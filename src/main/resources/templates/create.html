@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>청원 작성페이지</title>
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+    <link rel="fontsetting" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
+</head>
+<body>
+
+    <!--네비게이션바-->
+    <nav class="navbar">
+
+        <!--좌측-->
+        <div class="navbar_title">
+            <img src="../static/image/logo.png" alt="logo" class="maha_lazer">
+            <a class="service_title" href="main.html">송곳매</a>
+        </div>
+
+        <!--우측-->
+        <div class="navbar_text">
+            <ul class="navbar_menu">
+                <li class="navbar_menu_item1" ><a href="create.html">청원하기</a></li>
+                <li class="navbar_menu_item2"><a href="login.html" >로그인/회원가입</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!--페이지에서 보이는 제일 큰 타이틀-->
+    <div class="create_page_title">
+        <h2>청원하기</h2>
+    </div>
+
+    <!--입력전 조그만한 주의사항-->
+    <p class="info_text">청원 내용을 입력해주세요</p>
+    <p class="warning_text">*표시는 필수 입력항목입니다</p>
+
+    <!--청원 내용 입력박스-->
+    <div class="create_page_box">
+        <hr class="inputbox_topline">
+        <p class="create_title">청원 제목</p>
+        <input class="post_title">
+        <hr class="box_between_line">
+        <p class="creat_text">청원 내용</p>
+        <input class="post_text">
+    </div>
+
+    <!--버튼들-->
+    <div class="create_page_button">
+        <button class="cancel_button">취소</button>
+        <button class="back_button">이전화면으로 이동</button>
+        <button class="submit_button">신청</button>
+    </div>
+</body>
+
+<!--푸터-->
+<footer class="footer">
+    <ul class="footer_menu">
+        <a class="terms_of_use" href="#">이용약관</a>
+        <a class="private_info" href="#">개인정보 처리방침</a>
+        <a class="contact_us" href="#">이용문의</a>
+    </ul>
+</footer>
+
+</html>
