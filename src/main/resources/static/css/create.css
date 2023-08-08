@@ -182,7 +182,99 @@ body, html{
     height:360px;
     margin-left:1%;
 }
+/*버튼 묶어주는 div tag*/
+.create_page_button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:3%;
+}
+/*취소버튼*/
+.cancel_button{
+    width:184px;
+    height:47px;
+    border-radius: 30px;
+    background-color: var(--color-sub-lightblue);
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    border: none;
+    font-size:16px;
+    margin-right:1%;
+}
 
+/*이전화면 돌아가기 버튼*/
+.back_button{
+    width:184px;
+    height:47px;
+    border-radius: 30px;
+    background-color: var(--color-sub-lightblue);
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    border: none;
+    font-size:16px;
+    margin-right:1%;
+}
+
+/*제출버튼*/
+.submit_button{
+    width:184px;
+    height:47px;
+    border-radius: 30px;
+    background-color: var(--color-main-lightblue);
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    border: none;
+    font-size:16px;
+}
+.footer{
+    background-color: var(--color-main-deepblue);
+    width:100%;
+    height: 120px;
+    margin-top: 3%;
+}
+.footer_menu{
+    display:flex;
+    justify-content: flex-start;
+    padding-top: 2%;
+    padding-left: 5%;
+}
+
+.terms_of_use{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+    padding-right: 5%;
+}
+.private_info{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+    padding-right:5%;
+}
+.contact_us{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+}
+.copyright_div{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.copyright_mark{
+    width:10px;
+    height: 10px;
+    margin-right:5px;
+}
+.copyright_likelion{
+    font-family: "Noto Sans KR";
+    font-size:11px;
+    color:var(--font-color-sub);
+}
 
 .fix{
     /*width: 1200.007px;*/
@@ -247,5 +339,20 @@ body, html{
     }
     .post_text{
         width:85%;
+    }
+    .cancel_button{
+        width:35%;
+        font-size:1rem;
+        margin-right:3%;
+    }
+    .submit_button{
+        width:35%;
+        font-size:1rem;
+    }
+    .back_button{
+        display:none;
+    }
+    .footer{
+        display:none;
     }
 }
