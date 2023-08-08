@@ -87,7 +87,7 @@ body, html{
     font-size: 40px;
     font-weight: var(--font-weight-bold);
     font-color:var(--font-color-main);
-    margin-top:10%;
+    margin-top:5%;
 }
 
 /*필수입력항목을 안내하는 p태그 묶음*/
@@ -97,7 +97,7 @@ body, html{
     flex-direction: row;
     /*margin-left: 180px;*/
     margin-left: 10%;
-    margin-top:8%;
+    margin-top:3%;
 }
 
 /*청원 입력전 주의사항*/
@@ -105,12 +105,12 @@ body, html{
     font-family:"Noto Sans KR";
     font-weight: var(--font-weight-normal);
     color: var(--font-color-main);
-    font-size:20px;
+    font-size:15px;
 }
 .warning_text{
     font-family: "Noto Sans KR";
     font-weight: var(--font-weight-normal);
-    font-size:15px;
+    font-size:13px;
     color:#950000;
     margin-top:22px;
     /*margin-left:700px;*/
@@ -119,21 +119,18 @@ body, html{
 /*입력칸 전체를 담은 큰 박스*/
 .create_page_box{
     border:1px solid var(--color-sub-grey);
-    border-radius: 30px;
+    border-radius: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
-/*입력박스 제일 위에 있는 구분선*/
-.createbox_topline{
-    width:80%;
-    border: 0.5px solid var(--font-color-main);
-    margin-top: 30px;
-}
 
 /*청원제목 텍스트와 input 박스 묶음*/
-.title_box{
+.title_div{
     display:flex;
     flex-direction: row;
     margin-left:3%;
+    margin-top: 2%;
 }
 /*청원제목 텍스트*/
 .create_title{
@@ -153,11 +150,39 @@ body, html{
     height:49px;
     margin-left:1%;
 }
+/*중간 구분선*/
 .createbox_between_line{
     width:80%;
-    border: 0.5px solid var(--font-color-main);
+    border: 1px solid var(--font-color-main);
     margin-top: 30px;
+    margin-bottom: 3%;
 }
+/*내용 작성하는곳 div로 묶음*/
+.content_div{
+    display:flex;
+    flex-direction: row;
+    margin-left:3%;
+    margin-bottom: 2%;
+}
+/*청원 내용 텍스트*/
+.create_text{
+    font-family: "Noto Sans KR";
+    font-weight: var(--font-weight-normal);
+    color:var(--font-color-main);
+    font-size:15px;
+    display:flex;
+    margin-left:100px;
+}
+/*청원내용 입력하는 박스*/
+.post_text{
+    font-family: "Noto Sans KR";
+    border: 1px solid var(--color-sub-grey);
+    border-radius: 5px;
+    width:70%;
+    height:360px;
+    margin-left:1%;
+}
+
 
 .fix{
     /*width: 1200.007px;*/
@@ -177,7 +202,10 @@ body, html{
     }
     .page_title{
         font-size:2rem;
-        margin-top:20%;
+        margin-top:10%;
+    }
+    .warning_box{
+        margin-top: 5%;
     }
     .info_text{
         display:none;
@@ -188,13 +216,36 @@ body, html{
     .create_page_box{
         border:none;
     }
-    .create_title{
-        margin-left: 3%;
+    .title_div{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left:10%;
+        margin-top: 0;
     }
-    .title_box{
-        margin-left: 10%;
+    .create_title{
+        margin-left:3%;
     }
     .post_title{
-        width:60%;
+        width:85%;
+    }
+    .createbox_between_line{
+        margin-top:3%;
+        margin-bottom: 3%;
+    }
+
+    .content_div{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left:10%;
+        margin-top: 0;
+    }
+
+    .create_text{
+        margin-left: 3%;
+    }
+    .post_text{
+        width:85%;
     }
 }
