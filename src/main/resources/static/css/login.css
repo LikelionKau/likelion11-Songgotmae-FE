@@ -177,15 +177,36 @@ input[id="check_login"]:checked + label::after{
     border-radius: 10px;
     border:1px solid var(--color-sub-grey);
 }
+.email_input_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.email_login_div{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 15%;
+}
 
 .alert-circle{
     width:20px;
     height: 20px;
+    margin-right: 5px;
 }
 .account_message{
     font-family: "Noto Sans KR";
     font-size:14px;
     color:var(--color-sub-grey);
+}
+.submit_button_div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
 }
 .certification_submit{
     background-color: var(--color-sub-lightblue);
@@ -252,11 +273,74 @@ footer{
     color:var(--font-color-sub);
 }
 
-
-
 .fix{
     /*width: 1200.007px;*/
     width: 100%;
     height: 1px;
     background: #D9D9D9;
+}
+
+/*미디어쿼리 적용*/
+@media screen and (max-width:767px) {
+    .navbar{
+        width:100%;
+        /*왜됨? 몰루...*/
+        box-sizing: border-box;
+    }
+    .navbar_menu_create {
+        padding-right: 4vw;
+        font-size: 0.8rem;
+    }
+
+    .navbar_menu_login {
+        font-size: 0.5rem;
+    }
+    .login_main_title{
+        font-size: 2rem;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+    .login_box{
+        margin-left: 8%;
+        height:500px;
+        margin-top: 10%;
+    }
+    .linked_login{
+        margin-top: 10%;
+    }
+    .google_login_btn{
+        margin-left: 15%;
+        margin-bottom: 5%;
+    }
+    .google_logo{
+        width:20px;
+        height: 20px;
+    }
+    .social_login_text{
+        font-size: 0.8rem;
+    }
+    .email_input_div{
+        margin-top: 10%;
+    }
+    .email_login_div{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 12%;
+    }
+    .alert-circle{
+        width:15px;
+        height: 15px;
+    }
+    .account_message{
+        font-size: 0.5rem;
+        color:var(--color-main-deepblue);
+    }
+    .submit_button_div{
+        margin-top: 10%;
+    }
+
+    .footer{
+        display:none;
+    }
 }

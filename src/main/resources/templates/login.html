@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인페이지</title>
     <link rel="stylesheet" href="../static/css/login.css">
     <link rel="fontsetting" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
@@ -41,15 +43,19 @@
         <p class="auto_login_text">로그인 상태 유지하기</p>
     </div>
 
-    <p class="kau_email_account">Kau 계정으로 인증하기</p>
-    <input class="kau_email">
+    <div class="email_input_div">
+        <p class="kau_email_account">Kau 계정으로 인증하기</p>
+        <input class="kau_email">
+    </div>
     <div class="email_login_div">
         <img src="../static/image/exclamation-circle.png" alt="alert-circle" class="alert-circle">
         <p class="account_message">이미 인증이 완료된 계정입니다</p>
     </div>
-    <button class="certification_submit">
-        <p class="submit_text">계정 인증</p>
-    </button>
+    <div class="submit_button_div">
+        <button class="certification_submit">
+            <p class="submit_text">계정 인증</p>
+        </button>
+    </div>
 </div>
 
 </body>
