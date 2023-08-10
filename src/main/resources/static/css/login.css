@@ -334,7 +334,7 @@ footer{
     }
     .account_message{
         font-size: 0.5rem;
-        color:var(--color-main-deepblue);
+        color:var(—color-main-deepblue);
     }
     .submit_button_div{
         margin-top: 10%;
