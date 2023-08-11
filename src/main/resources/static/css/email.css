@@ -1,0 +1,233 @@
+:root{
+    --color-main-deepblue:#1F244E;
+    --color-main-lightblue:rgba(0, 40, 112, 0.70);
+    --color-sub-lightblue:rgba(0, 40, 112, 0.30);
+    --color-sub-grey:#d9d9d9;
+    --font-color-main:#3a3a3a;
+    --font-color-sub:#ffffff;
+    --font-weight-bold:700;
+    --font-weight-normal:500;
+    --font-weight-light:400;
+
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+/*네비게이션 바*/
+.navbar{
+    background-color: var(--color-sub-lightblue);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*네비게이션 바 좌측*/
+.navbar_title{
+    margin-left: 10%;
+}
+
+/*송곳매 로고*/
+.maha_lazer{
+    width: 45px;
+    height: 48px;
+}
+
+/*송곳매 로고 글씨*/
+.service_title{
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 14px;
+}
+
+/*네비게이션 바 우측*/
+.navbar_text{
+    margin-right: 10%;
+    display: flex;
+    float: left;
+}
+
+/*네비게이션 바 우측 디테일*/
+.navbar_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*네비게이션 바 우측 아이템*/
+.navbar_menu_create{
+    font-family:"Noto Sans KR";
+    font-size:18px;
+    color:var(--font-color-main);
+    font-weight: var(--font-weight-normal);
+    padding-right:2vw;
+}
+
+.navbar_menu_login{
+    font-family:"Noto Sans KR";
+    font-size:15px;
+    color:var(--color-sub-grey);
+    font-weight: var(--font-weight-light);
+    padding-right:2vw;
+
+}
+/*body*/
+.email_main_title{
+    font-family: "Noto Sans KR";
+    font-size:40px;
+    color:var(--font-color-main);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.email_main_box{
+    border: 2px solid var(--color-sub-grey);
+    width:80%;
+    height:600px;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+.email_input_div{
+    margin-top: 20%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.kau_email_input{
+    border: 1px solid var(--color-sub-grey);
+    border-radius: 10px;
+    width:70%;
+    height:60px;
+}
+.send_message{
+    font-family: "Noto Sans KR";
+    font-size: 14px;
+    color:var(--color-sub-grey);
+    font-weight: 600;
+}
+.button_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:15%;
+}
+.email_submit{
+    border:none;
+    background-color: var(--color-sub-lightblue);
+    border-radius: 30px;
+    width:180px;
+}
+.email_submit_complete{
+    font-family: "Noto Sans KR";
+    font-size:16px;
+    color:var(--font-color-main);
+    font-weight: 700;
+}
+
+/*footer*/
+footer{
+    background-color: var(--color-main-deepblue);
+    width:100%;
+    height: 120px;
+    margin-top: 3%;
+}
+.footer_menu{
+    display:flex;
+    justify-content: flex-start;
+    padding-top: 2%;
+    padding-left: 5%;
+}
+
+.terms_of_use{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+    padding-right: 5%;
+}
+.private_info{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+    padding-right:5%;
+}
+.contact_us{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+}
+.copyright_div{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.copyright_mark{
+    width:10px;
+    height: 10px;
+    margin-right:5px;
+}
+.copyright_likelion{
+    font-family: "Noto Sans KR";
+    font-size:11px;
+    color:var(--font-color-sub);
+}
+
+.fix{
+    /*width: 1200.007px;*/
+    width: 100%;
+    height: 1px;
+    background: #D9D9D9;
+}
+
+/*반응형 웹페이지 - 미디어커리*/
+@media screen and (max-width:767px){
+    .navbar{
+        width:100%;
+        /*왜됨? 몰루...*/
+        box-sizing: border-box;
+    }
+    .navbar_menu_create {
+        padding-right: 4vw;
+        font-size: 0.8rem;
+    }
+
+    .navbar_menu_login {
+        font-size: 0.5rem;
+    }
+    .email_main_title{
+        font-size:1.8rem;
+        margin-top: 15%;
+    }
+    .email_main_box{
+        height:500px;
+        margin-top: 20%;
+    }
+    .email_input_div{
+        margin-top: 30%;
+    }
+    .kau_email_input{
+        width:75%;
+    }
+    .send_message{
+        font-size:0.5rem;
+        margin-top: 5%;
+        color:var(--font-color-main);
+    }
+    .button_div{
+        margin-top: 40%;
+    }
+    .footer{
+        display:none;
+    }
+}
