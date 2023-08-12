@@ -1,3 +1,16 @@
+:root{
+    --color-main-deepblue:#1F244E;
+    --color-main-lightblue:rgba(0, 40, 112, 0.70);
+    --color-sub-lightblue:rgba(0, 40, 112, 0.30);
+    --color-sub-grey:#d9d9d9;
+    --font-color-main:#3a3a3a;
+    --font-color-sub:#ffffff;
+    --font-weight-bold:700;
+    --font-weight-normal:500;
+    --font-weight-light:400;
+
+}
+
 body, html{
     margin: 0;
     padding: 0;
@@ -5,7 +18,7 @@ body, html{
 
 /*네비게이션 바*/
 .navbar{
-    background-color: #002870;
+    background-color: var(--color-sub-lightblue);
     height: 60px;
     width: 100%;
     display: flex;
@@ -28,48 +41,239 @@ body, html{
 .service_title{
     font-weight: bold;
     font-size: 24px;
-    text-decoration: none;
     color: white;
     margin-left: 10px;
     position: absolute;
-    top: 12px;
+    margin-top: 14px;
 }
 
 /*네비게이션 바 우측*/
 .navbar_text{
     margin-right: 10%;
     display: flex;
-    justify-items: flex-start;
     float: left;
 }
 
 /*네비게이션 바 우측 디테일*/
 .navbar_menu{
-    list-style: none;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*네비게이션 바 우측 아이템*/
-.navbar_menu_item{
-    margin-right: 20px;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    color: white;
+.navbar_menu_create{
+    font-family:"Noto Sans KR";
+    font-size:18px;
+    color:var(--font-color-main);
+    font-weight: var(--font-weight-normal);
+    padding-right:2vw;
+}
+
+.navbar_menu_login{
+    font-family:"Noto Sans KR";
+    font-size:15px;
+    color:var(--color-sub-grey);
+    font-weight: var(--font-weight-light);
+    padding-right:2vw;
+
 }
 
 /*페이지에서 보이는 가장 큰 타이틀*/
 .page_title{
+    font-family: "Noto Sans KR";
     display: flex;
     justify-content: center;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
+    font-color:var(--font-color-main);
+    margin-top:5%;
 }
 
-/**/
-h2{
-    border-bottom: 1px solid #D9D9D9;
-    padding-bottom: 30px;
+/*필수입력항목을 안내하는 p태그 묶음*/
+.warning_box{
+    display:flex;
+    justify-content: left;
+    flex-direction: row;
+    /*margin-left: 180px;*/
+    margin-left: 10%;
+    margin-top:3%;
+}
+
+/*청원 입력전 주의사항*/
+.info_text{
+    font-family:"Noto Sans KR";
+    font-weight: var(--font-weight-normal);
+    color: var(--font-color-main);
+    font-size:15px;
+}
+.warning_text{
+    font-family: "Noto Sans KR";
+    font-weight: var(--font-weight-normal);
+    font-size:13px;
+    color:#950000;
+    margin-top:22px;
+    /*margin-left:700px;*/
+    margin-left:54%;
+}
+/*입력칸 전체를 담은 큰 박스*/
+.create_page_box{
+    border:1px solid var(--color-sub-grey);
+    border-radius: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+
+/*청원제목 텍스트와 input 박스 묶음*/
+.title_div{
+    display:flex;
+    flex-direction: row;
+    margin-left:3%;
+    margin-top: 2%;
+}
+/*청원제목 텍스트*/
+.create_title{
+    font-family: "Noto Sans KR";
+    font-weight: var(--font-weight-normal);
+    color:var(--font-color-main);
+    font-size:15px;
+    display:flex;
+    margin-left:100px;
+}
+/*제목 input 박스*/
+.post_title{
+    font-family: "Noto Sans KR";
+    border: 1px solid var(--color-sub-grey);
+    border-radius: 10px;
+    width:70%;
+    height:49px;
+    margin-left:1%;
+}
+/*중간 구분선*/
+.createbox_between_line{
+    width:80%;
+    border: 1px solid var(--font-color-main);
+    margin-top: 30px;
+    margin-bottom: 3%;
+}
+/*내용 작성하는곳 div로 묶음*/
+.content_div{
+    display:flex;
+    flex-direction: row;
+    margin-left:3%;
+    margin-bottom: 2%;
+}
+/*청원 내용 텍스트*/
+.create_text{
+    font-family: "Noto Sans KR";
+    font-weight: var(--font-weight-normal);
+    color:var(--font-color-main);
+    font-size:15px;
+    display:flex;
+    margin-left:100px;
+}
+/*청원내용 입력하는 박스*/
+.post_text{
+    font-family: "Noto Sans KR";
+    border: 1px solid var(--color-sub-grey);
+    border-radius: 5px;
+    width:70%;
+    height:360px;
+    margin-left:1%;
+}
+/*버튼 묶어주는 div tag*/
+.create_page_button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:3%;
+}
+/*취소버튼*/
+.cancel_button{
+    width:184px;
+    height:47px;
+    border-radius: 30px;
+    background-color: var(--color-sub-lightblue);
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    border: none;
+    font-size:16px;
+    margin-right:1%;
+}
+
+/*이전화면 돌아가기 버튼*/
+.back_button{
+    width:184px;
+    height:47px;
+    border-radius: 30px;
+    background-color: var(--color-sub-lightblue);
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    border: none;
+    font-size:16px;
+    margin-right:1%;
+}
+
+/*제출버튼*/
+.submit_button{
+    width:184px;
+    height:47px;
+    border-radius: 30px;
+    background-color: var(--color-main-lightblue);
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    border: none;
+    font-size:16px;
+}
+.footer{
+    background-color: var(--color-main-deepblue);
+    width:100%;
+    height: 120px;
+    margin-top: 3%;
+}
+.footer_menu{
+    display:flex;
+    justify-content: flex-start;
+    padding-top: 2%;
+    padding-left: 5%;
+}
+
+.terms_of_use{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+    padding-right: 5%;
+}
+.private_info{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+    padding-right:5%;
+}
+.contact_us{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+}
+.copyright_div{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.copyright_mark{
+    width:10px;
+    height: 10px;
+    margin-right:5px;
+}
+.copyright_likelion{
+    font-family: "Noto Sans KR";
+    font-size:11px;
+    color:var(--font-color-sub);
 }
 
 .fix{
@@ -79,73 +283,106 @@ h2{
     background: #D9D9D9;
 }
 
-/*청원 디테일 전체 div*/
-.detail{
-    margin: 0 auto;
-    margin-top: 3%;
-    /*width: 1200px;*/
-    width: 63%;
-    height: 945px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    border: 1px solid #D9D9D9;
-    background: #FFF;
-}
+/*반응형 웹페이지 - 미디어커리*/
+@media screen and (max-width:767px){
+    .navbar_menu_create{
+        padding-right:4vw;
+        font-size:0.8rem;
+    }
+    .navbar_menu_login{
+        font-size:0.5rem;
+    }
+    .page_title{
+        font-size:2rem;
+        margin-top:10%;
+    }
+    .warning_box{
+        margin-top: 5%;
+    }
+    .info_text{
+        display:none;
+    }
+    .warning_text{
+        font-size:0.8rem;
+    }
+    .create_page_box{
+        border:none;
+    }
+    .title_div{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left:10%;
+        margin-top: 0;
+    }
+    .create_title{
+        margin-left:3%;
+    }
+    .post_title{
+        width:85%;
+    }
+    .createbox_between_line{
+        margin-top:3%;
+        margin-bottom: 3%;
+    }
 
-/*청원 제목*/
-.detail_title{
-    margin-left: 5%;
-    display: flex;
-    width: 1200px;
-    height: 90px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Noto Sans KR;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
+    .content_div{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left:10%;
+        margin-top: 0;
+    }
 
-.detail_body{
-    /*clear: both;*/
-}
+    .create_text{
+        margin-left: 3%;
+    }
+    .post_text{
+        width:85%;
+    }
+    .cancel_button{
+        width:35%;
+        font-size:1rem;
+        margin-right:3%;
+    }
+    .submit_button{
+        width:35%;
+        font-size:1rem;
+    }
+    .back_button{
+        display:none;
+    }
+    .footer{
+        width:100%;
+    }
+    .footer_menu{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_text{
+        width:70%;
+        justify-content: center;
+        align-items: center;
+        margin-left:10%;
+        margin-top: 5%;
+    }
+    .terms_of_use{
+        font-size:12px;
+        padding-right: 5%;
+    }
 
-/*청원 작성 일시/조회수*/
-.detail_time{
-    /*clear: both;*/
-    float: right;
-    width: 183px;
-    color: #000;
-    text-align: right;
-    font-family: Noto Sans KR;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 40%;
-    margin-right: 5%;
-    margin-top: 1%;
-    clear: both;
+    .private_info{
+        font-size:12px;
+        padding-right: 5%;
+    }
+    .contact_us{
+        font-size:12px;
+        padding-right: 5%;
+    }
+    .copyright_div{
+        justify-content: left;
+        margin-top:5%;
+    }
 }
-
-/*청원 본문 내용*/
-.detail_content{
-    /*clear: both;*/
-    margin-left: 5%;
-    display: flex;
-    /*width: 1090px;*/
-    width: 90%;
-    height: 149px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Noto Sans KR;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
