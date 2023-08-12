@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>청원리스트</title>
-    <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/detail.css" type="text/css">
 </head>
 <body>
 
@@ -32,17 +32,23 @@
         <!--청원 제목 + 좋아요/싫어요/공유-->
         <div class="detail_head">
 
-            <!--청원 제목-->
-            <div class="detail_title">
-                <h3>제목 어쩌구 저쩌구</h3>
+            <!--청원 제목 + 좋아요/싫어요-->
+            <div class="detail_title_like">
+                <!--청원 제목-->
+                <div class="detail_title">
+                    <h3>제목 어쩌구 저쩌구</h3>
+                </div>
+
+                <!--청원 좋아요/싫어요-->
+                <div class="detail_like">
+                    <input type="image" name="button" src="../static/image/like.png" onclick="">
+                    <input type="image" name="button" src="../static/image/dislike.png" onclick="">
+                </div>
             </div>
 
-            <div class="detail_like">
-
-            </div>
-
+            <!--청원 공유-->
             <div class="detail_share">
-
+                <input type="image" name="button" src="../static/image/share.png" onclick="" class="detail_share_logo">
             </div>
         </div>
 
@@ -65,6 +71,7 @@
                     형사피의자 또는 형사피고인으로서 구금되었던 자가 법률이 정하는 불기소처분을 받거나 무죄판결을 받은 때에는 법률이 정하는 바에 의하여 국가에 정당한 보상을 청구할 수 있다.</p>
             </div>
         </div>
+
     </div>
 
     <!--페이지에서 보이는 제일 큰 타이틀-->
