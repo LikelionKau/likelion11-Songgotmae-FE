@@ -228,6 +228,36 @@ footer{
         margin-top: 40%;
     }
     .footer{
-        display:none;
+        width:100%;
+    }
+    .footer_menu{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_text{
+        width:70%;
+        justify-content: center;
+        align-items: center;
+        margin-left:10%;
+        margin-top: 5%;
+    }
+    .terms_of_use{
+        font-size:12px;
+        padding-right: 5%;
+    }
+
+    .private_info{
+        font-size:12px;
+        padding-right: 5%;
+    }
+    .contact_us{
+        font-size:12px;
+        padding-right: 5%;
+    }
+    .copyright_div{
+        justify-content: left;
+        margin-top:5%;
     }
 }
