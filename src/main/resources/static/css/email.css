@@ -326,11 +326,6 @@ body, html{
 
 /*반응형 웹페이지 - 미디어커리*/
 @media screen and (max-width:767px){
-    .navbar{
-        width:100%;
-        /*왜됨? 몰루...*/
-        box-sizing: border-box;
-    }
     .navbar_menu_create {
         padding-right: 4vw;
         font-size: 0.8rem;
@@ -339,27 +334,57 @@ body, html{
     .navbar_menu_login {
         font-size: 0.5rem;
     }
-    .email_main_title{
-        font-size:1.8rem;
-        margin-top: 15%;
+    .signup_main_title{
+        font-size:2rem;
     }
-    .email_main_box{
-        height:500px;
-        margin-top: 20%;
+    .signup_main_box{
+        width:80%;
+        margin-left:10%;
     }
-    .email_input_div{
-        margin-top: 30%;
+    .email_text{
+        font-size:0.8rem;
     }
+
     .kau_email_input{
-        width:75%;
+        font-size:0.5rem;
+        height:40px;
     }
     .send_message{
-        font-size:0.5rem;
-        margin-top: 5%;
-        color:var(--font-color-main);
+        font-size:0.4rem;
     }
-    .button_div{
-        margin-top: 40%;
+    .nickname_text{
+        font-size:0.8rem;
+    }
+    .kau_nickname_input{
+        font-size:0.5rem;
+        height:40px;
+    }
+    .password_text{
+        font-size:0.8rem;
+    }
+    .kau_password_input{
+        font-size:0.5rem;
+        height:40px;
+    }
+    .pw_confirm_text{
+        font-size:0.8rem;
+    }
+    .kau_pw_confirm_input{
+        font-size:0.5rem;
+        height:40px;
+    }
+    .alert_circle{
+        width:8px;
+        height:8px;
+    }
+    .alert_message{
+        font-size:0.5rem;
+    }
+    .signup_submit{
+        height:40px;
+    }
+    .signup_submit_complete{
+        font-size:0.8rem;
     }
     .footer{
         width:100%;
@@ -367,14 +392,13 @@ body, html{
     .footer_menu{
         display:flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
     }
     .footer_text{
         width:70%;
         justify-content: center;
         align-items: center;
-        margin-left:10%;
         margin-top: 5%;
     }
     .terms_of_use{
