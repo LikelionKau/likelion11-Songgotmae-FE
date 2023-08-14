@@ -63,6 +63,16 @@ body, html{
 }
 
 /*네비게이션 바 우측 아이템*/
+.navbar_menu_main{
+    text-decoration: none;
+    font-family:"Noto Sans KR";
+    font-size:18px;
+    color:var(--font-color-main);
+    font-weight: var(--font-weight-normal);
+    padding-right:2vw;
+}
+
+/*네비게이션 바 우측 아이템*/
 .navbar_menu_create{
     text-decoration: none;
     font-family:"Noto Sans KR";
@@ -73,6 +83,16 @@ body, html{
 }
 
 .navbar_menu_login{
+    text-decoration: none;
+    font-family:"Noto Sans KR";
+    font-size:15px;
+    color:var(--color-sub-grey);
+    font-weight: var(--font-weight-light);
+    padding-right:2vw;
+
+}
+
+.navbar_menu_email{
     text-decoration: none;
     font-family:"Noto Sans KR";
     font-size:15px;

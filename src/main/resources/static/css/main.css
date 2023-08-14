@@ -11,13 +11,14 @@
 
 }
 
-body, main.html{
+body, html{
     margin: 0;
     padding: 0;
 }
 
+/*네비게이션 바*/
 .navbar{
-    background-color: #002870;
+    background-color: var(--color-sub-lightblue);
     height: 60px;
     width: 100%;
     display: flex;
@@ -25,15 +26,18 @@ body, main.html{
     align-items: center;
 }
 
+/*네비게이션 바 좌측*/
 .navbar_title{
     margin-left: 10%;
 }
 
+/*송곳매 로고*/
 .maha_lazer{
     width: 45px;
     height: 48px;
 }
 
+/*송곳매 로고 글씨*/
 .service_title{
     font-weight: bold;
     font-size: 24px;
@@ -42,25 +46,62 @@ body, main.html{
     margin-left: 10px;
     position: absolute;
     top: 12px;
+    font-family: "Noto Sans KR";
 }
 
+/*네비게이션 바 우측*/
 .navbar_text{
     margin-right: 10%;
     display: flex;
-    justify-items: flex-start;
     float: left;
+    font-family: "Noto Sans KR";
 }
 
+/*네비게이션 바 우측 디테일*/
 .navbar_menu{
-    list-style: none;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.navbar_menu_item{
-    margin-right: 20px;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    color: white;
+
+/*네비게이션 바 우측 아이템*/
+.navbar_menu_main{
+    text-decoration: none;
+    font-family:"Noto Sans KR";
+    font-size:18px;
+    color:var(--font-color-main);
+    font-weight: var(--font-weight-normal);
+    padding-right:2vw;
+}
+
+/*네비게이션 바 우측 아이템*/
+.navbar_menu_create{
+    text-decoration: none;
+    font-family:"Noto Sans KR";
+    font-size:18px;
+    color:var(--font-color-main);
+    font-weight: var(--font-weight-normal);
+    padding-right:2vw;
+}
+
+.navbar_menu_login{
+    text-decoration: none;
+    font-family:"Noto Sans KR";
+    font-size:15px;
+    color:var(--color-sub-grey);
+    font-weight: var(--font-weight-light);
+    padding-right:2vw;
+
+}
+
+.navbar_menu_email{
+    text-decoration: none;
+    font-family:"Noto Sans KR";
+    font-size:15px;
+    color:var(--color-sub-grey);
+    font-weight: var(--font-weight-light);
+    padding-right:2vw;
+
 }
 
 .page_title{
@@ -68,6 +109,7 @@ body, main.html{
     justify-content: center;
     font-size: 40px;
     font-weight: bold;
+    font-family: "Noto Sans KR";
 }
 
 h1{
@@ -106,7 +148,7 @@ h1{
     font-weight: bold;
     margin: 10px auto;
 }
-.context_container{
+.contents_container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -114,14 +156,15 @@ h1{
     width: 100%;
 }
 
-.context_topic {
+.contents_topic {
     flex-shrink: 0;
     color: black;
     font-size: 20px;
     align-self: flex-start;
     margin-left: 3%;
+    font-family: "Noto Sans KR";
 }
-.context_box{
+.contents_box{
     display: flex;
     flex-direction: column;
     justify-content: flex-end; /* context를 하단으로 정렬 */
@@ -129,20 +172,22 @@ h1{
     flex-grow: 1; /* context와 context_detail이 남은 공간을 차지하도록 설정 */
 }
 
-.context {
+.contents {
     color: #000;
     font-size: 15px;
     align-self: flex-start;
     margin-left: -22%;
+    font-family: "Noto Sans KR";
 }
 
-.context_detail {
+.contents_detail {
     flex-shrink: 0;
     color: #000;
     font-size: 15px;
     text-align: right;
     align-self: flex-start;
     margin-right: 5%;
+    font-family: "Noto Sans KR";
 }
 .footer{
     background-color: var(--color-main-deepblue);
@@ -240,10 +285,10 @@ h1{
         width: 90%; /* 너비를 더 좁게 조정 */
         height: auto;
     }
-    .context_topic{
+    .contents_topic{
         margin-left: 5%;
     }
-    .context_detail{
+    .contents_detail{
         margin-right: 5%;
     }
 }
