@@ -80,6 +80,7 @@ body, html{
     color:var(--font-color-main);
     font-weight: var(--font-weight-normal);
     padding-right:2vw;
+    text-decoration: none;
 }
 
 .navbar_menu_login{
@@ -89,6 +90,7 @@ body, html{
     color:var(--color-sub-grey);
     font-weight: var(--font-weight-light);
     padding-right:2vw;
+    text-decoration:none;
 
 }
 
@@ -103,7 +105,7 @@ body, html{
 }
 
 /*body*/
-.email_main_title{
+.signup_main_title{
     font-family: "Noto Sans KR";
     font-size:40px;
     color:var(--font-color-main);
@@ -112,45 +114,145 @@ body, html{
     justify-content: center;
     font-weight: 700;
 }
-.email_main_box{
+.signup_main_box{
     border: 2px solid var(--color-sub-grey);
-    width:80%;
-    height:600px;
+    width:590px;
     border-radius: 10px;
-    margin-left: 10%;
+    margin-left: 31%;
 }
 .email_input_div{
-    margin-top: 20%;
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top:10%;
+}
+.nickname_input_div{
+    display:flex;
+    flex-direction: column;
+}
+.password_input_div{
+    display:flex;
+    flex-direction: column;
+}
+.pw_confirm_input_div{
+    display:flex;
+    flex-direction: column;
 }
 .kau_email_input{
     border: 1px solid var(--color-sub-grey);
     border-radius: 10px;
     width:70%;
     height:60px;
+    margin-left:15%;
+    font-family: "Noto Sans KR";
+    font-size:15px;
+    color:rgba(58, 58, 58, 0.10);
+    padding-left:1%;
+}
+.kau_nickname_input{
+    border: 1px solid var(--color-sub-grey);
+    border-radius: 10px;
+    width:70%;
+    height:60px;
+    margin-left:15%;
+    font-family: "Noto Sans KR";
+    font-size:15px;
+    color:rgba(58, 58, 58, 0.10);
+    padding-left:1%;
+}
+.kau_password_input{
+    border: 1px solid var(--color-sub-grey);
+    border-radius: 10px;
+    width:70%;
+    height:60px;
+    margin-left:15%;
+    font-family: "Noto Sans KR";
+    font-size:15px;
+    color:rgba(58, 58, 58, 0.10);
+    padding-left:1%;
+}
+.kau_pw_confirm_input{
+    border: 1px solid var(--color-sub-grey);
+    border-radius: 10px;
+    width:70%;
+    height:60px;
+    margin-left:15%;
+    font-family: "Noto Sans KR";
+    font-size:15px;
+    color:rgba(58, 58, 58, 0.10);
+    padding-left:1%;
+}
+.email_text{
+    font-family: "Noto Sans KR";
+    text-align: left;
+    color:var(--font-color-main);
+    font-size:18px;
+    margin-left:16%;
+    font-weight: var(--font-weight-bold);
+}
+.nickname_text{
+    font-family: "Noto Sans KR";
+    text-align: left;
+    color:var(--font-color-main);
+    font-size:18px;
+    margin-left:16%;
+    font-weight: var(--font-weight-bold);
+}
+.password_text{
+    font-family: "Noto Sans KR";
+    text-align: left;
+    color:var(--font-color-main);
+    font-size:18px;
+    margin-left:16%;
+    font-weight: var(--font-weight-bold);
+}
+.pw_confirm_text{
+    font-family: "Noto Sans KR";
+    text-align: left;
+    color:var(--font-color-main);
+    font-size:18px;
+    margin-left:16%;
+    font-weight: var(--font-weight-bold);
 }
 .send_message{
     font-family: "Noto Sans KR";
     font-size: 14px;
     color:var(--color-sub-grey);
     font-weight: 600;
+    text-align: right;
+    margin-right:15%;
+}
+.alert_div{
+    display:flex;
+    align-items: center;
+    justify-content: right;
+}
+.alert_circle{
+    width:15px;
+    height:15px;
+    margin-right:5px;
+}
+.alert_message{
+    font-family: "Noto Sans KR";
+    font-size: 14px;
+    color:var(--color-sub-grey);
+    font-weight: 600;
+    text-align: right;
+    margin-right:15%;
 }
 .button_div{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:15%;
+    margin-top:5%;
+    margin-bottom:5%;
 }
-.email_submit{
+.signup_submit{
     border:none;
     background-color: var(--color-sub-lightblue);
     border-radius: 30px;
     width:180px;
 }
-.email_submit_complete{
+.signup_submit_complete{
     font-family: "Noto Sans KR";
     font-size:16px;
     color:var(--font-color-main);

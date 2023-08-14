@@ -33,11 +33,30 @@
 
 <p class="login_main_title">로그인</p>
 <div class="login_box">
-    <p class="linked_login">연동 로그인</p>
-    <button class="google_login_btn">
-        <img src="../static/image/google.png" alt="google" class="google_logo">
-        <p class="social_login_text">google 계정으로 로그인</p>
-    </button>
+    <div class="email_input_div">
+        <p class="kau_email_account">Kau 계정으로 로그인하기</p>
+        <input type="text" placeholder="likelion@kau.kr"class="kau_email">
+        <input type="text" placeholder="비밀번호"class="kau_password">
+    </div>
+    <div class="email_login_div">
+        <img src="../static/image/exclamation-circle.png" alt="alert-circle" class="alert-circle">
+        <p class="account_message">이미 회원가입이 완료된 계정입니다</p>
+    </div>
+    <div class="submit_button_div">
+        <button class="certification_submit">
+            <p class="submit_text">로그인</p>
+        </button>
+    </div>
+    <div class="signup_and_pw_div">
+        <a class="signup_text" href="email.html">회원가입</a>
+        <a class="pw_update_text" href="#">비밀번호 찾기</a>
+    </div>
+    <div class="social_login_btn_div">
+        <button class="google_login_btn">
+            <img src="../static/image/google.png" alt="google" class="google_logo">
+            <p class="social_login_text">google 계정으로 로그인</p>
+        </button>
+    </div>
 
     <div class="auto_login_div">
         <input type="checkbox" id="check_login"></input>
@@ -45,19 +64,6 @@
         <p class="auto_login_text">로그인 상태 유지하기</p>
     </div>
 
-    <div class="email_input_div">
-        <p class="kau_email_account">Kau 계정으로 인증하기</p>
-        <input class="kau_email">
-    </div>
-    <div class="email_login_div">
-        <img src="../static/image/exclamation-circle.png" alt="alert-circle" class="alert-circle">
-        <p class="account_message">이미 인증이 완료된 계정입니다</p>
-    </div>
-    <div class="submit_button_div">
-        <button class="certification_submit">
-            <p class="submit_text">계정 인증</p>
-        </button>
-    </div>
 </div>
 
 </body>
