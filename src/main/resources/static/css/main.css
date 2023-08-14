@@ -11,13 +11,14 @@
 
 }
 
-body, main.html{
+body, html{
     margin: 0;
     padding: 0;
 }
 
+/*네비게이션 바*/
 .navbar{
-    background-color: #002870;
+    background-color: var(--color-sub-lightblue);
     height: 60px;
     width: 100%;
     display: flex;
@@ -25,15 +26,18 @@ body, main.html{
     align-items: center;
 }
 
+/*네비게이션 바 좌측*/
 .navbar_title{
     margin-left: 10%;
 }
 
+/*송곳매 로고*/
 .maha_lazer{
     width: 45px;
     height: 48px;
 }
 
+/*송곳매 로고 글씨*/
 .service_title{
     font-weight: bold;
     font-size: 24px;
@@ -45,25 +49,59 @@ body, main.html{
     font-family: "Noto Sans KR";
 }
 
+/*네비게이션 바 우측*/
 .navbar_text{
     margin-right: 10%;
     display: flex;
-    justify-items: flex-start;
     float: left;
     font-family: "Noto Sans KR";
 }
 
+/*네비게이션 바 우측 디테일*/
 .navbar_menu{
-    list-style: none;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.navbar_menu_item{
-    margin-right: 20px;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    color: white;
-    font-family: "Noto Sans KR";
+
+/*네비게이션 바 우측 아이템*/
+.navbar_menu_main{
+    text-decoration: none;
+    font-family:"Noto Sans KR";
+    font-size:18px;
+    color:var(--font-color-main);
+    font-weight: var(--font-weight-normal);
+    padding-right:2vw;
+}
+
+/*네비게이션 바 우측 아이템*/
+.navbar_menu_create{
+    text-decoration: none;
+    font-family:"Noto Sans KR";
+    font-size:18px;
+    color:var(--font-color-main);
+    font-weight: var(--font-weight-normal);
+    padding-right:2vw;
+}
+
+.navbar_menu_login{
+    text-decoration: none;
+    font-family:"Noto Sans KR";
+    font-size:15px;
+    color:var(--color-sub-grey);
+    font-weight: var(--font-weight-light);
+    padding-right:2vw;
+
+}
+
+.navbar_menu_email{
+    text-decoration: none;
+    font-family:"Noto Sans KR";
+    font-size:15px;
+    color:var(--color-sub-grey);
+    font-weight: var(--font-weight-light);
+    padding-right:2vw;
+
 }
 
 .page_title{
@@ -151,6 +189,63 @@ h1{
     margin-right: 5%;
     font-family: "Noto Sans KR";
 }
+.footer{
+    background-color: var(--color-main-deepblue);
+    width:100%;
+    height: 120px;
+    margin-top: 3%;
+}
+.footer_menu{
+    padding-top: 2%;
+    padding-left: 2%;
+}
+.footer_text{
+    display:inline-block;
+    text-align: center;
+    white-space: nowrap;
+    width:100px;
+    margin-left:10%;
+}
+.terms_of_use{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+    padding-right: 40%;
+    text-decoration: none;
+
+}
+.private_info{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+    padding-right:40%;
+    text-decoration: none;
+}
+.contact_us{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+    text-decoration: none;
+}
+.copyright_div{
+    display:flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left:10%;
+}
+
+.copyright_mark{
+    width:10px;
+    height: 10px;
+    margin-right:5px;
+}
+.copyright_likelion{
+    font-family: "Noto Sans KR";
+    font-size:11px;
+    color:var(--font-color-sub);
+}
+
 
 /* 기존 스타일들은 여기에 위치 */
 
