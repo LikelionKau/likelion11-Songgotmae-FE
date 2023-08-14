@@ -18,7 +18,7 @@ body, html{
 
 /*네비게이션 바*/
 .navbar{
-    background-color: #002870;
+    background-color: var(--color-sub-lightblue);
     height: 60px;
     width: 100%;
     display: flex;
@@ -52,24 +52,54 @@ body, html{
 .navbar_text{
     margin-right: 10%;
     display: flex;
-    justify-items: flex-start;
     float: left;
 }
 
 /*네비게이션 바 우측 디테일*/
 .navbar_menu{
-    list-style: none;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*네비게이션 바 우측 아이템*/
-.navbar_menu_item{
-    /*margin-right: 20px;*/
-    margin-right: 1vw;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    color: white;
+.navbar_menu_main{
+    text-decoration: none;
+    font-family:"Noto Sans KR";
+    font-size:18px;
+    color:var(--font-color-main);
+    font-weight: var(--font-weight-normal);
+    padding-right:2vw;
+}
+
+/*네비게이션 바 우측 아이템*/
+.navbar_menu_create{
+    text-decoration: none;
+    font-family:"Noto Sans KR";
+    font-size:18px;
+    color:var(--font-color-main);
+    font-weight: var(--font-weight-normal);
+    padding-right:2vw;
+}
+
+.navbar_menu_login{
+    text-decoration: none;
+    font-family:"Noto Sans KR";
+    font-size:15px;
+    color:var(--color-sub-grey);
+    font-weight: var(--font-weight-light);
+    padding-right:2vw;
+
+}
+
+.navbar_menu_email{
+    text-decoration: none;
+    font-family:"Noto Sans KR";
+    font-size:15px;
+    color:var(--color-sub-grey);
+    font-weight: var(--font-weight-light);
+    padding-right:2vw;
+
 }
 
 /*페이지에서 보이는 가장 큰 타이틀*/
