@@ -1,3 +1,16 @@
+:root{
+    --color-main-deepblue:#1F244E;
+    --color-main-lightblue:rgba(0, 40, 112, 0.70);
+    --color-sub-lightblue:rgba(0, 40, 112, 0.30);
+    --color-sub-grey:#d9d9d9;
+    --font-color-main:#3a3a3a;
+    --font-color-sub:#ffffff;
+    --font-weight-bold:700;
+    --font-weight-normal:500;
+    --font-weight-light:400;
+
+}
+
 body, html{
     margin: 0;
     padding: 0;
