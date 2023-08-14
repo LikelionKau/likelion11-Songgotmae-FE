@@ -46,6 +46,7 @@ body, html{
     margin-left: 10px;
     position: absolute;
     top: 12px;
+    font-family: "Noto Sans KR";
 }
 
 /*네비게이션 바 우측*/
@@ -53,6 +54,7 @@ body, html{
     margin-right: 10%;
     display: flex;
     float: left;
+    font-family: "Noto Sans KR";
 }
 
 /*네비게이션 바 우측 디테일*/
@@ -107,6 +109,7 @@ body, html{
     justify-content: center;
     font-size: 40px;
     font-weight: bold;
+    font-family: "Noto Sans KR";
 }
 
 h1{
@@ -145,7 +148,7 @@ h1{
     font-weight: bold;
     margin: 10px auto;
 }
-.context_container{
+.contents_container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -153,14 +156,15 @@ h1{
     width: 100%;
 }
 
-.context_topic {
+.contents_topic {
     flex-shrink: 0;
     color: black;
     font-size: 20px;
     align-self: flex-start;
     margin-left: 3%;
+    font-family: "Noto Sans KR";
 }
-.context_box{
+.contents_box{
     display: flex;
     flex-direction: column;
     justify-content: flex-end; /* context를 하단으로 정렬 */
@@ -168,20 +172,22 @@ h1{
     flex-grow: 1; /* context와 context_detail이 남은 공간을 차지하도록 설정 */
 }
 
-.context {
+.contents {
     color: #000;
     font-size: 15px;
     align-self: flex-start;
     margin-left: -22%;
+    font-family: "Noto Sans KR";
 }
 
-.context_detail {
+.contents_detail {
     flex-shrink: 0;
     color: #000;
     font-size: 15px;
     text-align: right;
     align-self: flex-start;
     margin-right: 5%;
+    font-family: "Noto Sans KR";
 }
 .footer{
     background-color: var(--color-main-deepblue);
@@ -279,10 +285,10 @@ h1{
         width: 90%; /* 너비를 더 좁게 조정 */
         height: auto;
     }
-    .context_topic{
+    .contents_topic{
         margin-left: 5%;
     }
-    .context_detail{
+    .contents_detail{
         margin-right: 5%;
     }
 }
