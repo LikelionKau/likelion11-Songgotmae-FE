@@ -326,13 +326,33 @@ body, html{
 
 /*반응형 웹페이지 - 미디어커리*/
 @media screen and (max-width:767px){
-    .navbar_menu_create {
-        padding-right: 4vw;
-        font-size: 0.8rem;
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .service_title{
+        display:none;
     }
 
-    .navbar_menu_login {
-        font-size: 0.5rem;
+    .navbar_title {
+        margin: 10px 0;
+    }
+
+    .navbar_text {
+        margin: 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar_menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar_menu_item {
+        margin: 10px 0;
     }
     .signup_main_title{
         font-size:2rem;
