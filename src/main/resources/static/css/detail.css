@@ -138,6 +138,8 @@ h2{
     /*flex-direction: column;*/
     /*justify-content: center;*/
     align-items: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 /*청원 제목*/
@@ -159,6 +161,10 @@ h2{
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+
+    position: relative;
+    top: 45px;
+    left: 5%;
 }
 
 /*청원 좋아요/싫어요*/
@@ -168,6 +174,8 @@ h2{
     float: right;
     margin-right: 10%;
 
+    position: relative;
+    bottom: 45px;
 }
 
 /*청원 공유*/
