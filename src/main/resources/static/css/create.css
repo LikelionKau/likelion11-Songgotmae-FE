@@ -30,7 +30,9 @@ body, html{
 .navbar_title{
     margin-left: 10%;
 }
-
+.navbar__toggle-btn{
+    display:none;
+}
 /*송곳매 로고*/
 .maha_lazer{
     width: 45px;
@@ -319,6 +321,7 @@ body, html{
 @media screen and (max-width:767px){
     .navbar {
         height: auto;
+        display:flex;
         flex-direction: column;
         align-items: center;
         padding: 10px 0;
@@ -338,12 +341,20 @@ body, html{
     }
 
     .navbar_menu {
-        flex-direction: column;
+        display:none;
+    }
+    .navbar_menu.open{
+        display:flex;
+        justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
 
-    .navbar_menu_item {
-        margin: 10px 0;
+    .navbar__toggle-btn{
+        display:flex;
+    }
+    .navbar__toggle-btn.open{
+        display:none;
     }
     .page_title{
         font-size:2rem;
