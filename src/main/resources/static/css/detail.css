@@ -17,11 +17,6 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-body, html{
-    margin: 0;
-    padding: 0;
-}
-
 /*네비게이션 바*/
 .navbar{
     background-color: var(--color-sub-lightblue);
@@ -54,7 +49,7 @@ body, html{
     color: white;
     margin-left: 10px;
     position: absolute;
-    top: 12px;
+    padding-top: 12px;
 }
 
 /*네비게이션 바 우측*/
@@ -122,8 +117,6 @@ body, html{
 
 /*청원 디테일 전체 div*/
 .detail_title_box{
-    width: 90%;
-    height: 900px;
     border-radius: 10px;
     border: 1px solid #D9D9D9;
     background: #FFF;
@@ -140,7 +133,7 @@ body, html{
 
 /*청원 제목*/
 .detail_title{
-    font-size:20px;
+    font-size:25px;
     color: var(--font-color-main);
     font-family: Noto Sans KR;
     font-weight: var(--font-weight-bold);
@@ -157,8 +150,8 @@ body, html{
 .detail_buttons_div{
     display:flex;
     flex-direction: row;
-    margin-left:8%;
-    margin-top:20%;
+    justify-content: center;
+    margin-top:5%;
 }
 .like_btn{
     width:60px;
@@ -202,16 +195,6 @@ body, html{
     padding-right:5%;
 }
 
-
-/*중간 선*/
-.fix{
-    /*width: 1200.007px;*/
-    width: 100%;
-    height: 1px;
-    background: #D9D9D9;
-}
-
-
 /*청원 작성 일시/조회수*/
 .detail_time_div{
     float: right;
@@ -234,12 +217,11 @@ body, html{
 
 /*청원 본문 내용*/
 .detail_content{
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 5%;
     display: flex;
     /*width: 1090px;*/
     width: 90%;
-    height: 149px;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
@@ -253,18 +235,28 @@ body, html{
 }
 .bar_graph_div{
     width:90%;
-    height:25px;
-    background-color:var(--color-main-deepblue);
     border-radius:15px;
     margin-left:5%;
-    margin-top:8%;
+    margin-top:5%;
 }
 
-.like_bar{
-    background-color:#950000;
-    width:70%;
+/*막대그래프 전체*/
+.progress_bar{
+    appearance: none;
+    width:100%;
+    margin-bottom:1%;
+}
+/*진행도를 나타내는 막대그래프 부분(좋아요-빨강)*/
+.progress_bar::-webkit-progress-bar{
+    background-color:var(--color-main-deepblue);
     height:25px;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px;
+}
+/*막대그래프 나머지 부분(싫어요-파랑)*/
+.progress_bar::-webkit-progress-value{
+    background-color:#950000;
+    height:25px;
+    border-radius:15px 0px 0px 15px;
 }
 .bar_text_div{
     display:flex;
@@ -410,7 +402,11 @@ body, html{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        height:300px;
+    }
+    .detail_title{
+        text-align: center;
+        margin-left:3%;
+        margin-right:3%;
     }
     .detail_title_like{
         display:flex;
@@ -426,6 +422,15 @@ body, html{
         display:flex;
         top:0;
         left:0;
+    }
+    .detail_content{
+        margin-bottom:8%;
+    }
+    .bar_graph_div{
+        margin-bottom:5%;
+    }
+    .footer_text{
+        margin-top:3%;
     }
 
 }
