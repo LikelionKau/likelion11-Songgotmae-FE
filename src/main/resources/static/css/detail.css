@@ -11,6 +11,12 @@
 
 }
 
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 body, html{
     margin: 0;
     padding: 0;
@@ -117,9 +123,15 @@ body, html{
 /*청원 디테일 전체 div*/
 .detail_title_box{
     width: 90%;
+    height: 900px;
     border-radius: 10px;
     border: 1px solid #D9D9D9;
     background: #FFF;
+    margin-left:5%;
+    margin-top:3%;
+    margin-right:3%;
+    margin-bottom:3%;
+
 }
 .detail_title_like{
     display:flex;
@@ -206,6 +218,7 @@ body, html{
     text-align: right;
     margin-right: 5%;
     margin-top: 1%;
+    margin-bottom:5%;
 }
 .detail_date{
     font-family: "Noto Sans KR";
@@ -233,10 +246,63 @@ body, html{
     color: #000;
     font-family: Noto Sans KR;
     /*font-size: 15px;*/
-    font-size: 0.8vw;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 2;
+}
+.bar_graph_div{
+    width:90%;
+    height:25px;
+    background-color:var(--color-main-deepblue);
+    border-radius:15px;
+    margin-left:5%;
+    margin-top:8%;
+}
+
+.like_bar{
+    background-color:#950000;
+    width:70%;
+    height:25px;
+    border-radius: 15px 0px 0px 15px;
+}
+.bar_text_div{
+    display:flex;
+}
+.like_bar_data_text{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--font-color-main);
+    font-size:15px;
+    display:flex;
+    flex-direction: column;
+    width:50px;
+    text-align: center;
+    margin-left:1%;
+}
+.dislike_bar_data_text{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--font-color-main);
+    font-size:15px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    width:50px;
+    margin-left:auto;
+    margin-right:1%;
+}
+.like_bar_text{
+    font-weight: var(--font-weight-bold);
+    margin-bottom:0;
+}
+.like_bar_number{
+    font-size:12px;
+}
+.dislike_bar_text{
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 0;
+}
+.dislike_bar_number{
+    font-size:12px;
 }
 
 /*-----푸터-----*/
