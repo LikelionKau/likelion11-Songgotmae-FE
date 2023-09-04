@@ -31,6 +31,10 @@ body, html{
     margin-left: 10%;
 }
 
+.navbar__toggle-btn{
+    display:none;
+}
+
 /*송곳매 로고*/
 .maha_lazer{
     width: 45px;
@@ -119,68 +123,55 @@ body, html{
     display: flex;
     justify-content: center;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 700;
     font-family: "Noto Sans KR";
 }
 
-h1{
-    border-bottom: 1px solid #000000;
-    padding-bottom: 30px;
+.many_content_text{
+    font-family: "Noto Sans KR";
+    color:var(--color-sub-grey);
+    font-weight:var(--font-weight-bold);
+    font-size: 18px;
+    margin-left:1%;
 }
-.main_page_1 h3 {
-    text-align: left; /* 텍스트를 오른쪽으로 정렬 */
-    margin-left: 100px; /* 오른쪽으로 20px의 마진 추가 */
-}
-
 
 .horizontal-line {
-    border-top: 1px solid black;
+    border-top: 3px solid var(--font-color-main);
+    margin-right:1%;
+    margin-left:1%;
 }
 
-/* Grid 컨테이너 스타일 */
-.grid-container {
-    display: flex;
-    justify-content: center;
-    /*max-width: 1200px; !* 최대 너비 설정 *!*/
-    margin: 0 auto; /* 가운데 정렬 */
-    flex-direction: column;
-
-}
-.grid-item {
-    border: 1px solid #D9D9D9; /* 회색 선으로 테두리 설정 */
-    border-radius: 5px; /* 모서리를 둥글게 만듦 */
-    background-color: #FFFFFF; /* 배경색 지정 */
-    /*height: 150px; !* 높이 지정 *!*!*/
-    /*width: 1200px;*/
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    margin: 10px auto;
+.contents_main_box{
+    border: 1px solid var(--color-sub-grey);
+    border-radius:5px;
+    width:90%;
+    height:180px;
+    margin-left:5%;
+    margin-top:1%;
 }
 .contents_container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
+    display:flex;
+    flex-direction:row;
 }
-
-.contents_topic {
-    flex-shrink: 0;
-    color: black;
-    font-size: 20px;
-    align-self: flex-start;
-    margin-left: 3%;
-    font-family: "Noto Sans KR";
-}
-.contents_box{
-    display: flex;
+.contents_div{
+    display:flex;
     flex-direction: column;
-    justify-content: flex-end; /* context를 하단으로 정렬 */
-    height: 100%;
-    flex-grow: 1; /* context와 context_detail이 남은 공간을 차지하도록 설정 */
+    width:85%;
+}
+.contents_title{
+    font-family: "Noto Sans KR";
+    font-size: 20px;
+    font-weight: var(--font-weight-bold);
+    color:var(--font-color-main);
+    margin-left:5%;
+    margin-bottom:3%;
+}
+.contents_text{
+    font-family: "Noto Sans KR";
+    font-size:15px;
+    color:var(--font-color-main);
+    margin-left:5%;
+    margin-top:0;
 }
 
 .contents {
@@ -188,17 +179,41 @@ h1{
     font-size: 15px;
     align-self: flex-start;
     margin-left: -17%;
-    font-family: "Noto Sans KR";
 }
 
-.contents_detail {
-    flex-shrink: 0;
-    color: #000;
-    font-size: 15px;
-    text-align: right;
-    align-self: flex-start;
-    margin-right: 5%;
+.contents_detail_date{
     font-family: "Noto Sans KR";
+    font-size:15px;
+    color:var(--font-color-main);
+}
+.contents_detail_view{
+    font-family: "Noto Sans KR";
+    font-size:15px;
+    color:var(--font-color-main);
+}
+.contents_detail_div{
+    display:flex;
+    flex-direction: column;
+    text-align: end;
+    margin-right:0;
+    margin-top:1%;
+}
+.contents_detail_date{
+    margin-bottom: 0;
+}
+.contents_detail_view{
+    margin-top:0;
+}
+.contents_detail_div_mobile{
+    display:none;
+}
+.contents_blank_box{
+    border: 1px solid var(--color-sub-grey);
+    border-radius:5px;
+    width:90%;
+    height:180px;
+    margin-left:5%;
+    margin-top:1%;
 }
 .footer{
     background-color: var(--color-main-deepblue);
@@ -273,9 +288,13 @@ h1{
 
     .navbar {
         height: auto;
+        display:flex;
         flex-direction: column;
         align-items: center;
         padding: 10px 0;
+    }
+    .service_title{
+        display:none;
     }
 
     .navbar_title {
@@ -295,34 +314,75 @@ h1{
         display: none;
         width: 100%;
         flex-direction: column;
+    }
+  
+    .navbar_menu.open{
+        display:flex;
+        justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
     .navbar_menu.open{
         display: block;
     }
 
-    .navbar_menu_item {
-        margin: 10px 0;
+    .navbar__toggle-btn{
+        display:flex;
     }
-
-    .grid-container {
+    .navbar__toggle-btn.open{
+        display:none;
+    }
+    .page_title{
+        font-size:2rem;
+    }
+    .many_content_text{
+        font-size:0.8rem;
+        margin-left:5%;
+    }
+    .horizontal-line{
+        margin-left:5%;
+        margin-right:5%;
+    }
+    .contents_div{
+        width:90%;
+        margin-bottom: 0;
+    }
+    .contents_container{
+        display:flex;
         flex-direction: column;
     }
-
-    .grid-item {
-        width: 90%; /* 너비를 더 좁게 조정 */
-        height: auto;
+    .contents_title{
+        font-size:1rem;
     }
-    .contents_topic{
-        margin-left: 5%;
+    .contents_text{
+        font-size:0.8rem;
+        width:100%;
+        margin-bottom: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
-    .contents_detail{
-        margin-right: 5%;
+    .contents_detail_div{
+        display:none;
     }
-}
-@media (min-width: 769px) {
-    .grid-item{
-        width: 80%;
+    .contents_detail_div_mobile{
+        display:flex;
+        margin-top:0;
+        justify-content: end;
+        margin-right:8%;
+    }
+    .mobile_detail_date{
+        font-family: "Noto Sans KR";
+        font-weight: var(--font-weight-bold);
+        font-size:0.5rem;
+        color:var(--font-color-main);
+        margin-right:3%;
+    }
+    .mobile_detail_view{
+        font-family: "Noto Sans KR";
+        font-size:0.5rem;
+        color:var(--font-color-main);
+        font-weight: var(--font-weight-bold);
     }
 
 }

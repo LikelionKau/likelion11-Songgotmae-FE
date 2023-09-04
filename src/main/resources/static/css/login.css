@@ -30,6 +30,9 @@ body, html{
 .navbar_title{
     margin-left: 10%;
 }
+.navbar__toggle-btn{
+    display: none;
+}
 
 /*송곳매 로고*/
 .maha_lazer{
@@ -45,7 +48,7 @@ body, html{
     color: white;
     margin-left: 10px;
     position: absolute;
-    top: 12px;
+    padding-top: 12px;
 }
 
 /*네비게이션 바 우측*/
@@ -53,6 +56,7 @@ body, html{
     margin-right: 10%;
     display: flex;
     float: left;
+
 }
 
 /*네비게이션 바 우측 디테일*/
@@ -60,6 +64,7 @@ body, html{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
 }
 
 /*네비게이션 바 우측 아이템*/
@@ -80,6 +85,7 @@ body, html{
     color:var(--font-color-main);
     font-weight: var(--font-weight-normal);
     padding-right:2vw;
+    text-decoration: none;
 }
 
 .navbar_menu_login{
@@ -89,6 +95,7 @@ body, html{
     color:var(--color-sub-grey);
     font-weight: var(--font-weight-light);
     padding-right:2vw;
+    text-decoration: none;
 
 }
 
@@ -105,29 +112,20 @@ body, html{
 /*가장 큰 타이틀 - 로그인*/
 .login_main_title{
     font-family: "Noto Sans KR";
+    text-align: center;
     font-size: 40px;
     font-weight: 700;
     color:var(--font-color-main);
-    text-align: center;
-    margin-top: 10%;
-
+    margin-top: 5%;
 }
 
 /*login 요소들을 담은 큰 박스*/
 .login_box{
-    width:80%;
-    height:600px;
+    width:590px;
     border-radius: 10px;
     border:3px solid var(--color-sub-grey);
-    margin-left:10%;
-}
-.linked_login{
-    font-family: "Noto Sans KR";
-    color:var(--font-color-main);
-    font-size:18px;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 5%;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .google_login_btn{
@@ -140,6 +138,8 @@ body, html{
     justify-content: center;
     align-items: center;
     margin-left:15%;
+    margin-top:10%;
+    margin-bottom:10%;
 }
 .google_logo{
     width:28px;
@@ -156,7 +156,9 @@ body, html{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 3%;
+}
+.social_login_btn_div{
+    margin-bottom: auto;
 }
 input[type="checkbox"]{
     display: none;
@@ -165,18 +167,18 @@ input[type="checkbox"] + label{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     border:1px solid var(--font-color-main);
-    border-radius: 10px;
+    border-radius: 3px;
     margin-right: 1%;
 }
 input[id="check_login"]:checked + label::after{
     color: var(--font-color-main);
     content:'✔';
-    font-size: 25px;
-    width:30px;
-    height: 30px;
+    font-size: 10px;
+    width:10px;
+    height: 10px;
     text-align: center;
     left: 0;
     top:0;
@@ -201,7 +203,35 @@ input[id="check_login"]:checked + label::after{
     height:60px;
     border-radius: 10px;
     border:1px solid var(--color-sub-grey);
+    font-family: "Noto Sans KR";
+    font-color:var(--color-sub-grey);
+    padding-left:3%;
+    font-size:15px;
+    font-weight: var(--font-weight-light);
 }
+.kau_email[type="text"]{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:12px;
+    color:var(--font-color-main);
+}
+.kau_password{
+    margin-top:2%;
+    width:70%;
+    height:60px;
+    border-radius: 10px;
+    border:1px solid var(--color-sub-grey);
+    font-family: "Noto Sans KR";
+    font-color:var(--color-sub-grey);
+    padding-left:3%;
+    font-size:15px;
+    font-weight: var(--font-weight-light);
+}
+.kau_password[type="password"]{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:12px;
+    color:var(--font-color-main);
+}
+
 .email_input_div{
     display: flex;
     flex-direction: column;
@@ -215,6 +245,7 @@ input[id="check_login"]:checked + label::after{
     align-items: center;
     justify-content: flex-end;
     margin-right: 15%;
+    margin-top:0;
 }
 
 .alert-circle{
@@ -231,8 +262,8 @@ input[id="check_login"]:checked + label::after{
     display:flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
-    margin-bottom: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 .certification_submit{
     background-color: var(--color-sub-lightblue);
@@ -240,12 +271,38 @@ input[id="check_login"]:checked + label::after{
     height:47px;
     border-radius: 30px;
     border: none;
+    margin-bottom: 0;
 }
 .submit_text{
     font-family: "Noto Sans KR";
     font-size: 16px;
     color: var(--font-color-main);
     font-weight: 700;
+}
+.signup_and_pw_div{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top:0;
+    margin-bottom: 5%;
+}
+.signup_text{
+    font-family: "Noto Sans KR";
+    font-size:13px;
+    font-weight: var(--font-weight-normal);
+    color:var(--color-main-lightblue);
+    padding-right:8px;
+    text-decoration: none;
+}
+.pw_update_text{
+    font-family: "Noto Sans KR";
+    font-size:13px;
+    font-weight: var(--font-weight-normal);
+    color:var(--color-main-lightblue);
+    text-decoration: none;
+}
+.social_login_content{
+    display:none;
 }
 
 /*footer*/
@@ -307,73 +364,128 @@ input[id="check_login"]:checked + label::after{
 }
 
 
-.fix{
-    /*width: 1200.007px;*/
-    width: 100%;
-    height: 1px;
-    background: #D9D9D9;
-}
+
+
 
 /*미디어쿼리 적용*/
 @media screen and (max-width:767px) {
-    .navbar{
-        width:100%;
-        /*왜됨? 몰루...*/
-        box-sizing: border-box;
+    .navbar {
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
     }
-    .navbar_menu_create {
-        padding-right: 4vw;
-        font-size: 0.8rem;
+    .service_title{
+        display:none;
     }
 
-    .navbar_menu_login {
-        font-size: 0.5rem;
+    .navbar_title {
+        margin: 10px 0;
     }
-    .login_main_title{
-        font-size: 2rem;
-        margin-bottom: 10%;
-        margin-top: 10%;
+
+    .navbar_text {
+        margin: 0;
+        justify-content: center;
+        text-align: center;
     }
-    .login_box{
-        margin-left: 8%;
-        height:500px;
-        margin-top: 10%;
+
+    .navbar_menu {
+        display:none;
     }
-    .linked_login{
-        margin-top: 10%;
-    }
-    .google_login_btn{
-        margin-left: 15%;
-        margin-bottom: 5%;
-    }
-    .google_logo{
-        width:20px;
-        height: 20px;
-    }
-    .social_login_text{
-        font-size: 0.8rem;
-    }
-    .email_input_div{
-        margin-top: 10%;
-    }
-    .email_login_div{
+    .navbar_menu.open{
         display:flex;
         justify-content: center;
         align-items: center;
-        margin-left: 12%;
-    }
-    .alert-circle{
-        width:15px;
-        height: 15px;
-    }
-    .account_message{
-        font-size: 0.5rem;
-        color:var(-—color-main-deepblue);
-    }
-    .submit_button_div{
-        margin-top: 10%;
+        flex-direction: column;
     }
 
+    .navbar__toggle-btn{
+        display:flex;
+    }
+    .navbar__toggle-btn.open{
+        display:none;
+    }
+    .login_main_title{
+        display:none;
+    }
+    .login_box{
+        border:none;
+        display:flex;
+        flex-direction: column;
+        width:100%;
+    }
+    .email_input_div{
+        margin-top:10%;
+    }
+    .kau_email_account{
+        margin-bottom:8%;
+    }
+    .kau_email{
+        font-size:12px;
+        height:50px;
+    }
+    .kau_password{
+        font-size:12px;
+        height:50px;
+    }
+    .account_message{
+        font-size:0.5rem;
+        color:var(--color-sub-grey);
+    }
+    .alert-circle{
+        width:10px;
+        height:10px;
+    }
+
+    input[type="checkbox"] + label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        width: 15px;
+        height: 15px;
+        border:1px solid var(--font-color-main);
+        margin-right: 1%;
+    }
+    input[id="check_login"]:checked + label::after{
+        color:var(--color-main-deepblue);
+        width:15px;
+        height:15px;
+        border-radius: 8px;
+        background-color:var(--color-main-deepblue);
+        left: 0;
+        top:0;
+    }
+    .certification_submit{
+        width:80%;
+        background-color: var(--color-sub-grey);
+        border-radius: 8px;
+    }
+    .google_login_btn{
+        width:64px;
+        height:64px;
+        border-radius: 30px;
+        margin-left:0;
+        margin-top:0;
+    }
+    .social_login_text{
+        display:none;
+    }
+    .social_login_content{
+        display:flex;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size:12px;
+        font-weight: var(--font-weight-bold);
+        color:var(--font-color-main);
+    }
+    .social_login_btn_div{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top:5%;
+    }
     .footer{
         width:100%;
     }
@@ -385,10 +497,8 @@ input[id="check_login"]:checked + label::after{
     }
     .footer_text{
         width:70%;
-        justify-content: center;
-        align-items: center;
-        margin-left:10%;
         margin-top: 5%;
+        margin-left:0;
     }
     .terms_of_use{
         font-size:12px;
@@ -404,7 +514,8 @@ input[id="check_login"]:checked + label::after{
         padding-right: 5%;
     }
     .copyright_div{
-        justify-content: left;
+        justify-content: center;
         margin-top:5%;
+        margin-left:0;
     }
 }

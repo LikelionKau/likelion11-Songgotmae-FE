@@ -34,4 +34,3 @@ window.addEventListener('resize', function() {
         contentsText.textContent = originalText;
     }
 }, true);
-

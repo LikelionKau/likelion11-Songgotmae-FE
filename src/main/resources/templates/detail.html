@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>청원리스트</title>
+    <title>청원세부페이지</title>
     <link rel="stylesheet" href="../static/css/detail.css" type="text/css">
     <link rel="fontsetting" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
 </head>
@@ -20,6 +20,7 @@
 
         <!--우측-->
         <div class="navbar_text">
+            <img src="../static/image/hamburger-toggle.png" alt="toggle" class="navbar__toggle-btn">
             <div class="navbar_menu">
                 <a class="navbar_menu_main" href="main.html">청원보기</a>
                 <a class="navbar_menu_create" href="create.html">청원하기</a>
@@ -31,61 +32,78 @@
     </nav>
 
     <!--청원 디테일-->
-    <div class="detail">
+    <div class="detail_title_box">
         <!--청원 제목 + 좋아요/싫어요/공유-->
         <div class="detail_head">
 
             <!--청원 제목 + 좋아요/싫어요-->
             <div class="detail_title_like">
                 <!--청원 제목-->
-                <div class="detail_title">
-                    <h3>제목 어쩌구 저쩌구</h3>
-                </div>
-
+                    <p class="detail_title">
+                        내린 속의 어머니 사랑과 이런 아름다운 풀이 나의 파란 까닭입니다</p>
                 <!--청원 좋아요/싫어요-->
-                <div class="detail_like">
-                    <input type="image" name="button" src="../static/image/like.png" onclick="">
-                    <input type="image" name="button" src="../static/image/dislike.png" onclick="">
+                <div class="detail_buttons_div">
+                    <button class="like_btn" onclick="updateLikes()">
+                        <img src="../static/image/like.png" alt="like" class="like_img">
+                        <p class="like_text">찬성</p>
+                    </button>
+                    <button class="dislike_btn" onclick="updateDislikes()">
+                        <img src="../static/image/dislike.png" alt="dislike" class="dislike_img">
+                        <p class="dislike_text">반대</p>
+                    </button>
                 </div>
             </div>
 
-            <!--청원 공유-->
-            <div class="detail_share">
-                <input type="image" name="button" src="../static/image/share.png" onclick="" class="detail_share_logo">
-            </div>
         </div>
 
-        <div class="fix">
-
+        <div class="share_button_div">
+            <button class="share_button">
+                <img src="../static/image/share.png" class="share_btn_img">
+            </button>
         </div>
 
-        <!--청원 본문-->
-        <div class="detail_body">
 
             <!--청원 작성 일시/조회수-->
-            <div class="detail_time">
-                <p>작성 일시 : 2023-07-31</p>
-                <p>조회수 : 1230</p>
+            <div class="detail_time_div">
+                <p class="detail_date">작성 일시 : 2023-07-31</p>
+                <p class="detail_view">조회수 : 1230</p>
             </div>
 
             <!--창원 본문 내용-->
-            <div class="detail_content">
-                <p>국가는 농지에 관하여 경자유전의 원칙이 달성될 수 있도록 노력하여야 하며, 농지의 소작제도는 금지된다. 국가는 농수산물의 수급균형과 유통구조의 개선에 노력하여 가격안정을 도모함으로써 농·어민의 이익을 보호한다.
-                    형사피의자 또는 형사피고인으로서 구금되었던 자가 법률이 정하는 불기소처분을 받거나 무죄판결을 받은 때에는 법률이 정하는 바에 의하여 국가에 정당한 보상을 청구할 수 있다.</p>
-            </div>
+                <p class="detail_content">눈이 내려온 영락과 설레는 산야에 있는 사람은 피가 것이다. 같이, 전인 이상, 열락의 있다. 오아이스도 끓는 열락의 그들은 석가는 속잎나고, 끓는다. 얼음과 찾아다녀도, 설레는 우리 속에 이것이다. 행복스럽고 사라지지 뛰노는 방지하는 교향악이다. 아니더면, 우리는 열락의 주는 수 힘차게 지혜는 끓는다. 따뜻한 봄바람을 얼음이 이것이다. 이상 방황하여도, 없는 넣는 그들에게 이것이다. 보이는 속에서 풀이 이상의 구하지 능히 풀밭에 이것은 것이다.
+
+                    고동을 쓸쓸한 무엇을 무엇을 타오르고 인생에 가치를 아름다우냐? 방지하는 오직 것은 풀밭에 얼마나 위하여서. 끓는 너의 이것은 가진 있다. 생명을 꽃 따뜻한 물방아 하는 힘차게 사막이다. 있는 소금이라 열락의 있는가? 얼음에 우는 그들을 있는가? 우리 바이며, 우리의 부패를 아니다. 이성은 별과 얼마나 같은 위하여서. 인생의 용기가 품었기 사막이다.</p>
+
+        <div class="bar_graph_div">
+            <progress class="progress_bar" value="80" min="0" max="100"></progress>
+                <div class="bar_text_div">
+                    <div class="like_bar_data_text">
+                        <p class="like_bar_text">좋아요</p>
+                        <p class="like_bar_number">80</p>
+                    </div>
+
+                    <div class="dislike_bar_data_text">
+                        <p class="dislike_bar_text">싫어요</p>
+                        <p class="dislike_bar_number">20</p>
+                    </div>
+                </div>
         </div>
 
     </div>
-
-    <!--페이지에서 보이는 제일 큰 타이틀-->
-<!--    <div class="page_title">-->
-<!--        <h2>청원보기</h2>-->
-<!--    </div>-->
-
-    <!--리스트 노출 기준-->
-<!--    <div class="main_page_1">-->
-<!--        <h3>청원 100개 이상 게시물</h3>-->
-<!--    </div>-->
-
+<script src="../static/js/nav.js"></script>
 </body>
+<!--푸터-->
+<footer class="footer">
+    <div class="footer_menu">
+        <div class="footer_text">
+            <a class="terms_of_use" href="#">이용약관</a>
+            <a class="private_info" href="#">개인정보 처리방침</a>
+            <a class="contact_us" href="#">이용문의</a>
+        </div>
+        <div class="copyright_div">
+            <img src="../static/image/copyright.png" alt="copyright" class="copyright_mark">
+            <p class="copyright_likelion">likelion.com</p>
+        </div>
+    </div>
+</footer>
 </html>

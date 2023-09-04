@@ -4,10 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>kau이메일 최초 연동</title>
+  <title>회원가입</title>
   <link rel="stylesheet" href="../static/css/email.css">
   <link rel="fontsetting" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
 </head>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="../static/js/signup.js"></script>
+
 <body>
 
 <!--네비게이션바-->
@@ -21,6 +25,7 @@
 
   <!--우측-->
   <div class="navbar_text">
+    <img src="../static/image/hamburger-toggle.png" alt="toggle" class="navbar__toggle-btn">
     <div class="navbar_menu">
       <a class="navbar_menu_main" href="main.html">청원보기</a>
       <a class="navbar_menu_create" href="create.html">청원하기</a>
@@ -31,19 +36,38 @@
 
 </nav>
 
-<p class="email_main_title">Kau 이메일 최초 연동하기</p>
-<div class="email_main_box">
+<p class="signup_main_title">회원가입</p>
+<div class="signup_main_box">
   <div class="email_input_div">
-    <input class="kau_email_input">
-    <p class="send_message">입력한 계정으로 인증 이메일을 발송하였습니다</p>
+    <p class="email_text">kau 이메일(아이디)</p>
+    <input type="text" placeholder="이메일을 입력하세요" class="kau_email_input" id="kauemail">
+    <p class="send_message">kau계정 이메일로 재학생 인증을 해주세요</p>
+  </div>
+  <div class="nickname_input_div">
+    <p class="nickname_text">닉네임</p>
+    <input type="text" placeholder="닉네임을 입력해주세요" class="kau_nickname_input" id="nickname">
+    <p class="send_message">청원글 작성시에는 닉네임 없이 익명으로 가능합니다</p>
+  </div>
+  <div class="password_input_div">
+    <p class="password_text">비밀번호</p>
+    <input type="text" placeholder="비밀번호를 입력해주세요" class="kau_password_input" id="password">
+  </div>
+  <div class="pw_confirm_input_div">
+    <p class="pw_confirm_text">비밀번호 확인</p>
+    <input type="text" placeholder="비밀번호를 다시 입력해주세요" class="kau_pw_confirm_input">
+    <div class="alert_div">
+      <img src="../static/image/exclamation-circle.png" alt="alert_circle" class="alert_circle">
+      <p class="alert_message">비밀번호가 일치하지 않습니다</p>
+    </div>
   </div>
   <div class="button_div">
-    <button class="email_submit">
-      <p class="email_submit_complete">인증 완료</p>
+    <button class="signup_submit" onclick="signup()">
+      <p class="signup_submit_complete">회원가입 완료</p>
     </button>
   </div>
 </div>
 
+<script src="../static/js/nav.js"></script>
 </body>
 <!—푸터—>
 <footer class="footer">
