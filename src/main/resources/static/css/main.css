@@ -60,6 +60,7 @@ body, html{
 /*네비게이션 바 우측 디테일*/
 .navbar_menu{
     display: flex;
+    list-style: none;
     justify-content: space-between;
     align-items: center;
 }
@@ -101,6 +102,16 @@ body, html{
     color:var(--color-sub-grey);
     font-weight: var(--font-weight-light);
     padding-right:2vw;
+
+}
+.navbar__toggle-btn{
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    right: 32px;
+    top: 24px;
+    font-size: 24px;
+    display: none;
 
 }
 
@@ -176,7 +187,7 @@ h1{
     color: #000;
     font-size: 15px;
     align-self: flex-start;
-    margin-left: -22%;
+    margin-left: -17%;
     font-family: "Noto Sans KR";
 }
 
@@ -245,12 +256,21 @@ h1{
     font-size:11px;
     color:var(--font-color-sub);
 }
-
+.position-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
 
 /* 기존 스타일들은 여기에 위치 */
 
 /* 미디어 쿼리를 사용한 모바일 반응성 추가 */
 @media (max-width: 768px) { /* 화면 너비가 768px 이하일 때 */
+    .navbar__toggle-btn{
+        display: block;
+        color: var(--color-sub-grey);
+    }
+
     .navbar {
         height: auto;
         flex-direction: column;
@@ -267,10 +287,18 @@ h1{
         justify-content: center;
         text-align: center;
     }
+    .service_title{
+        display: none;
+    }
 
     .navbar_menu {
+        display: none;
+        width: 100%;
         flex-direction: column;
         align-items: center;
+    }
+    .navbar_menu.open{
+        display: block;
     }
 
     .navbar_menu_item {
