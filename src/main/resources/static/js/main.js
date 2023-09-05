@@ -1,5 +1,4 @@
-const navbarMenu = document.querySelector('.navbar_menu');
-const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+
 const contentsText = document.querySelector('.contents_text'); // 클래스명으로 변경
 const maxCharactersSmall = 0; // 최대 표시할 글자 수 (작은 화면)
 const maxCharactersLarge = 30; // 최대 표시할 글자 수 (큰 화면)
@@ -7,10 +6,10 @@ const maxCharactersLarge = 30; // 최대 표시할 글자 수 (큰 화면)
 // 초기에 페이지 로딩 시 원본 텍스트 내용 저장
 const originalText = contentsText.textContent;
 
-// 네비게이션 바 토글 버튼 이벤트 리스너
-navbarToggleBtn.addEventListener('click', () => {
-    navbarMenu.classList.toggle('open');
-});
+// // 네비게이션 바 토글 버튼 이벤트 리스너
+// navbarToggleBtn.addEventListener('click', () => {
+//     navbarMenu.classList.toggle('open');
+// });
 
 // 화면 크기 변화 감지 이벤트 리스너
 window.addEventListener('resize', function() {

@@ -42,6 +42,7 @@ body, html{
 
 /*송곳매 로고 글씨*/
 .service_title{
+    font-family : "Noto Sans KR";
     font-weight: bold;
     font-size: 24px;
     text-decoration: none;
@@ -56,6 +57,7 @@ body, html{
     margin-right: 10%;
     display: flex;
     float: left;
+    font-family: "Noto Sans KR"
 
 }
 
@@ -85,7 +87,6 @@ body, html{
     color:var(--font-color-main);
     font-weight: var(--font-weight-normal);
     padding-right:2vw;
-    text-decoration: none;
 }
 
 .navbar_menu_login{
@@ -95,7 +96,6 @@ body, html{
     color:var(--color-sub-grey);
     font-weight: var(--font-weight-light);
     padding-right:2vw;
-    text-decoration: none;
 
 }
 
