@@ -43,14 +43,14 @@ body, html{
 
 /*송곳매 로고 글씨*/
 .service_title{
+    font-family: "Noto Sans KR";
     font-weight: bold;
     font-size: 24px;
     text-decoration: none;
     color: white;
     margin-left: 10px;
     position: absolute;
-    top: 12px;
-    font-family: "Noto Sans KR";
+    padding-top: 12px;
 }
 
 /*네비게이션 바 우측*/
@@ -109,12 +109,6 @@ body, html{
 
 }
 .navbar__toggle-btn{
-    position: absolute;
-    width: 34px;
-    height: 34px;
-    right: 32px;
-    top: 24px;
-    font-size: 24px;
     display: none;
 
 }
@@ -281,11 +275,6 @@ body, html{
 
 /* 미디어 쿼리를 사용한 모바일 반응성 추가 */
 @media (max-width: 768px) { /* 화면 너비가 768px 이하일 때 */
-    .navbar__toggle-btn{
-        display: block;
-        color: var(--color-sub-grey);
-    }
-
     .navbar {
         height: auto;
         display:flex;
@@ -306,24 +295,14 @@ body, html{
         justify-content: center;
         text-align: center;
     }
-    .service_title{
-        display: none;
-    }
-
     .navbar_menu {
-        display: none;
-        width: 100%;
-        flex-direction: column;
+        display:none;
     }
-  
     .navbar_menu.open{
         display:flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }
-    .navbar_menu.open{
-        display: block;
     }
 
     .navbar__toggle-btn{
@@ -332,6 +311,10 @@ body, html{
     .navbar__toggle-btn.open{
         display:none;
     }
+    .service_title{
+        display: none;
+    }
+
     .page_title{
         font-size:2rem;
     }
