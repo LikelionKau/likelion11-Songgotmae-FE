@@ -103,6 +103,95 @@ body, html{
     padding-right:2vw;
 
 }
+.community_main_title{
+    font-family: "Noto Sans KR";
+    font-size:20px;
+    color:var(--font-color-main);
+    text-align: center;
+    font-weight: var(--font-weight-bold);
+    margin-top:5%;
+}
+.accordion_area{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.accordion_drop_container{
+    display:flex;
+}
+.open_btn.dropdown{
+    display:flex;
+    align-items: center;
+    width:100%;
+    background-color: var(--color-main-lightblue);
+    border: 1px solid var(--color-sub-grey);
+    border-radius: 8px 8px 0px 0px;
+}
+.open_btn{
+    display:flex;
+    align-items: center;
+    width:100%;
+    background-color: var(--font-color-sub);
+    border: 1px solid var(--color-sub-grey);
+    border-radius: 8px 8px 0px 0px;
+}
+.info_circle{
+    width:20px;
+    height:20px;
+    margin-right:10px;
+    margin-left:18px;
+    color:var(--font-color-main);
+}
+.info_circle.dropdown{
+    width:20px;
+    height:20px;
+    margin-right:10px;
+    margin-left:18px;
+    color:var(--font-color-sub);
+}
+.accordion_title_text{
+    font-family:"Noto Sans KR";
+    color:var(--font-color-main);
+    font-size:15px;
+    font-weight:var(--font-weight-bold);
+}
+
+.accordion_title_text.dropdown{
+    font-family:"Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+    font-weight:var(--font-weight-bold);
+}
+.bottom_arrow{
+    color:var(--font-color-main);
+    width:21px;
+    height:11px;
+    margin-left:auto;
+    margin-right:5px;
+}
+.bottom_arrow.dropdown{
+    display:none;
+}
+.accordion_content{
+    height:0px;
+    overflow-y: hidden;
+    border:1px solid var(--color-sub-grey);
+    border-radius: 0px 0px 8px 8px;
+}
+
+.accordion_content_text{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-main);
+    font-size:10px;
+    margin-left:12px;
+    margin-right:12px;
+    line-height:200%;
+}
+.dropdown{
+    display:block;
+    height:100%;
+    overflow:auto;
+}
 /*푸터*/
 .footer{
     background-color: var(--color-main-deepblue);
