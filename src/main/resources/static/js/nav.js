@@ -1,6 +1,6 @@
 const navbarMenu = document.querySelector('.navbar_menu');
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
-const navbarBackground = document.querySelector('.navbar')
+const navbarBackground = document.querySelector('.navbar');
 
 navbarToggleBtn.addEventListener('click',()=>{
     navbarMenu.classList.toggle('open');
