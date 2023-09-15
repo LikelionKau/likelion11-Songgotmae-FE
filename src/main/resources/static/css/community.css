@@ -136,11 +136,7 @@ body, html{
     border-radius: 8px 8px 0px 0px;
 }
 .info_circle{
-    width:20px;
-    height:20px;
-    margin-right:10px;
-    margin-left:18px;
-    color:var(--font-color-main);
+    display:none;
 }
 .info_circle.dropdown{
     width:20px;
@@ -148,6 +144,15 @@ body, html{
     margin-right:10px;
     margin-left:18px;
     color:var(--font-color-sub);
+}
+.info_circle_black{
+    width:20px;
+    height: 20px;
+    margin-right:10px;
+    margin-left:18px;
+}
+.info_circle_black.dropdown{
+    display:none;
 }
 .accordion_title_text{
     font-family:"Noto Sans KR";
@@ -163,7 +168,6 @@ body, html{
     font-weight:var(--font-weight-bold);
 }
 .bottom_arrow{
-    color:var(--font-color-main);
     width:21px;
     height:11px;
     margin-left:auto;
