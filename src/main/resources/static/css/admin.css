@@ -65,7 +65,8 @@ body, main.html{
     font-family:"Noto Sans KR";
     font-size:18px;
     color:var(--font-color-main);
-    font-weight: var(--font-weight-normal);
+    /*font-weight: var(--font-weight-normal);*/
+    font-weight: bold;
     padding-right:2vw;
 }
 
@@ -75,7 +76,8 @@ body, main.html{
     font-family:"Noto Sans KR";
     font-size:18px;
     color:var(--font-color-main);
-    font-weight: var(--font-weight-normal);
+    /*font-weight: var(--font-weight-normal);*/
+    font-weight: bold;
     padding-right:2vw;
 }
 
@@ -84,7 +86,8 @@ body, main.html{
     font-family:"Noto Sans KR";
     font-size:15px;
     color:var(--color-sub-grey);
-    font-weight: var(--font-weight-light);
+    /*font-weight: var(--font-weight-light);*/
+    font-weight: bold;
     padding-right:2vw;
 
 }
@@ -94,7 +97,8 @@ body, main.html{
     font-family:"Noto Sans KR";
     font-size:15px;
     color:var(--color-sub-grey);
-    font-weight: var(--font-weight-light);
+    /*font-weight: var(--font-weight-light);*/
+    font-weight: bold;
     padding-right:2vw;
 
 }
