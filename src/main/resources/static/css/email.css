@@ -152,7 +152,8 @@ body, html{
     margin-left:15%;
     font-family: "Noto Sans KR";
     font-size:15px;
-    color:rgba(58, 58, 58, 0.10);
+    /*color:rgba(58, 58, 58, 0.10);*/
+    color:rgba(58, 58, 58, 1);
     padding-left:1%;
 }
 .kau_nickname_input{
@@ -163,7 +164,7 @@ body, html{
     margin-left:15%;
     font-family: "Noto Sans KR";
     font-size:15px;
-    color:rgba(58, 58, 58, 0.10);
+    color:rgba(58, 58, 58, 1);
     padding-left:1%;
 }
 .kau_password_input{
@@ -174,7 +175,7 @@ body, html{
     margin-left:15%;
     font-family: "Noto Sans KR";
     font-size:15px;
-    color:rgba(58, 58, 58, 0.10);
+    color:rgba(58, 58, 58, 1);
     padding-left:1%;
 }
 .kau_pw_confirm_input{
@@ -185,7 +186,7 @@ body, html{
     margin-left:15%;
     font-family: "Noto Sans KR";
     font-size:15px;
-    color:rgba(58, 58, 58, 0.10);
+    color:rgba(58, 58, 58, 1);
     padding-left:1%;
 }
 .email_text{
