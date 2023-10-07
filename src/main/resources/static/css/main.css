@@ -329,8 +329,6 @@ body, html{
 @media (max-width: 768px) { /* 화면 너비가 768px 이하일 때 */
     .navbar {
         height: auto;
-        display:flex;
-        flex-direction: column;
         align-items: center;
         padding: 10px 0;
     }
@@ -339,7 +337,9 @@ body, html{
     }
 
     .navbar_title {
-        margin: 10px 0;
+        margin-left:175px;
+        margin-top:10px;
+        margin-bottom:10px;
     }
 
     .navbar_text {
@@ -355,10 +355,12 @@ body, html{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-right: 40px;
     }
 
     .navbar__toggle-btn{
         display:flex;
+        margin-right:50px;
     }
     .navbar__toggle-btn.open{
         display:none;
@@ -377,6 +379,18 @@ body, html{
     .horizontal-line{
         margin-left:5%;
         margin-right:5%;
+    }
+    .list_right{
+        position:relative;
+        display:flex;
+        justify-content: center;
+        margin-left:0;
+        margin-right:20px;
+        margin-bottom: 5%;
+    }
+    .search_text{
+        display:flex;
+        justify-content: center;
     }
     .contents_div{
         width:90%;

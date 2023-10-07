@@ -16,6 +16,10 @@
 .notosanskr * {
     font-family: 'Noto Sans KR', sans-serif;
 }
+body,html{
+    margin:0;
+    padding:0;
+}
 
 /*네비게이션 바*/
 .navbar{
@@ -338,6 +342,13 @@
     font-family: "Noto Sans KR";
     color:var(--font-color-sub);
     font-size:15px;
+    padding-right:40%;
+    text-decoration: none;
+}
+.community_compliance{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
     text-decoration: none;
 }
 .copyright_div{
@@ -363,8 +374,6 @@
     /* 화면 너비가 768px 이하일 때 */
     .navbar {
         height: auto;
-        display: flex;
-        flex-direction: column;
         align-items: center;
         padding: 10px 0;
     }
@@ -374,7 +383,9 @@
     }
 
     .navbar_title {
-        margin: 10px 0;
+        margin-left:175px;
+        margin-top:10px;
+        margin-bottom: 10px;
     }
 
     .navbar_text {
@@ -392,10 +403,12 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-right:40px;
     }
 
     .navbar__toggle-btn {
         display: flex;
+        margin-right:50px;
     }
 
     .navbar__toggle-btn.open {
@@ -433,8 +446,36 @@
     .bar_graph_div{
         margin-bottom:5%;
     }
+    .footer{
+        width:100%;
+    }
+    .footer_menu{
+        display:flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+    }
     .footer_text{
-        margin-top:3%;
+        width:100%;
+        margin-left:0;
+        margin-top: 5%;
+    }
+    .terms_of_use{
+        font-size:12px;
+        padding-right: 5%;
+    }
+
+    .contact_us{
+        font-size:12px;
+        padding-right: 5%;
+    }
+    .community_compliance{
+        font-size:12px;
+    }
+    .copyright_div{
+        justify-content: left;
+        margin-top:5%;
+        margin-left:0;
     }
 
 }
