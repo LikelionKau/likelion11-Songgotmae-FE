@@ -409,10 +409,12 @@ input[id="check_login"]:checked + label::after{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-right:40px;
     }
 
     .navbar__toggle-btn{
         display:flex;
+        margin-right: 50px;
     }
     .navbar__toggle-btn.open{
         display:none;
