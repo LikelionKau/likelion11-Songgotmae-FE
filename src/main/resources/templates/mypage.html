@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>마이페이지</title>
+
+    <link rel="stylesheet" href="../static/css/mypage.css" type="text/css">
+    <link rel="fontsetting" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <script src="../static/js/mypage.js" defer></script>
+
 </head>
 <body>
 <!--네비게이션바-->
@@ -29,86 +34,49 @@
 
 </nav>
 
-<p class="my_info">내 정보</p>
-<p class="logout">로그아웃</p>
-<p class="id_input">id input</p>
-<p class="nickname">이름/닉네임</p>
-<p class="student_id">한국항공대00학번</p>
-
-<p class="account">계정</p>
-<p class="school_certification">학교 인증</p>
-<p class="change_password">비밀번호 변경</p>
-
-<p class="community">커뮤니티</p>
-<p class="within_usage_restriction">이용 제한 내역</p>
-<p class="community_rules of use">커뮤니티 이용규칙</p>
-
-<p class="terms_of_use">이용 안내</p>
-<p class="terms_of_service">서비스 이용약관</p>
-<p class="privacy_policy">개인정보 처리방침</p>
-
-<p class="etc">기타</p>
-<p class="information_consent_settings">정보 동의 설정</p>
-<p class="withdrawal">회원 탈퇴</p>
-
-<div class="grid-item">
-    <div class="contents_container">
-        <div class="contents_box">
-            <div class="contents">
-                <p class="my_info">내 정보</p>
-                <p class="logout">로그아웃</p>
-                <p class="id_input">id input</p>
-                <p class="nickname">이름/닉네임</p>
-                <p class="student_id">한국항공대00학번</p>
-            </div>
+<div class="contents_main_box">
+    <div class="contents_div">
+        <p class="contents_title">내 정보</p>
+        <div class="info_section">
+            <div class="info_box"></div>
+            <p class="id_input">id input</p>
         </div>
+            <p class="nickname">이름/닉네임</p>
+            <p class="student_id">한국항공대00학번</p>
+    </div>
+    <p class="logout">로그아웃</p>
+</div>
+<div class="contents_main_box">
+    <div class="contents_div">
+            <p class="contents_title">계정</p>
+            <p class="school_certification">학교 인증</p>
+            <p class="change_password">비밀번호 변경</p>
     </div>
 </div>
-<div class="grid-item">
-    <div class="contents_container">
-        <div class="contents_box">
-            <div class="contents">
-                <p class="account">계정</p>
-                <p class="school_certification">학교 인증</p>
-                <p class="change_password">비밀번호 변경</p>
-            </div>
-        </div>
+<div class="contents_main_box">
+    <div class="contents_div">
+        <p class="contents_title">커뮤니티</p>
+        <p class="usage_restriction_details">이용 제한 내역</p>
+        <p class="community_use_rules">커뮤니티 이용 규칙</p>
     </div>
 </div>
-<div class="grid-item">
-    <div class="contents_container">
-        <div class="contents_box">
-            <div class="contents">
-                <p class="community">커뮤니티</p>
-                <p class="within_usage_restriction">이용 제한 내역</p>
-                <p class="community_rules of use">커뮤니티 이용규칙</p>
-            </div>
-        </div>
+<div class="contents_main_box">
+    <div class="contents_div">
+        <p class="contents_title">이용 안내</p>
+        <p class="terms_and_conditions_of_service_use">서비스 이용약관</p>
+        <p class="privacy_policy">개인정보 처리방침</p>
     </div>
 </div>
-<div class="grid-item">
-    <div class="contents_container">
-        <div class="contents_box">
-            <div class="contents">
-                <p class="terms_of_use">이용 안내</p>
-                <p class="terms_of_service">서비스 이용약관</p>
-                <p class="privacy_policy">개인정보 처리방침</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="grid-item">
-    <div class="contents_container">
-        <div class="contents_box">
-            <div class="contents">
-                <p class="etc">기타</p>
-                <p class="information_consent_settings">정보 동의 설정</p>
-                <p class="withdrawal">회원 탈퇴</p>
-
-            </div>
-        </div>
+<div class="contents_main_box">
+    <div class="contents_div">
+        <p class="contents_title">기타</p>
+        <p class="set_information_consent">정보 동의 설정</p>
+        <p class="membership_withdrawal">회원 탈퇴</p>
     </div>
 </div>
 
+
+<script src="../static/js/main.js"></script>
 </body>
+
 </html>
