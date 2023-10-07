@@ -298,6 +298,13 @@ body, html{
     font-family: "Noto Sans KR";
     color:var(--font-color-sub);
     font-size:15px;
+    padding-right:40%;
+    text-decoration: none;
+}
+.community_compliance{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
     text-decoration: none;
 }
 .copyright_div{
@@ -325,17 +332,18 @@ body, html{
 @media screen and (max-width:767px){
     .navbar {
         height: auto;
-        display:flex;
-        flex-direction: column;
         align-items: center;
         padding: 10px 0;
     }
+
     .service_title{
         display:none;
     }
 
     .navbar_title {
-        margin: 10px 0;
+        margin-left:175px;
+        margin-top:10px;
+        margin-bottom: 10px;
     }
 
     .navbar_text {
@@ -352,10 +360,12 @@ body, html{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-right:40px;
     }
 
     .navbar__toggle-btn{
         display:flex;
+        margin-right:50px;
     }
     .navbar__toggle-btn.open{
         display:none;
@@ -429,14 +439,12 @@ body, html{
     .footer_menu{
         display:flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
     }
     .footer_text{
-        width:70%;
-        justify-content: center;
-        align-items: center;
-        margin-left:10%;
+        width:100%;
+        margin-left:0;
         margin-top: 5%;
     }
     .terms_of_use{
@@ -444,16 +452,16 @@ body, html{
         padding-right: 5%;
     }
 
-    .private_info{
-        font-size:12px;
-        padding-right: 5%;
-    }
     .contact_us{
         font-size:12px;
         padding-right: 5%;
     }
+    .community_compliance{
+        font-size:12px;
+    }
     .copyright_div{
         justify-content: left;
         margin-top:5%;
+        margin-left:0;
     }
 }

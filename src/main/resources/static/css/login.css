@@ -346,6 +346,13 @@ input[id="check_login"]:checked + label::after{
     font-family: "Noto Sans KR";
     color:var(--font-color-sub);
     font-size:15px;
+    padding-right:40%;
+    text-decoration: none;
+}
+.community_compliance{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
     text-decoration: none;
 }
 .copyright_div{
@@ -375,8 +382,6 @@ input[id="check_login"]:checked + label::after{
 @media screen and (max-width:767px) {
     .navbar {
         height: auto;
-        display:flex;
-        flex-direction: column;
         align-items: center;
         padding: 10px 0;
     }
@@ -385,7 +390,9 @@ input[id="check_login"]:checked + label::after{
     }
 
     .navbar_title {
-        margin: 10px 0;
+        margin-left:175px;
+        margin-top:10px;
+        margin-bottom:10px;
     }
 
     .navbar_text {
@@ -500,7 +507,7 @@ input[id="check_login"]:checked + label::after{
         align-items: center;
     }
     .footer_text{
-        width:70%;
+        width:100%;
         margin-top: 5%;
         margin-left:0;
     }
@@ -516,6 +523,9 @@ input[id="check_login"]:checked + label::after{
     .contact_us{
         font-size:12px;
         padding-right: 5%;
+    }
+    .community_compliance{
+        font-size:12px;
     }
     .copyright_div{
         justify-content: center;
