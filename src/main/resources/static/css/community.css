@@ -267,10 +267,7 @@ body, html{
 /*반응형 웹페이지 - 미디어커리*/
 @media screen and (max-width:767px){
     .navbar {
-        width:100%;
-        height: auto;
-        display:flex;
-        flex-direction: column;
+        height:auto;
         align-items: center;
         padding: 10px 0;
     }
@@ -278,7 +275,9 @@ body, html{
         display:none;
     }
     .navbar_title {
-        margin: 10px 0;
+        margin-left:175px;
+        margin-top:10px;
+        margin-bottom: 10px;
     }
 
     .navbar_text {
@@ -295,10 +294,12 @@ body, html{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-right:40px;
     }
 
     .navbar__toggle-btn{
         display:flex;
+        margin-right:50px;
     }
     .navbar__toggle-btn.open{
         display:none;
