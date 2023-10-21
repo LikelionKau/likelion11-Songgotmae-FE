@@ -23,3 +23,9 @@ const bottomArrow = document.querySelectorAll('.bottom_arrow');
             }
         });
     }
+
+    const subContentTitle = document.querySelectorAll('.accordion_content_sub_area')
+    const subContentText = document.querySelectorAll('.accordion_content_text')
+    function openSubList(){
+       
+    }

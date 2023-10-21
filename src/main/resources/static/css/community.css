@@ -205,6 +205,23 @@ body, html{
     height:100%;
     overflow:auto;
 }
+
+.accordion_content_sub_area{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-main);
+    font-size:12px;
+    font-weight: var(--font-weight-bold);
+    text-align: left;
+    padding-left:12px;
+}
+.accordion_content_sub_text{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-main);
+    font-size:10px;
+    text-align: left;
+    padding-left:20px;
+    text-decoration: none;
+}
 /*푸터*/
 .footer{
     background-color: var(--color-main-deepblue);
