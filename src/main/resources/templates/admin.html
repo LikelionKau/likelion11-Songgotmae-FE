@@ -7,6 +7,10 @@
   <link rel="fontsetting" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
   <link rel="stylesheet" href="../static/css/main.css" type="text/css">
 </head>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="../static/js/admin.js"></script>
+
 <body>
 
 <!--네비게이션바-->
@@ -14,7 +18,7 @@
 
   <!--좌측-->
   <div class="navbar_title">
-    <img src="../static/image/logo.png" alt="logo" class="maha_lazer">
+    <a href="main.html"><img src="../static/image/logo.png" alt="logo" class="maha_lazer"></a>
     <a class="service_title" href="main.html">송곳매</a>
   </div>
 
@@ -52,8 +56,8 @@
         <p class="contents_detail_date">작성 일시 : 2023-08-12</p>
       </div>
       <div class="admission">
-        <input type="image" name="button" src="../static/image/approval.png" onclick="">
-        <input type="image" name="button" src="../static/image/reject.png" onclick="">
+        <input type="image" name="button" src="../static/image/approval.png" onclick="approve">
+        <input type="image" name="button" src="../static/image/reject.png" onclick="reject">
     </div>
   </div>
 
