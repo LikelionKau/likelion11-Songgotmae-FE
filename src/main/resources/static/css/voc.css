@@ -338,8 +338,6 @@ body, html{
 @media screen and (max-width:767px){
     .navbar {
         height: auto;
-        display:flex;
-        flex-direction: column;
         align-items: center;
         padding: 10px 0;
     }
@@ -348,7 +346,9 @@ body, html{
     }
 
     .navbar_title {
-        margin: 10px 0;
+        margin-left:175px;
+        margin-top:10px;
+        margin-bottom:10px;
     }
 
     .navbar_text {
@@ -365,17 +365,19 @@ body, html{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-right:40px;
     }
 
     .navbar__toggle-btn{
         display:flex;
+        margin-right:50px;
+
     }
     .navbar__toggle-btn.open{
         display:none;
     }
     .page_title{
         font-size:2rem;
-        margin-top:10%;
     }
     .warning_box{
         margin-top: 5%;
