@@ -103,7 +103,7 @@ body, html{
     padding-right:2vw;
 
 }
-.community_main_title{
+.use_main_title{
     font-family: "Noto Sans KR";
     font-size:20px;
     color:var(--font-color-main);
