@@ -28,8 +28,8 @@
 // }, true);
 //
 
-const contentsText = document.querySelectorAll('.contents_text'); // 클래스명으로 변경
-const maxCharactersLarge = 8; // 최대 표시할 글자 수 (큰 화면)
-if(contentsText.length>maxCharactersLarge){
-    // contentsText= contentsText.substring(0,maxCharactersLarge);
-}
+// const contentsText = document.querySelectorAll('.contents_text'); // 클래스명으로 변경
+// const maxCharactersLarge = 8; // 최대 표시할 글자 수 (큰 화면)
+// if(contentsText.length>maxCharactersLarge){
+//     // contentsText= contentsText.substring(0,maxCharactersLarge);
+// }

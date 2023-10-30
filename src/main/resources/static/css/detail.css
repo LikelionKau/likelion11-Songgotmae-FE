@@ -58,15 +58,12 @@ body,html{
 
 /*네비게이션 바 우측*/
 .navbar_text{
-    margin-right: 10%;
     display: flex;
-    float: left;
 }
 
 /*네비게이션 바 우측 디테일*/
 .navbar_menu{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -373,9 +370,17 @@ body,html{
 @media (max-width: 768px) {
     /* 화면 너비가 768px 이하일 때 */
     .navbar {
-        height: auto;
         align-items: center;
         padding: 10px 0;
+        display:flex;
+    }
+    .bg{
+        margin-top:159px;
+        position:absolute;
+        background-color: var(--color-sub-lightblue);
+        width:100%;
+        height:auto;
+        justify-content: center;
     }
 
     .service_title {
@@ -389,8 +394,8 @@ body,html{
     }
 
     .navbar_text {
-        margin: 0;
-        justify-content: center;
+        margin-left: auto;
+        display:block;
         text-align: center;
     }
 
@@ -401,10 +406,26 @@ body,html{
     .navbar_menu.open {
         display: flex;
         justify-content: center;
-        align-items: center;
+        text-align: center;
         flex-direction: column;
-        margin-right:40px;
     }
+    .navbar_menu_main{
+        padding-right:0;
+        padding-left:2vw;
+    }
+    .navbar_menu_create{
+        padding-right:0;
+        padding-left:2vw;
+    }
+    .navbar_menu_login{
+        padding-right:0;
+        padding-left:2vw;
+    }
+    .navbar_menu_email{
+        padding-right:0;
+        padding-left:2vw;
+    }
+
 
     .navbar__toggle-btn {
         display: flex;

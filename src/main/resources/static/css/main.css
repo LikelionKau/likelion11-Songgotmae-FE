@@ -55,9 +55,7 @@ body, html{
 
 /*네비게이션 바 우측*/
 .navbar_text{
-    margin-right: 10%;
     display: flex;
-    float: left;
     font-family: "Noto Sans KR";
 }
 
@@ -65,7 +63,6 @@ body, html{
 .navbar_menu{
     display: flex;
     list-style: none;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -149,6 +146,7 @@ body, html{
     position: relative;
     width: 300px;
     margin-left: 1%;
+    margin-bottom:1%;
     /*float: right;*/
 }
 
@@ -191,33 +189,41 @@ body, html{
     border: 1px solid var(--color-sub-grey);
     border-radius:5px;
     width:90%;
-    height:180px;
     margin-left:5%;
     margin-top:1%;
+    display:flex;
+    flex-direction: column;
 }
 .contents_container{
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
 }
 .contents_div{
     display:flex;
     flex-direction: column;
-    width:85%;
+    width:100%;
+
 }
 .contents_title{
     font-family: "Noto Sans KR";
-    font-size: 20px;
+    font-size: 15px;
     font-weight: var(--font-weight-bold);
     color:var(--font-color-main);
     margin-left:5%;
-    margin-bottom:3%;
+    margin-bottom:1%;
+    padding-top:10px;
 }
 .contents_text{
     font-family: "Noto Sans KR";
-    font-size:15px;
+    font-size:12px;
     color:var(--font-color-main);
     margin-left:5%;
     margin-top:0;
+    margin-bottom: 0;
+    width:20%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .contents {
@@ -229,26 +235,25 @@ body, html{
 
 .contents_detail_date{
     font-family: "Noto Sans KR";
-    font-size:15px;
+    font-size:10px;
     color:var(--font-color-main);
 }
 .contents_detail_view{
     font-family: "Noto Sans KR";
-    font-size:15px;
+    font-size:10px;
     color:var(--font-color-main);
 }
 .contents_detail_div{
+    margin-left:5%;
     display:flex;
-    flex-direction: column;
-    text-align: end;
-    margin-right:0;
-    margin-top:1%;
 }
 .contents_detail_date{
-    margin-bottom: 0;
+    font-weight: var(--font-weight-bold);
+    color:var(--color-sub-grey);
 }
 .contents_detail_view{
-    margin-top:0;
+    padding-left:3px;
+    color:var(--color-sub-grey);
 }
 .contents_detail_div_mobile{
     display:none;
@@ -257,7 +262,7 @@ body, html{
     border: 1px solid var(--color-sub-grey);
     border-radius:5px;
     width:90%;
-    height:180px;
+    height:90px;
     margin-left:5%;
     margin-top:1%;
 }
@@ -328,9 +333,17 @@ body, html{
 /* 미디어 쿼리를 사용한 모바일 반응성 추가 */
 @media (max-width: 768px) { /* 화면 너비가 768px 이하일 때 */
     .navbar {
-        height: auto;
         align-items: center;
         padding: 10px 0;
+        display:flex;
+    }
+    .bg{
+        margin-top:159px;
+        position:absolute;
+        background-color: var(--color-sub-lightblue);
+        width:100%;
+        height:auto;
+        justify-content: center;
     }
     .service_title{
         display:none;
@@ -343,8 +356,8 @@ body, html{
     }
 
     .navbar_text {
-        margin: 0;
-        justify-content: center;
+        margin-left: auto;
+        display:block;
         text-align: center;
     }
     .navbar_menu {
@@ -353,14 +366,29 @@ body, html{
     .navbar_menu.open{
         display:flex;
         justify-content: center;
-        align-items: center;
+        text-align: center;
         flex-direction: column;
-        margin-right: 40px;
+    }
+    .navbar_menu_main{
+        padding-right:0;
+        padding-left:2vw;
+    }
+    .navbar_menu_create{
+        padding-right:0;
+        padding-left:2vw;
+    }
+    .navbar_menu_login{
+        padding-right:0;
+        padding-left:2vw;
+    }
+    .navbar_menu_email{
+        padding-right:0;
+        padding-left:2vw;
     }
 
     .navbar__toggle-btn{
         display:flex;
-        margin-right:50px;
+        margin-right:40px;
     }
     .navbar__toggle-btn.open{
         display:none;
@@ -402,10 +430,11 @@ body, html{
     }
     .contents_title{
         font-size:1rem;
+        padding-top:0;
     }
     .contents_text{
         font-size:0.8rem;
-        width:100%;
+        width:20%;
         margin-bottom: 0;
         white-space: nowrap;
         overflow: hidden;
@@ -424,13 +453,13 @@ body, html{
         font-family: "Noto Sans KR";
         font-weight: var(--font-weight-bold);
         font-size:0.5rem;
-        color:var(--font-color-main);
+        color:var(--color-sub-grey);
         margin-right:3%;
     }
     .mobile_detail_view{
         font-family: "Noto Sans KR";
         font-size:0.5rem;
-        color:var(--font-color-main);
+        color:var(--color-sub-grey);
         font-weight: var(--font-weight-bold);
     }
 

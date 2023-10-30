@@ -54,9 +54,7 @@ body, html{
 
 /*네비게이션 바 우측*/
 .navbar_text{
-    margin-right: 10%;
     display: flex;
-    float: left;
     font-family: "Noto Sans KR"
 
 }
@@ -64,7 +62,6 @@ body, html{
 /*네비게이션 바 우측 디테일*/
 .navbar_menu{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     text-decoration: none;
 }
@@ -384,12 +381,20 @@ input[id="check_login"]:checked + label::after{
 /*미디어쿼리 적용*/
 @media screen and (max-width:767px) {
     .navbar {
-        height: auto;
         align-items: center;
         padding: 10px 0;
+        display:flex;
     }
     .service_title{
         display:none;
+    }
+    .bg{
+        margin-top:159px;
+        position:absolute;
+        background-color: var(--color-sub-lightblue);
+        width:100%;
+        height:auto;
+        justify-content: center;
     }
 
     .navbar_title {
@@ -399,8 +404,8 @@ input[id="check_login"]:checked + label::after{
     }
 
     .navbar_text {
-        margin: 0;
-        justify-content: center;
+        margin-left: auto;
+        display:block;
         text-align: center;
     }
 
@@ -410,14 +415,29 @@ input[id="check_login"]:checked + label::after{
     .navbar_menu.open{
         display:flex;
         justify-content: center;
-        align-items: center;
+        text-align: center;
         flex-direction: column;
-        margin-right:40px;
+    }
+    .navbar_menu_main{
+        padding-right:0;
+        padding-left:2vw;
+    }
+    .navbar_menu_create{
+        padding-right:0;
+        padding-left:2vw;
+    }
+    .navbar_menu_login{
+        padding-right:0;
+        padding-left:2vw;
+    }
+    .navbar_menu_email{
+        padding-right:0;
+        padding-left:2vw;
     }
 
     .navbar__toggle-btn{
         display:flex;
-        margin-right: 50px;
+        margin-right: 40px;
     }
     .navbar__toggle-btn.open{
         display:none;

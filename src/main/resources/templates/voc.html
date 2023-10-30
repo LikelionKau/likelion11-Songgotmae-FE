@@ -22,51 +22,55 @@
     <a href="main.html"><img src="../static/image/logo.png" alt="logo" class="maha_lazer"></a>
     <a class="service_title" href="main.html">송곳매</a>
   </div>
-
-  <!--우측-->
-  <div class="navbar_text">
-    <img src="../static/image/hamburger-toggle.png" alt="toggle" class="navbar__toggle-btn">
-    <div class="navbar_menu">
-      <a class="navbar_menu_main" href="main.html">청원보기</a>
-      <a class="navbar_menu_create" href="create.html">청원하기</a>
-      <a class = "navbar_menu_login"href="login.html" >로그인</a>
-      <a class = "navbar_menu_email" href="email.html" >회원가입</a>
+  <img src="../static/image/hamburger-toggle.png" alt="toggle" class="navbar__toggle-btn">
+  <!--  미디어쿼리 적용시 추가 배경 필요-->
+  <div class="bg">
+    <!--우측-->
+    <div class="navbar_text">
+      <div class="navbar_menu">
+        <a class="navbar_menu_main" href="main.html">청원보기</a>
+        <a class="navbar_menu_create" href="create.html">청원하기</a>
+        <a class = "navbar_menu_login" href="login.html" >로그인</a>
+        <a class = "navbar_menu_email" href="email.html" >회원가입</a>
+      </div>
     </div>
   </div>
 
 </nav>
 
-<!--페이지에서 보이는 제일 큰 타이틀-->
-<div class="create_page_title">
-  <p class="page_title">피드백 남기기</p>
-</div>
-
-<!--입력전 조그만한 주의사항-->
-<div class="warning_box">
-  <p class="info_text">소중한 의견을 남겨주세요</p>
-<!--  <p class="warning_text">*표시는 필수 입력항목입니다</p>-->
-</div>
-
-<!--청원 내용 입력박스-->
-<div class="create_page_box">
-  <div class="title_div">
-    <p class="red_star">*</p>
-    <p class="create_title">피드백 제목</p>
-    <input class="post_title" id="title">
+<div class="main_div">
+  <!--페이지에서 보이는 제일 큰 타이틀-->
+  <div class="create_page_title">
+    <p class="page_title">피드백 남기기</p>
   </div>
-  <hr class="createbox_between_line">
-  <div class="content_div">
-    <p class="red_star">*</p>
-    <p class="create_text">피드백 내용</p>
-    <input class="post_text" id="content">
-  </div>
-</div>
 
-<!--버튼들-->
-<div class="create_page_button">
-  <button class="cancel_button">취소</button>
-  <button class="back_button">이전화면으로 이동</button>
-  <button class="submit_button" onclick="create()">제출</button>
+  <!--입력전 조그만한 주의사항-->
+  <div class="warning_box">
+    <p class="info_text">소중한 의견을 남겨주세요</p>
+    <!--  <p class="warning_text">*표시는 필수 입력항목입니다</p>-->
+  </div>
+
+  <!--청원 내용 입력박스-->
+  <div class="create_page_box">
+    <div class="title_div">
+      <p class="red_star">*</p>
+      <p class="create_title">피드백 제목</p>
+      <input class="post_title" id="title">
+    </div>
+    <hr class="createbox_between_line">
+    <div class="content_div">
+      <p class="red_star">*</p>
+      <p class="create_text">피드백 내용</p>
+      <input class="post_text" id="content">
+    </div>
+  </div>
+
+  <!--버튼들-->
+  <div class="create_page_button">
+    <button class="cancel_button">취소</button>
+    <button class="back_button">이전화면으로 이동</button>
+    <button class="submit_button" onclick="create()">제출</button>
+  </div>
 </div>
 <script src="../static/js/nav.js"></script>
 </body>
