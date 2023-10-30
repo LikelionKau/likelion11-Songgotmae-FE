@@ -9,7 +9,7 @@ function approve(){
     axios({
         method:"POST",
         // url: 'http://www.songgotmae.com:8080/api/v1/join',
-        url: 'http://ec2-13-209-226-19.ap-northeast-2.compute.amazonaws.com:8080/admin/v1/posts/{postId}/approve',
+        url: 'http://ec2-52-78-33-144.ap-northeast-2.compute.amazonaws.com:8080/admin/v1/posts/{postId}/approve',
         data:{
             "nickname": nickname.value,
             "kauEmail": kauemail.value,
@@ -38,7 +38,7 @@ function reject(){
     axios({
         method:"POST",
         // url: 'http://www.songgotmae.com:8080/api/v1/join',
-        url: 'http://ec2-13-209-226-19.ap-northeast-2.compute.amazonaws.com:8080/api/v1/join',
+        url: 'http://ec2-52-78-33-144.ap-northeast-2.compute.amazonaws.com:8080/admin/v1/posts/{postId}/disapprove',
         data:{
             "nickname": nickname.value,
             "kauEmail": kauemail.value,

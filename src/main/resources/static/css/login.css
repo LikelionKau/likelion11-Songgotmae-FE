@@ -272,16 +272,19 @@ input[id="check_login"]:checked + label::after{
 .certification_submit{
     background-color: var(--color-sub-lightblue);
     width:180px;
-    height:47px;
+    height:48px;
     border-radius: 30px;
     border: none;
     margin-bottom: 0;
+    position: relative;
 }
 .submit_text{
     font-family: "Noto Sans KR";
     font-size: 16px;
     color: var(--font-color-main);
     font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .signup_and_pw_div{
     text-align: center;
