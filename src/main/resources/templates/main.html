@@ -24,15 +24,17 @@
         <a href="main.html"><img src="../static/image/logo.png" alt="logo" class="maha_lazer"></a>
         <a class="service_title" href="main.html">송곳매</a>
     </div>
+    <img src="../static/image/hamburger-toggle.png" alt="toggle" class="navbar__toggle-btn">
 
-    <!--우측-->
-    <div class="navbar_text">
-        <img src="../static/image/hamburger-toggle.png" alt="toggle" class="navbar__toggle-btn">
-        <div class="navbar_menu">
-            <a class="navbar_menu_main" href="main.html">청원보기</a>
-            <a class="navbar_menu_create" href="create.html">청원하기</a>
-            <a class = "navbar_menu_login" href="login.html" >로그인</a>
-            <a class = "navbar_menu_login" href="email.html" >회원가입</a>
+    <div class="bg">
+        <!--우측-->
+        <div class="navbar_text">
+            <div class="navbar_menu">
+                <a class="navbar_menu_main" href="main.html">청원보기</a>
+                <a class="navbar_menu_create" href="create.html">청원하기</a>
+                <a class = "navbar_menu_login" href="login.html" >로그인</a>
+                <a class = "navbar_menu_login" href="email.html" >회원가입</a>
+            </div>
         </div>
     </div>
 
@@ -41,36 +43,37 @@
 
 </nav>
 
-<!--페이지에서 보이는 제일 큰 타이틀-->
-<div class="page_title">
-    <p>청원보기</p>
-</div>
+<div class="main_div">
+    <!--페이지에서 보이는 제일 큰 타이틀-->
+    <div class="page_title">
+        <p>청원보기</p>
+    </div>
 
-<!--리스트 노출 기준-->
-<div class="list_char">
-<!--보여지는 게시물-->
-    <p class="many_content_text">청원이 총 935건 있습니다.</p>
+    <!--리스트 노출 기준-->
+    <div class="list_char">
+        <!--보여지는 게시물-->
+        <p class="many_content_text">청원이 총 935건 있습니다.</p>
 
-    <div class="list_right">
-        <ul class="list_sort">
-            <li id="order1">
-                <a class="order1" href="js">최신순</a>
-            </li>
-            <li id="order2">
-                <a class="order2" href="js">조회순</a>
-            </li>
-        </ul>
+        <div class="list_right">
+            <ul class="list_sort">
+                <li id="order1">
+                    <a class="order1" href="js">최신순</a>
+                </li>
+                <li id="order2">
+                    <a class="order2" href="js">조회순</a>
+                </li>
+            </ul>
 
-        <div class="search">
-            <input class="search_text" type="text" placeholder="검색어 입력">
-            <img class="search_img" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+            <div class="search">
+                <input class="search_text" type="text" placeholder="검색어 입력">
+                <img class="search_img" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+            </div>
         </div>
     </div>
-</div>
 
-<!--중간 구분선-->
+    <!--중간 구분선-->
     <div class="horizontal-line"></div>
-<!--청원글 리스트로 만듦-->
+    <!--청원글 리스트로 만듦-->
     <div class="contents_main_box">
         <div class="contents_container">
             <div class="contents_div">
@@ -91,11 +94,12 @@
             </div>
         </div>
     </div>
-<!--빈 청원글 박스들-->
-<div class="contents_blank_box"></div>
-<div class="contents_blank_box"></div>
-<div class="contents_blank_box"></div>
-<div class="contents_blank_box"></div>
+    <!--빈 청원글 박스들-->
+    <div class="contents_blank_box"></div>
+    <div class="contents_blank_box"></div>
+    <div class="contents_blank_box"></div>
+    <div class="contents_blank_box"></div>
+</div>
 
 <script src="../static/js/main.js"></script>
 <script src="../static/js/nav.js"></script>
