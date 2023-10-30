@@ -413,6 +413,9 @@ body, html{
     }
     .create_page_box{
         border:none;
+        margin-left:0;
+        margin-right:0;
+        width:100%;
     }
     .title_div{
         display:flex;
