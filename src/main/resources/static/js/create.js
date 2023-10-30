@@ -18,5 +18,6 @@ function create(){
     }).catch(error=>{
         console.log(error);
         // throw new Error(error);
+        alert(error.response.data.message);
     });
 }
