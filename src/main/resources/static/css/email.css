@@ -133,6 +133,50 @@ body, html{
     flex-direction: column;
     margin-top:10%;
 }
+
+.email_confirm_div{
+    display:flex;
+    flex-direction: column;
+    margin-top:10%;
+}
+
+.email_input_div #email_q {
+    position: relative;
+}
+
+#email_q button{
+    border: none;
+    background-color: var(--color-sub-lightblue);
+    /*border: 2px solid var(--color-main-lightblue);*/
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: 0;
+    bottom: 0;
+    right: 100px;
+    margin: auto 0;
+    border-radius: 18px;
+    font-weight: 700;
+}
+
+.email_input_div #email_a {
+    position: relative;
+}
+
+#email_a button{
+    border: none;
+    background-color: var(--color-sub-lightblue);
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: 0;
+    bottom: 0;
+    right: 100px;
+    margin: auto 0;
+    border-radius: 18px;
+    font-weight: 700;
+}
+
 .nickname_input_div{
     display:flex;
     flex-direction: column;
@@ -412,6 +456,28 @@ body, html{
     }
     .email_text{
         font-size:0.8rem;
+    }
+
+    #email_q button{
+        width: 80px;
+        height: 28px;
+        top: 0;
+        bottom: 0;
+        right: 16%;
+        margin: auto 0;
+        border-radius: 8px;
+        font-size: 0.5rem;
+    }
+
+    #email_a button{
+        width: 80px;
+        height: 28px;
+        top: 0;
+        bottom: 0;
+        right: 16%;
+        margin: auto 0;
+        border-radius: 8px;
+        font-size: 0.5rem;
     }
 
     .kau_email_input{
