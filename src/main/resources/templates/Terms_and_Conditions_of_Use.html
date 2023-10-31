@@ -1,110 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>이용약관</title>
-  <link rel="stylesheet" href="../static/css/community.css" type="text/css">
+  <link rel="stylesheet" href="../static/css/Terms_and_Conditions_of_Use.css" type="text/css">
   <link rel="fontsetting" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
 </head>
 
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <body>
 
+<!--네비게이션바-->
 <nav class="navbar">
 
   <!--좌측-->
   <div class="navbar_title">
-    <img src="../static/image/logo.png" alt="logo" class="maha_lazer">
+    <a href="main.html"><img src="../static/image/logo.png" alt="logo" class="maha_lazer"></a>
     <a class="service_title" href="main.html">송곳매</a>
   </div>
-
-  <!--우측-->
-  <div class="navbar_text">
-    <img src="../static/image/hamburger-toggle.png" alt="toggle" class="navbar__toggle-btn">
-    <div class="navbar_menu">
-      <a class="navbar_menu_main" href="main.html">청원보기</a>
-      <a class="navbar_menu_create" href="create.html">청원하기</a>
-      <a class = "navbar_menu_login"href="login.html" >로그인</a>
-      <a class = "navbar_menu_email" href="email.html" >회원가입</a>
+  <img src="../static/image/hamburger-toggle.png" alt="toggle" class="navbar__toggle-btn">
+  <!--  미디어쿼리 적용시 추가 배경 필요-->
+  <div class="bg">
+    <!--우측-->
+    <div class="navbar_text">
+      <div class="navbar_menu">
+        <a class="navbar_menu_main" href="main.html">청원보기</a>
+        <a class="navbar_menu_create" href="create.html">청원하기</a>
+        <a class = "navbar_menu_login" href="login.html" >로그인</a>
+        <a class = "navbar_menu_email" href="email.html" >회원가입</a>
+      </div>
     </div>
   </div>
 
 </nav>
-<p class="use_main_title">서비스 이용약관</p>
-<!--아코디언 구역 전체의 부모태그-->
-<div class="accordion_area">
-  <!--  아코디언 기능을 실행시키는 태그-->
-  <div class="accordion_drop_container">
-    <button class="open_btn">
-      <img src="../static/image/info_circle_black.png" class="info_circle_black" alt="default_info_circle">
-      <img src="../static/image/info_circle.png" class="info_circle" alt="info_circle">
-      <!--        아코디언 제목 : 커뮤니티 준수사항 안내-->
-      <p class="accordion_title_text">제 1조(목적)</p>
-      <img src="../static/image/bottom_arrow.png" class="bottom_arrow" alt="bottom_arrow">
-    </button>
-  </div>
-  <!--  아코디언을 적용시킬 태그-->
-  <div class="accordion_content">
-    <p class="accordion_content_text">
-      송곳매 서비스 이용약관은  쩡이팀 주식회사(이하 “회사”라 합니다)가 제공하는 송곳매 서비스 및 캠퍼스픽 서비스르의 이용과 관련하여 회사와 이용자 간의 권리, 의무 및 책임 사항 등을 규정함을 목적으로 합니다.
-    </p>
-  </div>
 
-  <!--  아코디언 기능을 실행시키는 태그-->
-  <div class="accordion_drop_container">
-    <button class="open_btn">
-      <img src="../static/image/info_circle_black.png" class="info_circle_black" alt="default_info_circle">
-      <img src="../static/image/info_circle.png" class="info_circle" alt="info_circle">
-      <!--      아코디언 제목: 커뮤니티 운영 시스템-->
-      <p class="accordion_title_text">제 2조(정의)</p>
-      <img src="../static/image/bottom_arrow.png" class="bottom_arrow" alt="bottom_arrow">
-    </button>
-  </div>
-  <!--  아코디언을 적용시킬 태그-->
-  <div class="accordion_content">
-    <p class="accordion_content_text">
-      이 약관에서 사용하는 용어의 정의는 다음과 같습니다.
-      1. “서비스”란, 회사가 제공하는 모든 서비스 및 기능을 말합니다.
-      2. “이용자”란, 이 약관에 따라 서비스를 이용하는 회원 및 비회원을 말합니다.
-      3. “회원”이란, 서비스에 회원 등록을 하고 서비스를 이용하는 자를 말합니다.
-      4. “비회원”이란, 서비스에 회원 등록을 하지 않고 서비스를 이용하는 자를 말합니다.
-      5. “게시물”이란, 서비스에 게재된 문자, 사진, 영상, 첨부파일, 광고 등을 말합니다.
-      6. “커뮤니티”란, 게시물을 게시할 수 있는 공간을 말합니다.
-      7. “로그 기록”이란, 이용자가 서비스를 이용하면서 자동으로 생성된 IP 주소, 접속 시간 등을 말합니다다.
-      8. “기기 정보”란, 이용자의 통신 기기에서 수집된 유저 에이전트 등을 말합니다.
-      9. “계정”이란, 이용계약을 통해 생성된 회원의 고유 하이디와 이에 수반하는 정보를 말합니다.’
-      10. “서비스 내부 알림 수단”이란, 팝업, 알림, 내 정보 메뉴 등을 말합니다.
-      11. “연락처”란, 회원가입, 본인 인증, 문의 창구 등을 통해 수집된 이용자의 이메일, 휴대전화 번호 등을 의미합니다.
-      12. “관련법”이란, 정보통신망 이용촉진 및 정보보호 등에 관한 법률, 전기통신사업법, 개인정보보호법 등 관련 있는 국내 법령을 말합니다.
-      13. “본인 인증”이란, 아이핀, 휴대전화 번호 등을 이용한 본인 확인 절차를 말합니다.
-      14. “학교 인증”이란, 학생증, 학교 웹메일, 증명서 등을 이용한 학적 확인 절차를 말합니다.
-      제1항에서 정의되지 않은 이 약관 내 용어의 의미는 일반적인 이용관행에 의합니다.
-    </p>
-  </div>
+<div class="terms_main_title">
+  <p class="community_main_title">서비스 이용약관</p>
+    <!--아코디언 구역 전체의 부모태그-->
+    <div class="accordion_area">
+      <!--  아코디언 기능을 실행시키는 태그-->
+      <div class="accordion_drop_container">
+        <button class="open_btn">
+          <img src="../static/image/info_circle_black.png" class="info_circle_black" alt="default_info_circle">
+          <img src="../static/image/info_circle.png" class="info_circle" alt="info_circle">
+          <!--        아코디언 제목 : 커뮤니티 준수사항 안내-->
+          <p class="accordion_title_text">제 1조(목적)</p>
+          <img src="../static/image/bottom_arrow.png" class="bottom_arrow" alt="bottom_arrow">
+        </button>
+      </div>
+      <!--  아코디언을 적용시킬 태그-->
+      <div class="accordion_content">
+        <p class="accordion_content_text">
+          송곳매 서비스 이용약관은  쩡이팀 주식회사(이하 “회사”라 합니다)가 제공하는 송곳매 서비스 및 캠퍼스픽 서비스르의 이용과 관련하여 회사와 이용자 간의 권리, 의무 및 책임 사항 등을 규정함을 목적으로 합니다.
+        </p>
+      </div>
 
-  <!--  아코디언 기능을 실행시키는 태그-->
-  <div class="accordion_drop_container">
-    <button class="open_btn">
-      <img src="../static/image/info_circle_black.png" class="info_circle_black" alt="default_info_circle">
-      <img src="../static/image/info_circle.png" class="info_circle" alt="info_circle">
-      <!--      아코디언 제목: 금지 행위-->
-      <p class="accordion_title_text">제 3조(약관 동의 명시와 설명 및 개정)</p>
-      <img src="../static/image/bottom_arrow.png" class="bottom_arrow" alt="bottom_arrow">
-    </button>
-  </div>
-  <!--  아코디언을 적용시킬 태그-->
-  <div class="accordion_content">
-    <p class="accordion_content_text" style="font-size:12px;">
-      1. 회사는 이 약관을 서비스 초기화면, 회원가입 화면 및 “내 정보” 메뉴 등에 게시하거나 기타의 방법으로 회원에게 공지합니다.
-      2. 회사는 필요하다고 인정되는 경우, 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.
-      3. 회사는 약관을 개정할 경우, 적용 일자 및 개정 사유를 명시하여 현행약관과 함께 개정약관 적용 일자 7일 전부터 “공지사항”을 통해 공지합니다. 다만, 개정 내용이 회원의 권리 및 의무에 중대한 영향을 미치는 경우에는 적용 일자 30일 전부터 회원의 연락처 또는 서비스 내부 알림 수단으로 개별 공지합니다.
-      4. 회원은 개정 약관에 동의하지 않을 경우, 제 7조(서비스 이용계약의 종료)에 따른 회원 탈퇴 방법으로 거부 의사를 표시할 수 있습니다. 단, 회사가 약관 개정 시 “개정 약관의 적용 일자까지 회원이 거부 의사를 표시하지 아니할 경우 약관의 개정에 동의한 것으로 간주한다”는 내용을 고지하였음에도 불구하고 회원이 약관 개정에 대한 거부 의사를 표시하지 아니하면, 회사는 적용 일자부로 개정 약관에 동의한 것으로 간주합니다.
-      5. 회원은 약관 일부분만을 동의 또는 거부할 수 없습니다.
-      6. 회사는 제1항부터 제4항까지를 준수하였음에도 불구하고 회원이 약관 개정 사실을 알지 못함으로써 발생한 피해에 대해 회사의 고의 또는 중대한 과실이 없는 한 어떠한 책임도 지지 않습니다.
-    </p>
-  </div>
+      <!--  아코디언 기능을 실행시키는 태그-->
+      <div class="accordion_drop_container">
+        <button class="open_btn">
+          <img src="../static/image/info_circle_black.png" class="info_circle_black" alt="default_info_circle">
+          <img src="../static/image/info_circle.png" class="info_circle" alt="info_circle">
+          <!--      아코디언 제목: 커뮤니티 운영 시스템-->
+          <p class="accordion_title_text">제 2조(정의)</p>
+          <img src="../static/image/bottom_arrow.png" class="bottom_arrow" alt="bottom_arrow">
+        </button>
+      </div>
+      <!--  아코디언을 적용시킬 태그-->
+      <div class="accordion_content">
+        <p class="accordion_content_text">
+          이 약관에서 사용하는 용어의 정의는 다음과 같습니다.
+          1. “서비스”란, 회사가 제공하는 모든 서비스 및 기능을 말합니다.
+          2. “이용자”란, 이 약관에 따라 서비스를 이용하는 회원 및 비회원을 말합니다.
+          3. “회원”이란, 서비스에 회원 등록을 하고 서비스를 이용하는 자를 말합니다.
+          4. “비회원”이란, 서비스에 회원 등록을 하지 않고 서비스를 이용하는 자를 말합니다.
+          5. “게시물”이란, 서비스에 게재된 문자, 사진, 영상, 첨부파일, 광고 등을 말합니다.
+          6. “커뮤니티”란, 게시물을 게시할 수 있는 공간을 말합니다.
+          7. “로그 기록”이란, 이용자가 서비스를 이용하면서 자동으로 생성된 IP 주소, 접속 시간 등을 말합니다다.
+          8. “기기 정보”란, 이용자의 통신 기기에서 수집된 유저 에이전트 등을 말합니다.
+          9. “계정”이란, 이용계약을 통해 생성된 회원의 고유 하이디와 이에 수반하는 정보를 말합니다.’
+          10. “서비스 내부 알림 수단”이란, 팝업, 알림, 내 정보 메뉴 등을 말합니다.
+          11. “연락처”란, 회원가입, 본인 인증, 문의 창구 등을 통해 수집된 이용자의 이메일, 휴대전화 번호 등을 의미합니다.
+          12. “관련법”이란, 정보통신망 이용촉진 및 정보보호 등에 관한 법률, 전기통신사업법, 개인정보보호법 등 관련 있는 국내 법령을 말합니다.
+          13. “본인 인증”이란, 아이핀, 휴대전화 번호 등을 이용한 본인 확인 절차를 말합니다.
+          14. “학교 인증”이란, 학생증, 학교 웹메일, 증명서 등을 이용한 학적 확인 절차를 말합니다.
+          제1항에서 정의되지 않은 이 약관 내 용어의 의미는 일반적인 이용관행에 의합니다.
+        </p>
+      </div>
 
+      <!--  아코디언 기능을 실행시키는 태그-->
+      <div class="accordion_drop_container">
+        <button class="open_btn">
+          <img src="../static/image/info_circle_black.png" class="info_circle_black" alt="default_info_circle">
+          <img src="../static/image/info_circle.png" class="info_circle" alt="info_circle">
+          <!--      아코디언 제목: 금지 행위-->
+          <p class="accordion_title_text">제 3조(약관 동의 명시와 설명 및 개정)</p>
+          <img src="../static/image/bottom_arrow.png" class="bottom_arrow" alt="bottom_arrow">
+        </button>
+      </div>
+      <!--  아코디언을 적용시킬 태그-->
+      <div class="accordion_content">
+        <p class="accordion_content_text" style="font-size:12px;">
+          1. 회사는 이 약관을 서비스 초기화면, 회원가입 화면 및 “내 정보” 메뉴 등에 게시하거나 기타의 방법으로 회원에게 공지합니다.
+          2. 회사는 필요하다고 인정되는 경우, 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.
+          3. 회사는 약관을 개정할 경우, 적용 일자 및 개정 사유를 명시하여 현행약관과 함께 개정약관 적용 일자 7일 전부터 “공지사항”을 통해 공지합니다. 다만, 개정 내용이 회원의 권리 및 의무에 중대한 영향을 미치는 경우에는 적용 일자 30일 전부터 회원의 연락처 또는 서비스 내부 알림 수단으로 개별 공지합니다.
+          4. 회원은 개정 약관에 동의하지 않을 경우, 제 7조(서비스 이용계약의 종료)에 따른 회원 탈퇴 방법으로 거부 의사를 표시할 수 있습니다. 단, 회사가 약관 개정 시 “개정 약관의 적용 일자까지 회원이 거부 의사를 표시하지 아니할 경우 약관의 개정에 동의한 것으로 간주한다”는 내용을 고지하였음에도 불구하고 회원이 약관 개정에 대한 거부 의사를 표시하지 아니하면, 회사는 적용 일자부로 개정 약관에 동의한 것으로 간주합니다.
+          5. 회원은 약관 일부분만을 동의 또는 거부할 수 없습니다.
+          6. 회사는 제1항부터 제4항까지를 준수하였음에도 불구하고 회원이 약관 개정 사실을 알지 못함으로써 발생한 피해에 대해 회사의 고의 또는 중대한 과실이 없는 한 어떠한 책임도 지지 않습니다.
+        </p>
+      </div>
+
+    </div>
 </div>
 
 <script src="../static/js/nav.js"></script>
