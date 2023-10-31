@@ -18,78 +18,66 @@
         <a href="main.html"><img src="../static/image/logo.png" alt="logo" class="maha_lazer"></a>
         <a class="service_title" href="main.html">송곳매</a>
     </div>
-    <img src="../static/image/hamburger-toggle.png" alt="toggle" class="navbar__toggle-btn">
 
-    <div class="bg">
-        <!--우측-->
-        <div class="navbar_text">
-            <div class="navbar_menu">
-                <a class="navbar_menu_main" href="main.html">청원보기</a>
-                <a class="navbar_menu_create" href="create.html">청원하기</a>
-                <a class = "navbar_menu_login" href="login.html" >로그인</a>
-                <a class = "navbar_menu_login" href="email.html" >회원가입</a>
-            </div>
+    <!--우측-->
+    <div class="navbar_text">
+        <div class="navbar_menu">
+            <a class="navbar_menu_main" href="main.html">청원보기</a>
+            <a class="navbar_menu_create" href="create.html">청원하기</a>
+            <a class = "navbar_menu_login" href="login.html" >로그인</a>
+            <a class = "navbar_menu_login" href="email.html" >회원가입</a>
         </div>
     </div>
 
+    <img class="navbar__toggle-btn" type="image" src="../static/image/hamburger_btn.png" onclick="">
+    <!--        <i class="fa-sharp fa-solid fa-bars" style="color: #ffffff;"></i>-->
 
 </nav>
 
-<div class="main_div">
-    <div class="contents_main_box">
-        <div class="contents_div">
-            <p class="contents_title">내 정보</p>
-            <div class="info_section">
-                <div class="info_box"></div>
-                <p class="id_input">id input</p>
-            </div>
-            <p class="nickname">이름/닉네임</p>
-            <p class="student_id">한국항공대00학번</p>
+<div class="contents_main_box">
+    <div class="contents_div">
+        <p class="contents_title">내 정보</p>
+        <div class="info_section">
+            <div class="info_box"></div>
+            <p class="id_input">id input</p>
         </div>
-        <p class="logout">로그아웃</p>
+        <p class="nickname">이름/닉네임</p>
+        <p class="student_id">한국항공대00학번</p>
     </div>
-    <div class="contents_main_box">
-        <div class="contents_div">
-            <p class="contents_title">계정</p>
-            <p class="school_certification">학교 인증</p>
-            <p class="change_password">비밀번호 변경</p>
-        </div>
+</div>
+<div class="contents_main_box">
+    <div class="contents_div">
+        <p class="contents_title">계정</p>
+        <p class="school_certification">학교 인증</p>
+        <p class="change_password">비밀번호 변경</p>
     </div>
-    <div class="contents_main_box">
-        <div class="contents_div">
-            <p class="contents_title">커뮤니티</p>
-            <p class="usage_restriction_details">이용 제한 내역</p>
-            <p class="community_use_rules">커뮤니티 이용 규칙</p>
-        </div>
+</div>
+
+<div class="contents_main_box">
+    <div class="contents_div">
+        <p class="contents_title">이용약관</p>
+        <a class="Terms_and_Conditions_of_Use" href="Terms_and_Conditions_of_Use.html">서비스 이용약관</a>
+        <a class="community_compliance" href="community.html">커뮤니티 준수사항</a>
+
     </div>
-    <div class="contents_main_box">
-        <div class="contents_div">
-            <p class="contents_title">이용 안내</p>
-            <p class="terms_and_conditions_of_service_use">서비스 이용약관</p>
-            <p class="privacy_policy">개인정보 처리방침</p>
-        </div>
-    </div>
-    <div class="contents_main_box">
-        <div class="contents_div">
-            <p class="contents_title">기타</p>
-            <p class="set_information_consent">정보 동의 설정</p>
-            <p class="membership_withdrawal">회원 탈퇴</p>
-        </div>
+</div>
+<div class="contents_main_box">
+    <div class="contents_div">
+        <p class="contents_title">내 소식</p>
+        <a class="membership_withdrawal" href="wroteBy.html">내가 작성한 글</a>
     </div>
 </div>
 
 
 <script src="../static/js/main.js"></script>
-<script src="../static/js/nav.js"></script>
 </body>
 
-<!—푸터—>
 <footer class="footer">
     <div class="footer_menu">
         <div class="footer_text">
-            <a class="terms_of_use" href="#">이용약관</a>
-            <a class="contact_us" href="voc.html">피드백 남기기</a>
-            <a class="community_compliance" href="community.html">커뮤니티 준수사항</a>
+            <a class="footer_link" href="Terms_and_Conditions_of_Use.html">서비스 이용약관</a>
+            <a class="footer_link" href="voc.html">피드백 남기기</a>
+            <a class="footer_link" href="community.html">커뮤니티 준수사항</a>
         </div>
         <div class="copyright_div">
             <img src="../static/image/copyright.png" alt="copyright" class="copyright_mark">
@@ -97,5 +85,6 @@
         </div>
     </div>
 </footer>
+
 
 </html>
