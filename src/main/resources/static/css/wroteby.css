@@ -1,0 +1,432 @@
+:root{
+    --color-main-deepblue:#1F244E;
+    --color-main-lightblue:rgba(0, 40, 112, 0.70);
+    --color-sub-lightblue:rgba(0, 40, 112, 0.30);
+    --color-sub-grey:#d9d9d9;
+    --font-color-main:#3a3a3a;
+    --font-color-sub:#ffffff;
+    --font-weight-bold:700;
+    --font-weight-normal:500;
+    --font-weight-light:400;
+
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+/*네비게이션 바*/
+.navbar{
+    background-color: var(--color-sub-lightblue);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*네비게이션 바 좌측*/
+.navbar_title{
+    margin-left: 10%;
+}
+
+.navbar__toggle-btn{
+    display:none;
+}
+
+/*송곳매 로고*/
+.maha_lazer{
+    width: 45px;
+    height: 48px;
+}
+
+/*송곳매 로고 글씨*/
+.service_title{
+    font-family: "Noto Sans KR";
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    position: absolute;
+    top: 12px;
+}
+
+/*네비게이션 바 우측*/
+.navbar_text{
+    display: flex;
+    font-family: "Noto Sans KR";
+}
+
+/*네비게이션 바 우측 디테일*/
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+/*네비게이션 바 우측 아이템*/
+.navbar_menu_main{
+    text-decoration: none;
+    font-family:"Noto Sans KR";
+    font-size:18px;
+    color:var(--font-color-main);
+    /*font-weight: var(--font-weight-normal);*/
+    font-weight: bold;
+    padding-right:2vw;
+}
+
+/*네비게이션 바 우측 아이템*/
+.navbar_menu_create{
+    text-decoration: none;
+    font-family:"Noto Sans KR";
+    font-size:18px;
+    color:var(--font-color-main);
+    /*font-weight: var(--font-weight-normal);*/
+    font-weight: bold;
+    padding-right:2vw;
+}
+
+.navbar_menu_login{
+    text-decoration: none;
+    font-family:"Noto Sans KR";
+    font-size:15px;
+    color:var(--color-sub-grey);
+    /*font-weight: var(--font-weight-light);*/
+    font-weight: bold;
+    padding-right:2vw;
+
+}
+
+.navbar_menu_email{
+    text-decoration: none;
+    font-family:"Noto Sans KR";
+    font-size:15px;
+    color:var(--color-sub-grey);
+    /*font-weight: var(--font-weight-light);*/
+    font-weight: bold;
+    padding-right:2vw;
+
+}
+.navbar__toggle-btn{
+    display: none;
+
+}
+
+.page_title{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Noto Sans KR";
+}
+.search{
+    position: relative;
+    width: 300px;
+    margin-left: 1%;
+    margin-bottom:1%;
+    /*float: right;*/
+}
+
+.search_text{
+    width: 100%;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.search_img{
+    position : absolute;
+    width: 17px;
+    top: 10px;
+    right: 0px;
+    margin: 0;
+}
+
+.horizontal-line {
+    border-top: 3px solid var(--font-color-main);
+    margin-right:1%;
+    margin-left:1%;
+}
+
+.contents_main_box{
+    border: 1px solid var(--color-sub-grey);
+    border-radius:5px;
+    width:90%;
+    margin-left:5%;
+    margin-top:1%;
+    display:flex;
+    flex-direction: column;
+}
+.contents_container{
+    display:flex;
+    flex-direction:column;
+}
+.contents_div{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+
+}
+.contents_title{
+    font-family: "Noto Sans KR";
+    font-size: 15px;
+    font-weight: var(--font-weight-bold);
+    color:var(--font-color-main);
+    margin-left:5%;
+    margin-bottom:1%;
+    padding-top:10px;
+}
+.contents_text{
+    font-family: "Noto Sans KR";
+    font-size:12px;
+    color:var(--font-color-main);
+    margin-left:5%;
+    margin-top:0;
+    margin-bottom: 0;
+    width:20%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.contents {
+    color: #000;
+    font-size: 15px;
+    align-self: flex-start;
+    margin-left: -17%;
+}
+
+.contents_detail_date{
+    font-family: "Noto Sans KR";
+    font-size:10px;
+    color:var(--font-color-main);
+}
+.contents_detail_view{
+    font-family: "Noto Sans KR";
+    font-size:10px;
+    color:var(--font-color-main);
+}
+.contents_detail_div{
+    margin-left:5%;
+    display:flex;
+}
+.contents_detail_date{
+    font-weight: var(--font-weight-bold);
+    color:var(--color-sub-grey);
+}
+.contents_detail_view{
+    padding-left:3px;
+    color:var(--color-sub-grey);
+}
+.contents_detail_div_mobile{
+    display:none;
+}
+.contents_blank_box{
+    border: 1px solid var(--color-sub-grey);
+    border-radius:5px;
+    width:90%;
+    height:90px;
+    margin-left:5%;
+    margin-top:1%;
+}
+.footer{
+    background-color: var(--color-main-deepblue);
+    width:100%;
+    height: 120px;
+    margin-top: 3%;
+}
+.footer_menu{
+    padding-top: 2%;
+    padding-left: 2%;
+}
+.footer_text{
+    display:inline-block;
+    text-align: center;
+    white-space: nowrap;
+    width:100px;
+    margin-left:10%;
+}
+.terms_of_use{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+    padding-right: 40%;
+    text-decoration: none;
+
+}
+.private_info{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+    padding-right:40%;
+    text-decoration: none;
+}
+.contact_us{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+    text-decoration: none;
+}
+.copyright_div{
+    display:flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left:10%;
+}
+
+.copyright_mark{
+    width:10px;
+    height: 10px;
+    margin-right:5px;
+}
+.copyright_likelion{
+    font-family: "Noto Sans KR";
+    font-size:11px;
+    color:var(--font-color-sub);
+}
+.position-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* 기존 스타일들은 여기에 위치 */
+
+/* 미디어 쿼리를 사용한 모바일 반응성 추가 */
+@media (max-width: 768px) { /* 화면 너비가 768px 이하일 때 */
+    .navbar {
+        align-items: center;
+        padding: 10px 0;
+        display:flex;
+    }
+    .bg{
+        margin-top:159px;
+        position:absolute;
+        background-color: var(--color-sub-lightblue);
+        width:100%;
+        height:auto;
+        justify-content: center;
+    }
+    .service_title{
+        display:none;
+    }
+
+    .navbar_title {
+        margin-left:175px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+
+    .navbar_text {
+        margin-left: auto;
+        display:block;
+        text-align: center;
+    }
+    .navbar_menu {
+        display:none;
+    }
+    .navbar_menu.open{
+        display:flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .navbar_menu_main{
+        padding-right:0;
+        padding-left:2vw;
+    }
+    .navbar_menu_create{
+        padding-right:0;
+        padding-left:2vw;
+    }
+    .navbar_menu_login{
+        padding-right:0;
+        padding-left:2vw;
+    }
+    .navbar_menu_email{
+        padding-right:0;
+        padding-left:2vw;
+    }
+
+    .navbar__toggle-btn{
+        display:flex;
+        margin-right:40px;
+    }
+    .navbar__toggle-btn.open{
+        display:none;
+    }
+    .service_title{
+        display: none;
+    }
+
+    .page_title{
+        font-size:2rem;
+    }
+    .many_content_text{
+        font-size:0.8rem;
+        margin-left:5%;
+    }
+    .horizontal-line{
+        margin-left:5%;
+        margin-right:5%;
+    }
+    .list_right{
+        position:relative;
+        display:flex;
+        justify-content: center;
+        margin-left:0;
+        margin-right:20px;
+        margin-bottom: 5%;
+    }
+    .search_text{
+        display:flex;
+        justify-content: center;
+    }
+    .contents_div{
+        width:90%;
+        margin-bottom: 0;
+    }
+    .contents_container{
+        display:flex;
+        flex-direction: column;
+    }
+    .contents_title{
+        font-size:1rem;
+        padding-top:0;
+    }
+    .contents_text{
+        font-size:0.8rem;
+        width:20%;
+        margin-bottom: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .contents_detail_div{
+        display:none;
+    }
+    .contents_detail_div_mobile{
+        display:flex;
+        margin-top:0;
+        justify-content: end;
+        margin-right:8%;
+    }
+    .mobile_detail_date{
+        font-family: "Noto Sans KR";
+        font-weight: var(--font-weight-bold);
+        font-size:0.5rem;
+        color:var(--color-sub-grey);
+        margin-right:3%;
+    }
+    .mobile_detail_view{
+        font-family: "Noto Sans KR";
+        font-size:0.5rem;
+        color:var(--color-sub-grey);
+        font-weight: var(--font-weight-bold);
+    }
+
+}
