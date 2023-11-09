@@ -1,7 +1,7 @@
 const navbarMenu = document.querySelector('.navbar_menu');
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
-// const navbarBackground = document.querySelector('.navbar');
-// const navbarMenuDown = document.querySelector('.bg');
+const navbarBackground = document.querySelector('.navbar');
+const navbarMenuDown = document.querySelector('.bg');
 const bodyDiv = document.querySelector('.main_div');
 
 navbarToggleBtn.addEventListener('click', () => {
@@ -11,6 +11,9 @@ navbarToggleBtn.addEventListener('click', () => {
     if (bodyDiv.classList.toggle('open')) {
         // 추가 여백을 설정
         bodyDiv.style.marginTop = '100px'; // 예시로 100px로 설정
+    }
+    else {
+        console.log("Element not found.");
     }
 });
 
