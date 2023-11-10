@@ -39,8 +39,8 @@
     <div class="login_box">
         <div class="email_input_div">
             <p class="kau_email_account">Kau 계정으로 로그인하기</p>
-            <input type="text" placeholder="likelion@kau.kr"class="kau_email">
-            <input type="password" placeholder="비밀번호"class="kau_password">
+            <input type="text" placeholder="likelion@kau.kr" class="kau_email" id="kauemail">
+            <input type="password" placeholder="비밀번호" class="kau_password" id="password">
         </div>
         <div class="email_login_div">
 <!--            <img src="../static/image/exclamation-circle.png" alt="alert-circle" class="alert-circle">-->
@@ -52,7 +52,7 @@
             <p class="auto_login_text">로그인 상태 유지하기</p>
         </div>
         <div class="submit_button_div">
-            <button class="certification_submit">
+            <button class="certification_submit" onclick="login()">
                 <p class="submit_text">로그인</p>
             </button>
         </div>
@@ -70,9 +70,11 @@
     </div>
 </div>
 
+</body>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="../static/js/nav.js"></script>
 <script src="../static/js/login.js"></script>
-</body>
 
 <!—푸터—>
 <footer class="footer">

@@ -357,6 +357,9 @@ body, html{
     .open_btn{
         margin-top:3%;
     }
+    .accordion_content_sub_text{
+        padding-left:3%;
+    }
 
     .footer{
         width:100%;
