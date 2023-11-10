@@ -286,8 +286,9 @@ body, html{
         padding: 10px 0;
         display:flex;
     }
+
     .bg{
-        margin-top:159px;
+        margin-top:190px;
         position:absolute;
         background-color: var(--color-sub-lightblue);
         width:100%;
@@ -321,21 +322,25 @@ body, html{
     .navbar_menu_main{
         padding-right:0;
         padding-left:2vw;
+        padding-bottom: 2vw;
         font-weight: bold;
     }
     .navbar_menu_create{
         padding-right:0;
         padding-left:2vw;
+        padding-bottom: 2vw;
         font-weight: bold;
     }
     .navbar_menu_login{
         padding-right:0;
         padding-left:2vw;
+        padding-bottom: 2vw;
         font-weight: bold;
     }
     .navbar_menu_email{
         padding-right:0;
         padding-left:2vw;
+        padding-bottom: 2vw;
         font-weight: bold;
     }
 
