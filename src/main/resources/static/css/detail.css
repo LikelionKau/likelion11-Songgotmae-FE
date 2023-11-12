@@ -375,7 +375,7 @@ body,html{
         display:flex;
     }
     .bg{
-        margin-top:159px;
+        margin-top:200px;
         position:absolute;
         background-color: var(--color-sub-lightblue);
         width:100%;
@@ -412,18 +412,22 @@ body,html{
     .navbar_menu_main{
         padding-right:0;
         padding-left:2vw;
+        padding-bottom: 2vw;
     }
     .navbar_menu_create{
         padding-right:0;
         padding-left:2vw;
+        padding-bottom: 2vw;
     }
     .navbar_menu_login{
         padding-right:0;
         padding-left:2vw;
+        padding-bottom: 2vw;
     }
     .navbar_menu_email{
         padding-right:0;
         padding-left:2vw;
+        padding-bottom: 2vw;
     }
 
 
