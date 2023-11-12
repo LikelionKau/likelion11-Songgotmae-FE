@@ -261,29 +261,34 @@ body, html{
 
 /* 미디어 쿼리를 사용한 모바일 반응성 추가 */
 @media (max-width: 768px) { /* 화면 너비가 768px 이하일 때 */
-    .navbar__toggle-btn{
-        display: block;
-        color: var(--color-sub-grey);
-    }
 
     .navbar {
-        height: auto;
         display:flex;
-        flex-direction: column;
         align-items: center;
         padding: 10px 0;
+    }
+    .bg{
+        display:flex;
+        margin-top:200px;
+        position:absolute;
+        background-color: var(--color-sub-lightblue);
+        width:100%;
+        height:auto;
+        align-items: center;
     }
     .service_title{
         display:none;
     }
 
     .navbar_title {
-        margin: 10px 0;
+        margin-left:175px;
+        margin-top:10px;
+        margin-bottom: 10px;
     }
 
     .navbar_text {
-        margin: 0;
-        justify-content: center;
+        margin-left: 160px;
+        display: block;
         text-align: center;
     }
     .service_title{
@@ -292,22 +297,43 @@ body, html{
 
     .navbar_menu {
         display: none;
-        width: 100%;
-        flex-direction: column;
+
     }
 
     .navbar_menu.open{
         display:flex;
         justify-content: center;
-        align-items: center;
+        text-align: center;
         flex-direction: column;
     }
-    .navbar_menu.open{
-        display: block;
+    .navbar_menu_main{
+        padding-right:0;
+        padding-left:2vw;
+        padding-bottom: 2vw;
+        font-weight: bold;
+    }
+    .navbar_menu_create{
+        padding-right:0;
+        padding-left:2vw;
+        padding-bottom: 2vw;
+        font-weight: bold;
+    }
+    .navbar_menu_login{
+        padding-right:0;
+        padding-left:2vw;
+        padding-bottom: 2vw;
+        font-weight: bold;
+    }
+    .navbar_menu_email{
+        padding-right:0;
+        padding-left:2vw;
+        padding-bottom: 2vw;
+        font-weight: bold;
     }
 
     .navbar__toggle-btn{
         display:flex;
+        margin-right: 40px;
     }
     .navbar__toggle-btn.open{
         display:none;

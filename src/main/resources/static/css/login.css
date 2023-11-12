@@ -389,7 +389,7 @@ input[id="check_login"]:checked + label::after{
         display:none;
     }
     .bg{
-        margin-top:200px;
+        margin-top:210px;
         position:absolute;
         background-color: var(--color-sub-lightblue);
         width:100%;
