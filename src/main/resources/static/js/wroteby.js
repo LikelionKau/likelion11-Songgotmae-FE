@@ -1,4 +1,4 @@
-function approve(){
+function approve (){
 
     const memberId = document.getElementById("memberId")
 

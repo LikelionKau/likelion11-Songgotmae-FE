@@ -1,57 +1,35 @@
 function approve(){
 
-    const nickname = document.getElementById("nickname");
-    const kauemail = document.getElementById("kauemail");
-    const password = document.getElementById("password");
-
-    // const data = Response[5][1][1][2];
+    const postId = document.getElementById("postId")
 
     axios({
-        method:"POST",
-        // url: 'http://www.songgotmae.com:8080/api/v1/join',
+        method:"PATCH",
         url: 'http://ec2-52-78-33-144.ap-northeast-2.compute.amazonaws.com:8080/admin/v1/posts/{postId}/approve',
         data:{
-            "nickname": nickname.value,
-            "kauEmail": kauemail.value,
-            "password": password.value,
+            "postId":postId.value,
         }
-    })  .then(response => response.json())
-        .then((res)=>{
-            console.log(res);
-            alert('회원가입이 완료되었습니다.');
-            window.location.href = '../templates/login.html';
-        }).catch(error=>{
-        console.log(error);
-        alert(error.response.data.message);
-        // throw new Error(error);
-    });
+    })
+        .then(response => {
+            console.log(`포스트(${postId})가 성공적으로 거부되었습니다.`);
+        })
+        .catch(error => {
+            console.error(`포스트(${postId}) 거부 중 오류가 발생했습니다.`, error);
+        });
 }
-
-function reject(){
-
-    const nickname = document.getElementById("nickname");
-    const kauemail = document.getElementById("kauemail");
-    const password = document.getElementById("password");
-
-    // const data = Response[5][1][1][2];
+function disapprove(postId) {
 
     axios({
-        method:"POST",
-        // url: 'http://www.songgotmae.com:8080/api/v1/join',
-        url: 'http://ec2-52-78-33-144.ap-northeast-2.compute.amazonaws.com:8080/admin/v1/posts/{postId}/disapprove',
-        data:{
-            "nickname": nickname.value,
-            "kauEmail": kauemail.value,
-            "password": password.value,
+        method: "PATCH",
+        url: `http://ec2-52-78-33-144.ap-northeast-2.compute.amazonaws.com:8080/admin/v1/posts/{postId}/disapprove`,
+        data: {
+            "postId":postId.value,
         }
-    })  .then(response => response.json())
-        .then((res)=>{
-            console.log(res);
-            alert('회원가입이 완료되었습니다.');
-            window.location.href = '../templates/login.html';
-        }).catch(error=>{
-        console.log(error);
-        alert(error.response.data.message);
-        // throw new Error(error);
-    });
+
+    })
+        .then(response => {
+            console.log(`포스트(${postId})가 성공적으로 거부되었습니다.`);
+        })
+        .catch(error => {
+            console.error(`포스트(${postId}) 거부 중 오류가 발생했습니다.`, error);
+        });
 }
