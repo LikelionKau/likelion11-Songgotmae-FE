@@ -163,25 +163,25 @@ body, html{
 }
 
 .id_input{
-    font-family: "Noto Sans KR";
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 15px;
     font-weight: 550;
     color: var(--font-color-main);
-    margin-top: 0%;
+    margin-top: 0;
 }
 .nickname{
-    font-family: "Noto Sans KR";
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 15px;
     font-weight: 500;
     color: var(--font-color-main);
-    margin-top: 0%;
+    margin-top: 0;
 }
 .student_id {
-    font-family: "Noto Sans KR";
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 15px;
     font-weight: 500;
     color: var(--font-color-main);
-    margin-top: 0%;
+    margin-top: 0;
 }
 .contents_container{
     display:flex;
@@ -189,7 +189,7 @@ body, html{
 }
 
 .contents_title{
-    font-family: "Noto Sans KR";
+    font-family: 'Noto Sans KR', sans-serif;
     font-weight: 600;
     font-size: 20px;
     font-weight: var(--font-weight-bold);
