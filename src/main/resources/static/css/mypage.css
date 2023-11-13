@@ -55,17 +55,13 @@ body, html{
 
 /*네비게이션 바 우측*/
 .navbar_text{
-    margin-right: 10%;
     display: flex;
-    float: left;
     font-family: "Noto Sans KR";
 }
 
 /*네비게이션 바 우측 디테일*/
 .navbar_menu{
     display: flex;
-    list-style: none;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -75,7 +71,7 @@ body, html{
     font-family:"Noto Sans KR";
     font-size:18px;
     color:var(--font-color-main);
-    font-weight: var(--font-weight-normal);
+    font-weight: bold;
     padding-right:2vw;
 }
 
@@ -85,7 +81,7 @@ body, html{
     font-family:"Noto Sans KR";
     font-size:18px;
     color:var(--font-color-main);
-    font-weight: var(--font-weight-normal);
+    font-weight: bold;
     padding-right:2vw;
 }
 
@@ -94,8 +90,8 @@ body, html{
     font-family:"Noto Sans KR";
     font-size:15px;
     color:var(--color-sub-grey);
-    font-weight: var(--font-weight-light);
     padding-right:2vw;
+    font-weight: bold;
 
 }
 
@@ -104,17 +100,11 @@ body, html{
     font-family:"Noto Sans KR";
     font-size:15px;
     color:var(--color-sub-grey);
-    font-weight: var(--font-weight-light);
     padding-right:2vw;
+    font-weight: bold;
 
 }
 .navbar__toggle-btn{
-    position: absolute;
-    width: 34px;
-    height: 34px;
-    right: 32px;
-    top: 24px;
-    font-size: 24px;
     display: none;
 
 }
@@ -135,6 +125,27 @@ body, html{
     width: 85%;
     margin-left:5%;
     margin-bottom: 1%;
+}
+.Terms_and_Conditions_of_Use{
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:var(--font-color-main);
+    margin-bottom: 16px;
+    margin-top:16px;
+}
+.community_link_text{
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:var(--font-color-main);
+    margin-bottom: 16px;
+    margin-top:15px;
+}
+.membership_withdrawal{
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:var(--font-color-main);
+    margin-bottom: 16px;
+    margin-top:15px;
 }
 
 .info_section{
@@ -179,18 +190,6 @@ body, html{
     color:var(--font-color-main);
     margin-bottom:2%;
 }
-.community_compliance,
-.membership_withdrawal,
-.Terms_and_Conditions_of_Use{
-    font-family: "Noto Sans KR";
-    font-size: 15px;
-    color:var(--font-color-main);
-    margin-bottom:2%;
-    text-decoration: none;
-    font-weight: 500;
-    margin: 3%;
-    margin-left: 0%;
-}
 
 .footer{
     background-color: var(--color-main-deepblue);
@@ -209,30 +208,28 @@ body, html{
     width:100px;
     margin-left:10%;
 }
-.footer_text .footer_link {
+.terms_of_use {
     font-family: "Noto Sans KR";
-    font-size: 15px;
     color: var(--font-color-sub);
-    text-decoration: none;
-    font-weight: 500;
-    margin: 3%;
-    margin-right: 15%;
-}
-
-
-.private_info{
-    font-family: "Noto Sans KR";
-    color:var(--font-color-sub);
-    font-size:15px;
-    padding-right:40%;
+    font-size: 15px;
+    padding-right: 40%;
     text-decoration: none;
 }
+
 .contact_us{
     font-family: "Noto Sans KR";
     color:var(--font-color-sub);
     font-size:15px;
+    padding-right: 40%;
     text-decoration: none;
 }
+    .community_compliance{
+        font-family: "Noto Sans KR";
+        color:var(--font-color-sub);
+        font-size:15px;
+        padding-right:40%;
+        text-decoration: none;
+    }
 .copyright_div{
     display:flex;
     align-items: center;
@@ -251,30 +248,32 @@ body, html{
     font-size:11px;
     color:var(--font-color-sub);
 }
-.position-fixed {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}
+/*.position-fixed {*/
+/*    position: fixed;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*}*/
 
 /* 기존 스타일들은 여기에 위치 */
 
 /* 미디어 쿼리를 사용한 모바일 반응성 추가 */
-@media (max-width: 768px) { /* 화면 너비가 768px 이하일 때 */
+@media screen and (max-width: 768px) { /* 화면 너비가 768px 이하일 때 */
 
     .navbar {
         display:flex;
         align-items: center;
         padding: 10px 0;
     }
+    .maha_lazer{
+        margin-left: 40%;
+    }
     .bg{
-        display:flex;
         margin-top:195px;
         position:absolute;
         background-color: var(--color-sub-lightblue);
         width:100%;
         height:auto;
-        align-items: center;
+        justify-content: center;
     }
     .service_title{
         display:none;
@@ -287,12 +286,8 @@ body, html{
     }
 
     .navbar_text {
-        margin-left: 160px;
         display: block;
         text-align: center;
-    }
-    .service_title{
-        display: none;
     }
 
     .navbar_menu {
@@ -302,38 +297,35 @@ body, html{
 
     .navbar_menu.open{
         display:flex;
-        justify-content: center;
-        text-align: center;
+        align-items: center;
         flex-direction: column;
     }
     .navbar_menu_main{
         padding-right:0;
         padding-left:2vw;
         padding-bottom: 2vw;
-        font-weight: bold;
     }
     .navbar_menu_create{
         padding-right:0;
         padding-left:2vw;
         padding-bottom: 2vw;
-        font-weight: bold;
     }
     .navbar_menu_login{
         padding-right:0;
         padding-left:2vw;
         padding-bottom: 2vw;
-        font-weight: bold;
     }
     .navbar_menu_email{
         padding-right:0;
         padding-left:2vw;
         padding-bottom: 2vw;
-        font-weight: bold;
     }
 
     .navbar__toggle-btn{
         display:flex;
         margin-right: 40px;
+        width:23px;
+        height: 18px;
     }
     .navbar__toggle-btn.open{
         display:none;
@@ -361,5 +353,39 @@ body, html{
     .contents_main_box{
         width: 80%;
         margin-left: 10%;
+    }
+    .footer{
+        width:100%;
+        display:flex;
+    }
+    .footer_menu{
+        display:flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    .footer_text{
+        width:100%;
+        margin-left:0;
+        margin-top: 5%;
+    }
+    .terms_of_use{
+        font-size:12px;
+        padding-right: 5%;
+    }
+
+    .contact_us{
+        font-size:12px;
+        padding-right: 5%;
+    }
+    .community_compliance{
+        font-size:12px;
+    }
+    .copyright_div{
+        justify-content: left;
+        margin-top:5%;
+        margin-left:0;
     }
 }
