@@ -169,7 +169,13 @@ body, html{
     color: var(--font-color-main);
     margin-top: 0%;
 }
-.nickname,
+.nickname{
+    font-family: "Noto Sans KR";
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--font-color-main);
+    margin-top: 0%;
+}
 .student_id {
     font-family: "Noto Sans KR";
     font-size: 15px;
@@ -264,9 +270,7 @@ body, html{
         align-items: center;
         padding: 10px 0;
     }
-    .maha_lazer{
-        margin-left: 40%;
-    }
+
     .bg{
         margin-top:195px;
         position:absolute;
