@@ -269,7 +269,7 @@ body, html{
     }
     .bg{
         display:flex;
-        margin-top:200px;
+        margin-top:195px;
         position:absolute;
         background-color: var(--color-sub-lightblue);
         width:100%;
