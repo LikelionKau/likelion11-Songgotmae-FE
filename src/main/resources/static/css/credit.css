@@ -240,9 +240,13 @@ body, html{
         height:auto;
         justify-content: center;
     }
-
     .service_title{
         display:none;
+    }
+
+    .page_title{
+        margin-left: 0;
+        font-size:25px;
     }
 
     .navbar_title {
@@ -304,7 +308,9 @@ body, html{
         width:80%;
         height: auto;
     }
-
+    .row_div{
+        margin-left: 8%;
+    }
     .footer{
         width:100%;
     }
