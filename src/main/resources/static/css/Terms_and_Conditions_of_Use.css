@@ -113,7 +113,7 @@ body, html{
 }
 .community_main_title{
     font-family: "Noto Sans KR";
-    font-size:20px;
+    font-size:30px;
     color:var(--font-color-main);
     text-align: center;
     font-weight: var(--font-weight-bold);

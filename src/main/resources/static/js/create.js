@@ -12,7 +12,7 @@ const instance = axios.create({
 });
 
 // console.log(token);
-console.log(localStorage.getItem('token'));
+// console.log(localStorage.getItem('token'));
 
 document.addEventListener('DOMContentLoaded', () => {
 
