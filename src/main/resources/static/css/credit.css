@@ -109,12 +109,13 @@ body, html{
 .page_title{
     font-family: "Noto Sans KR";
     display: flex;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: var(--font-weight-bold);
     font-color:var(--font-color-main);
     margin-top:5%;
     justify-content: center;
-    margin-left: 7%;
+    margin-left: 3%;
+
 }
 .row_div{
     display:flex;
@@ -122,31 +123,38 @@ body, html{
 }
 .profile_box_div{
     display:flex;
-    width:40%;
+    width:30%;
     border: var(--color-sub-grey) solid 1px;
     border-radius: 8px;
     margin-bottom: 5%;
-    margin-right:5%;
+    margin-right:auto;
 }
 .profile_image{
-    width:200px;
-    height:200px;
+    width:150px;
+    height:150px;
     padding : 10px;
     padding-top:30px;
+}
+.profile_image_vettel{
+    width:150px;
+    height:120px;
+    padding : 10px;
+    padding-top:50px;
 }
 .profile_nickname{
     font-family: 'Noto Sans KR', sans-serif;
     color:var(--font-color-main);
-    font-size:15px;
+    font-size:10px;
     font-weight: bold;
-    margin-right:1%;
     width:40px;
+    margin-right: 0;
+    text-align: center;
 }
 .profile_position{
     font-family: 'Noto Sans KR', sans-serif;
     color:var(--color-sub-grey);
-    font-size:15px;
-    margin-right:1%;
+    font-size:8px;
+    margin-top:10px;
 }
 .profile_box_div{
     display:flex;
@@ -166,6 +174,8 @@ body, html{
 }
 .name_div{
     display:flex;
+    justify-content: center;
+    align-items: center;
 }
 /*푸터*/
 .footer{
