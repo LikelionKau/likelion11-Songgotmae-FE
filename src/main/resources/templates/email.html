@@ -27,8 +27,8 @@
       <div class="navbar_menu">
         <a class="navbar_menu_main" href="main.html">청원보기</a>
         <a class="navbar_menu_create" href="create.html">청원하기</a>
-        <a class ="navbar_menu_login" href="login.html" >로그인</a>
-        <a class = "navbar_menu_login" href="email.html" >회원가입</a>
+        <a class ="navbar_menu_login" href="login.html" id="loginButton">로그인</a>
+        <a class = "navbar_menu_login" href="email.html" id="nav_signup">회원가입</a>
       </div>
     </div>
   </div>
@@ -43,12 +43,12 @@
         <p class="email_text">kau 이메일(아이디)</p>
         <div id="email_q">
           <input type="text" placeholder="이메일을 입력해주세요" class="kau_email_input" id="kauemail">
-          <button>인증번호 받기</button>
+          <button onclick="echeck()">인증번호 받기</button>
         </div>
         <p class="send_message">kau계정 이메일로 재학생 인증을 해주세요</p>
         <div id="email_a">
-          <input type="text" placeholder="인증번호를 입력해주세요" class="kau_email_input" id="kauemailcer">
-          <button>인증번호 확인</button>
+          <input type="text" placeholder="인증번호를 입력해주세요" class="kau_email_input" id="econfig">
+          <button onclick="econfig()">인증번호 확인</button>
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@
     </div>
     <div class="pw_confirm_input_div">
       <p class="pw_confirm_text">비밀번호 확인</p>
-      <input type="text" placeholder="비밀번호를 다시 입력해주세요" class="kau_pw_confirm_input">
+      <input type="text" placeholder="비밀번호를 다시 입력해주세요" class="kau_pw_confirm_input" id="doublecheck">
       <div class="alert_div">
         <!--      <img src="../static/image/exclamation-circle.png" alt="alert_circle" class="alert_circle">-->
         <!--      <p class="alert_message">비밀번호가 일치하지 않습니다</p>-->
