@@ -62,11 +62,11 @@
             </div>
 
             <ul class="list_sort">
-                <li id="order1">
-                    <a class="order1" href="js">최신순</a>
+                <li id="orderedByOpinionCount">
+                    <p class="orderedByOpinionCount" onclick="orderedByOpinionCount()">조회순</p>
                 </li>
-                <li id="order2">
-                    <a class="order2" href="js">조회순</a>
+                <li id="orderedByCreatedAt">
+                    <p class="orderedByCreatedAt" onclick="orderedByCreatedAt()">최신순</p>
                 </li>
             </ul>
         </div>
@@ -86,12 +86,12 @@
                 </p>
             </div>
             <div class="contents_detail_div">
-                <p class="contents_detail_date">어제</p>
-                <p class="contents_detail_view">1230</p>
+                <p class="contents_detail_date" id="contents_detail_date">어제</p>
+                <p class="contents_detail_view" id="contents_detail_view">1230</p>
             </div>
             <div class="contents_detail_div_mobile">
-                <p class="mobile_detail_date">2023.08.12</p>
-                <p class="mobile_detail_view">조회 1230</p>
+                <p class="mobile_detail_date" id="mobile_detail_date">2023.08.12</p>
+                <p class="mobile_detail_view" id="mobile_detail_view">조회 1230</p>
             </div>
         </div>
     </div>
