@@ -232,6 +232,13 @@ body, html{
     color:var(--font-color-sub);
     font-size:15px;
     text-decoration: none;
+    padding-right: 40%;
+}
+.about_credit{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+    text-decoration: none;
 }
 .copyright_div{
     display:flex;

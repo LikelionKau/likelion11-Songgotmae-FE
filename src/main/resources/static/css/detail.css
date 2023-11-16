@@ -238,69 +238,69 @@ body,html{
     font-weight: 400;
     line-height: 2;
 }
-.bar_graph_div{
-    width:90%;
-    border-radius:15px;
-    margin-left:5%;
-    margin-top:5%;
-}
+/*.bar_graph_div{*/
+/*    width:90%;*/
+/*    border-radius:15px;*/
+/*    margin-left:5%;*/
+/*    margin-top:5%;*/
+/*}*/
 
-/*막대그래프 전체*/
-.progress_bar{
-    appearance: none;
-    width:100%;
-    margin-bottom:1%;
-}
-/*진행도를 나타내는 막대그래프 부분(좋아요-빨강)*/
-.progress_bar::-webkit-progress-bar{
-    background-color:var(--color-main-deepblue);
-    height:25px;
-    border-radius: 15px;
-}
-/*막대그래프 나머지 부분(싫어요-파랑)*/
-.progress_bar::-webkit-progress-value{
-    background-color:#950000;
-    height:25px;
-    border-radius:15px 0px 0px 15px;
-}
-.bar_text_div{
-    display:flex;
-}
-.like_bar_data_text{
-    font-family: 'Noto Sans KR', sans-serif;
-    color: var(--font-color-main);
-    font-size:15px;
-    display:flex;
-    flex-direction: column;
-    width:50px;
-    text-align: center;
-    margin-left:1%;
-}
-.dislike_bar_data_text{
-    font-family: 'Noto Sans KR', sans-serif;
-    color: var(--font-color-main);
-    font-size:15px;
-    text-align: center;
-    display:flex;
-    flex-direction: column;
-    width:50px;
-    margin-left:auto;
-    margin-right:1%;
-}
-.like_bar_text{
-    font-weight: var(--font-weight-bold);
-    margin-bottom:0;
-}
-.like_bar_number{
-    font-size:12px;
-}
-.dislike_bar_text{
-    font-weight: var(--font-weight-bold);
-    margin-bottom: 0;
-}
-.dislike_bar_number{
-    font-size:12px;
-}
+/*!*막대그래프 전체*!*/
+/*.progress_bar{*/
+/*    appearance: none;*/
+/*    width:100%;*/
+/*    margin-bottom:1%;*/
+/*}*/
+/*!*진행도를 나타내는 막대그래프 부분(좋아요-빨강)*!*/
+/*.progress_bar::-webkit-progress-bar{*/
+/*    background-color:var(--color-main-deepblue);*/
+/*    height:25px;*/
+/*    border-radius: 15px;*/
+/*}*/
+/*!*막대그래프 나머지 부분(싫어요-파랑)*!*/
+/*.progress_bar::-webkit-progress-value{*/
+/*    background-color:#950000;*/
+/*    height:25px;*/
+/*    border-radius:15px 0px 0px 15px;*/
+/*}*/
+/*.bar_text_div{*/
+/*    display:flex;*/
+/*}*/
+/*.like_bar_data_text{*/
+/*    font-family: 'Noto Sans KR', sans-serif;*/
+/*    color: var(--font-color-main);*/
+/*    font-size:15px;*/
+/*    display:flex;*/
+/*    flex-direction: column;*/
+/*    width:50px;*/
+/*    text-align: center;*/
+/*    margin-left:1%;*/
+/*}*/
+/*.dislike_bar_data_text{*/
+/*    font-family: 'Noto Sans KR', sans-serif;*/
+/*    color: var(--font-color-main);*/
+/*    font-size:15px;*/
+/*    text-align: center;*/
+/*    display:flex;*/
+/*    flex-direction: column;*/
+/*    width:50px;*/
+/*    margin-left:auto;*/
+/*    margin-right:1%;*/
+/*}*/
+/*.like_bar_text{*/
+/*    font-weight: var(--font-weight-bold);*/
+/*    margin-bottom:0;*/
+/*}*/
+/*.like_bar_number{*/
+/*    font-size:12px;*/
+/*}*/
+/*.dislike_bar_text{*/
+/*    font-weight: var(--font-weight-bold);*/
+/*    margin-bottom: 0;*/
+/*}*/
+/*.dislike_bar_number{*/
+/*    font-size:12px;*/
+/*}*/
 
 /*-----푸터-----*/
 .footer{
@@ -343,6 +343,13 @@ body,html{
     text-decoration: none;
 }
 .community_compliance{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+    text-decoration: none;
+    padding-right: 40%;
+}
+.about_credit{
     font-family: "Noto Sans KR";
     color:var(--font-color-sub);
     font-size:15px;
@@ -474,9 +481,9 @@ body,html{
     .detail_content{
         margin-bottom:8%;
     }
-    .bar_graph_div{
-        margin-bottom:5%;
-    }
+    /*.bar_graph_div{*/
+    /*    margin-bottom:5%;*/
+    /*}*/
     .footer{
         width:100%;
     }
@@ -502,6 +509,11 @@ body,html{
     }
     .community_compliance{
         font-size:12px;
+        padding-right: 5%;
+    }
+    .about_credit{
+        font-size:12px;
+        padding-right: 5%;
     }
     .copyright_div{
         justify-content: left;
