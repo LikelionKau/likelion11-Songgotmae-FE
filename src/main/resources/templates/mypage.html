@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>마이페이지</title>
+
     <link rel="stylesheet" href="../static/css/mypage.css" type="text/css">
     <link rel="fontsetting" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <script src="../static/js/mypage.js" defer></script>
 
 </head>
 <body>
@@ -17,7 +18,7 @@
         <a href="main.html"><img src="../static/image/logo.png" alt="logo" class="maha_lazer"></a>
         <a class="service_title" href="main.html">송곳매</a>
     </div>
-    <img src="../static/image/hamburger-toggle.png" alt="toggle" class="navbar__toggle-btn">
+
     <!--우측-->
     <div class="navbar_text">
         <div class="navbar_menu">
@@ -28,57 +29,55 @@
         </div>
     </div>
 
+    <img class="navbar__toggle-btn" type="image" src="../static/image/hamburger_btn.png" onclick="">
+    <!--        <i class="fa-sharp fa-solid fa-bars" style="color: #ffffff;"></i>-->
 
 </nav>
 
-<div class="community_main_div">
-    <div class="contents_main_box">
-        <div class="contents_div">
-            <p class="contents_title">내 정보</p>
-            <div class="info_section">
-                <div class="info_box"></div>
-                <p class="id_input">id input</p>
-            </div>
-            <p class="nickname">이름/닉네임</p>
-            <p class="student_id">한국항공대00학번</p>
+<div class="contents_main_box">
+    <div class="contents_div">
+        <p class="contents_title">내 정보</p>
+        <div class="info_section">
+            <div class="info_box"></div>
+            <p class="id_input">id input</p>
         </div>
+        <p class="nickname">이름/닉네임</p>
+        <p class="student_id">한국항공대00학번</p>
     </div>
 </div>
 <div class="contents_main_box">
     <div class="contents_div">
         <p class="contents_title">계정</p>
         <p class="school_certification">학교 인증</p>
-        <p class="change_password" onclick="changePassword()">비밀번호 재발급</p>
+        <p class="change_password">비밀번호 변경</p>
     </div>
-
-    <div class="contents_main_box">
-        <div class="contents_div">
-            <p class="contents_title">이용약관</p>
-            <a class="Terms_and_Conditions_of_Use" href="Terms_and_Conditions_of_Use.html">서비스 이용약관</a>
-            <a class="community_link_text" href="community.html">커뮤니티 준수사항</a>
-
-        </div>
-    </div>
-    <div class="contents_main_box">
-        <div class="contents_div">
-            <p class="contents_title">내 소식</p>
-            <a class="membership_withdrawal" href="wroteby.html">내가 작성한 글</a>
-        </div>
-    </div>
-
-
-<script src="../static/js/main.js"></script>
-<script src="../static/js/mypage.js"></script>
 </div>
-<script src="../static/js/nav.js"></script>
+
+<div class="contents_main_box">
+    <div class="contents_div">
+        <p class="contents_title">이용약관</p>
+        <a class="Terms_and_Conditions_of_Use" href="Terms_and_Conditions_of_Use.html">서비스 이용약관</a>
+        <a class="community_compliance" href="community.html">커뮤니티 준수사항</a>
+
+    </div>
+</div>
+<div class="contents_main_box">
+    <div class="contents_div">
+        <p class="contents_title">내 소식</p>
+        <a class="membership_withdrawal" href="wroteby.html">내가 작성한 글</a>
+    </div>
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="../static/js/main.js"></script>
 </body>
 
 <footer class="footer">
     <div class="footer_menu">
         <div class="footer_text">
-            <a class="terms_of_use" href="Terms_and_Conditions_of_Use.html">서비스 이용약관</a>
-            <a class="contact_us" href="voc.html">피드백 남기기</a>
-            <a class="community_compliance" href="community.html">커뮤니티 준수사항</a>
+            <a class="footer_link" href="Terms_and_Conditions_of_Use.html">서비스 이용약관</a>
+            <a class="footer_link" href="voc.html">피드백 남기기</a>
+            <a class="footer_link" href="community.html">커뮤니티 준수사항</a>
         </div>
         <div class="copyright_div">
             <img src="../static/image/copyright.png" alt="copyright" class="copyright_mark">
