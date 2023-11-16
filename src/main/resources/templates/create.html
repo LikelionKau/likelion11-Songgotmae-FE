@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>청원 작성페이지</title>
+   <title>청원 작성페이지</title>
     <link rel="stylesheet" href="../static/css/create.css" type="text/css">
     <link rel="fontsetting" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
 </head>
@@ -30,7 +29,7 @@
                 <div class="navbar_menu">
                     <a class="navbar_menu_main" href="main.html">청원보기</a>
                     <a class="navbar_menu_create" href="create.html">청원하기</a>
-                    <a class = "navbar_menu_login"href="login.html" >로그인</a>
+                    <a class = "navbar_menu_login" href="login.html" >로그인</a>
                     <a class = "navbar_menu_email" href="email.html" >회원가입</a>
                 </div>
             </div>
@@ -38,7 +37,7 @@
 
     </nav>
 
-    <div class="main_div">
+    <div class="community_main_div">
         <!--페이지에서 보이는 제일 큰 타이틀-->
         <div class="create_page_title">
             <p class="page_title">청원하기</p>
@@ -47,19 +46,19 @@
         <!--입력전 조그만한 주의사항-->
         <div class="warning_box">
             <p class="info_text">청원 내용을 입력해주세요</p>
-            <p class="warning_text">*표시는 필수 입력항목입니다</p>
+<!--            <p class="warning_text">*표시는 필수 입력항목입니다</p>-->
         </div>
 
         <!--청원 내용 입력박스-->
         <div class="create_page_box">
             <div class="title_div">
-                <p class="red_star">*</p>
+<!--                <p class="red_star">*</p>-->
                 <p class="create_title">청원 제목</p>
                 <input class="post_title" id="title">
             </div>
             <hr class="createbox_between_line">
             <div class="content_div">
-                <p class="red_star">*</p>
+<!--                <p class="red_star">*</p>-->
                 <p class="create_text">청원 내용</p>
                 <input class="post_text" id="content">
             </div>
@@ -72,6 +71,7 @@
         <button class="submit_button" onclick="create()">신청</button>
     </div>
 <script src="../static/js/nav.js"></script>
+    </div>
 </body>
 
 <!--푸터-->

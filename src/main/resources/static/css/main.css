@@ -122,12 +122,22 @@ body, html{
     font-family: "Noto Sans KR";
 }
 
+.list_right{
+    display: flex;
+    /*display: inline-block;*/
+    width: 100%;
+}
+
 .list_sort{
     width: 140px;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    right: 109px;
+    /*position: absolute;*/
+    position: relative;
+    /*right: 109px;*/
+    margin-right: 22%;
+    /*margin-left: 60%;*/
+    margin-left: auto;
 }
 
 .order1{
@@ -145,7 +155,7 @@ body, html{
 .search{
     position: relative;
     width: 300px;
-    margin-left: 1%;
+    margin-left: 22%;
     margin-bottom:1%;
     /*float: right;*/
 }
@@ -176,20 +186,20 @@ body, html{
     color:var(--color-sub-grey);
     font-weight:var(--font-weight-bold);
     font-size: 18px;
-    margin-left:1%;
+    margin-left:22%;
 }
 
 .horizontal-line {
     border-top: 3px solid var(--font-color-main);
-    margin-right:1%;
-    margin-left:1%;
+    margin-right:20%;
+    margin-left:20%;
 }
 
 .contents_main_box{
     border: 1px solid var(--color-sub-grey);
     border-radius:5px;
-    width:90%;
-    margin-left:5%;
+    width:56%;
+    margin-left:22%;
     margin-top:1%;
     display:flex;
     flex-direction: column;
@@ -261,9 +271,11 @@ body, html{
 .contents_blank_box{
     border: 1px solid var(--color-sub-grey);
     border-radius:5px;
-    width:90%;
+    /*width:90%;*/
+    width:56%;
+    margin-left:22%;
     height:90px;
-    margin-left:5%;
+    /*margin-left:5%;*/
     margin-top:1%;
 }
 .footer{
@@ -338,7 +350,7 @@ body, html{
         display:flex;
     }
     .bg{
-        margin-top:159px;
+        margin-top:195px;
         position:absolute;
         background-color: var(--color-sub-lightblue);
         width:100%;
@@ -372,18 +384,22 @@ body, html{
     .navbar_menu_main{
         padding-right:0;
         padding-left:2vw;
+        padding-bottom: 2vw;
     }
     .navbar_menu_create{
         padding-right:0;
         padding-left:2vw;
+        padding-bottom: 2vw;
     }
     .navbar_menu_login{
         padding-right:0;
         padding-left:2vw;
+        padding-bottom: 2vw;
     }
     .navbar_menu_email{
         padding-right:0;
         padding-left:2vw;
+        padding-bottom: 2vw;
     }
 
     .navbar__toggle-btn{
@@ -409,17 +425,36 @@ body, html{
         margin-right:5%;
     }
     .list_right{
-        position:relative;
+        /*position:relative;*/
+        /*float: top;*/
         display:flex;
         justify-content: center;
         margin-left:0;
         margin-right:20px;
         margin-bottom: 5%;
     }
+    .list_sort{
+        position: absolute;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        font-size:0.8rem;
+    }
+    .search{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+    }
     .search_text{
         display:flex;
         justify-content: center;
     }
+
+    .contents_main_box{
+        width:90%;
+        margin-left:5%;
+    }
+
     .contents_div{
         width:90%;
         margin-bottom: 0;
@@ -449,6 +484,12 @@ body, html{
         justify-content: end;
         margin-right:8%;
     }
+
+    .contents_blank_box{
+        width:90%;
+        margin-left:5%;
+    }
+
     .mobile_detail_date{
         font-family: "Noto Sans KR";
         font-weight: var(--font-weight-bold);

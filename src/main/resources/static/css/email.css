@@ -122,7 +122,7 @@ body, html{
     font-weight: 700;
 }
 .signup_main_box{
-    border: 2px solid var(--color-sub-grey);
+    border: 3px solid var(--color-sub-grey);
     width:590px;
     border-radius: 10px;
     margin-left: auto;
@@ -199,7 +199,7 @@ body, html{
     font-size:15px;
     /*color:rgba(58, 58, 58, 0.10);*/
     color:rgba(58, 58, 58, 1);
-    padding-left:1%;
+    padding-left:5%;
 }
 .kau_nickname_input{
     border: 1px solid var(--color-sub-grey);
@@ -210,7 +210,7 @@ body, html{
     font-family: "Noto Sans KR";
     font-size:15px;
     color:rgba(58, 58, 58, 1);
-    padding-left:1%;
+    padding-left:5%;
 }
 .kau_password_input{
     border: 1px solid var(--color-sub-grey);
@@ -221,7 +221,7 @@ body, html{
     font-family: "Noto Sans KR";
     font-size:15px;
     color:rgba(58, 58, 58, 1);
-    padding-left:1%;
+    padding-left:5%;
 }
 .kau_pw_confirm_input{
     border: 1px solid var(--color-sub-grey);
@@ -232,7 +232,7 @@ body, html{
     font-family: "Noto Sans KR";
     font-size:15px;
     color:rgba(58, 58, 58, 1);
-    padding-left:1%;
+    padding-left:5%;
 }
 .email_text{
     font-family: "Noto Sans KR";
@@ -391,7 +391,7 @@ body, html{
         display: flex;
     }
     .bg{
-        margin-top:159px;
+        margin-top:195px;
         position:absolute;
         background-color: var(--color-sub-lightblue);
         width:100%;
@@ -426,18 +426,22 @@ body, html{
     .navbar_menu_main{
         padding-right:0;
         padding-left:2vw;
+        padding-bottom: 2vw;
     }
     .navbar_menu_create{
         padding-right:0;
         padding-left:2vw;
+        padding-bottom: 2vw;
     }
     .navbar_menu_login{
         padding-right:0;
         padding-left:2vw;
+        padding-bottom: 2vw;
     }
     .navbar_menu_email{
         padding-right:0;
         padding-left:2vw;
+        padding-bottom: 2vw;
     }
 
     .navbar__toggle-btn{

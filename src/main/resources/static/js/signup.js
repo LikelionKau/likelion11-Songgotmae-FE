@@ -28,3 +28,20 @@ function signup(){
         // throw new Error(error);
     });
 }
+
+function echeck(){
+
+    axios({
+        method:"GET",
+        // url: 'http://www.songgotmae.com:8080/api/v1/join',
+        url: 'http://ec2-52-78-33-144.ap-northeast-2.compute.amazonaws.com:8080/api/v1/email/authcode',
+    }).then((res)=>{
+            console.log(res);
+            alert('인증번호가 발송되었습니다.');
+            // window.location.href = '../templates/login.html';
+        }).catch(error=>{
+        console.log(error);
+        // alert(error.response.data.message);
+        // throw new Error(error);
+    });
+}

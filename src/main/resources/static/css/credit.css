@@ -11,16 +11,10 @@
 
 }
 
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-
-.notosanskr * {
-    font-family: 'Noto Sans KR', sans-serif;
+body, html{
+    margin: 0;
+    padding: 0;
 }
-body,html{
-    margin:0;
-    padding:0;
-}
-
 /*네비게이션 바*/
 .navbar{
     background-color: var(--color-sub-lightblue);
@@ -36,9 +30,8 @@ body,html{
     margin-left: 10%;
 }
 .navbar__toggle-btn{
-    display: none;
+    display:none;
 }
-
 /*송곳매 로고*/
 .maha_lazer{
     width: 45px;
@@ -59,11 +52,13 @@ body,html{
 /*네비게이션 바 우측*/
 .navbar_text{
     display: flex;
+    /*float: left;*/
 }
 
 /*네비게이션 바 우측 디테일*/
 .navbar_menu{
     display: flex;
+    /*justify-content: space-between;*/
     align-items: center;
 }
 
@@ -110,199 +105,69 @@ body,html{
     padding-right:2vw;
 
 }
-
 /*페이지에서 보이는 가장 큰 타이틀*/
 .page_title{
+    font-family: "Noto Sans KR";
     display: flex;
-    justify-content: center;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-
-/*청원 디테일 전체 div*/
-.detail_title_box{
-    border-radius: 10px;
-    border: 1px solid #D9D9D9;
-    background: #FFF;
-    margin-left:20%;
-    margin-top:3%;
-    margin-right:20%;
-    margin-bottom:3%;
-
-}
-.detail_title_like{
-    display:flex;
-    flex-direction: column;
-}
-
-/*청원 제목*/
-.detail_title{
-    font-size:25px;
-    color: var(--font-color-main);
-    font-family: Noto Sans KR;
+    font-size: 30px;
     font-weight: var(--font-weight-bold);
-}
-.detail_head{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    font-color:var(--font-color-main);
     margin-top:5%;
-}
-
-/*청원 좋아요/싫어요 담은 div*/
-.detail_buttons_div{
-    display:flex;
-    flex-direction: row;
     justify-content: center;
-    margin-top:5%;
+    margin-left: 7%;
 }
-.like_btn{
-    width:60px;
-    height:60px;
-    background-color: var(--color-main-deepblue);
-    border-radius: 30px;
-    border:none;
-    padding-top:5px;
-    margin-right:3%;
-}
-
-.like_text{
-    font-family: "Noto Sans KR";
-    color:var(--font-color-sub);
-    font-size:11px;
-    margin-top:0;
-}
-.dislike_btn{
-    width:60px;
-    height:60px;
-    background-color:#950000;
-    border-radius: 30px;
-    border:none;
-    padding-top:5px;
-}
-.dislike_text{
-    font-family: "Noto Sans KR";
-    color:var(--font-color-sub);
-    font-size:11px;
-    margin-top:0;
-}
-.share_button{
-    border:none;
-    background:none;
+.row_div{
     display:flex;
-    justify-content: right;
+    margin-left: 20%;
 }
-.share_button_div{
+.profile_box_div{
     display:flex;
-    justify-content: right;
-    padding-right:5%;
+    width:40%;
+    border: var(--color-sub-grey) solid 1px;
+    border-radius: 8px;
+    margin-bottom: 5%;
+    margin-right:5%;
 }
-
-/*청원 작성 일시/조회수*/
-.detail_time_div{
-    float: right;
-    text-align: right;
-    margin-right: 5%;
-    margin-top: 1%;
-    margin-bottom:5%;
+.profile_image{
+    width:200px;
+    height:200px;
+    padding : 10px;
+    padding-top:30px;
 }
-.detail_date{
-    font-family: "Noto Sans KR";
-    color:var(--font-color-main);
-    font-size:12px;
-}
-.detail_view{
-    font-family: "Noto Sans KR";
-    color:var(--font-color-main);
-    font-size:12px;
-}
-
-
-/*청원 본문 내용*/
-.detail_content{
-    margin-top: 5%;
-    margin-left: 5%;
-    display: flex;
-    /*width: 1090px;*/
-    width: 90%;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #000;
-    font-family: Noto Sans KR;
-    /*font-size: 15px;*/
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2;
-}
-.bar_graph_div{
-    width:90%;
-    border-radius:15px;
-    margin-left:5%;
-    margin-top:5%;
-}
-
-/*막대그래프 전체*/
-.progress_bar{
-    appearance: none;
-    width:100%;
-    margin-bottom:1%;
-}
-/*진행도를 나타내는 막대그래프 부분(좋아요-빨강)*/
-.progress_bar::-webkit-progress-bar{
-    background-color:var(--color-main-deepblue);
-    height:25px;
-    border-radius: 15px;
-}
-/*막대그래프 나머지 부분(싫어요-파랑)*/
-.progress_bar::-webkit-progress-value{
-    background-color:#950000;
-    height:25px;
-    border-radius:15px 0px 0px 15px;
-}
-.bar_text_div{
-    display:flex;
-}
-.like_bar_data_text{
+.profile_nickname{
     font-family: 'Noto Sans KR', sans-serif;
-    color: var(--font-color-main);
+    color:var(--font-color-main);
     font-size:15px;
-    display:flex;
-    flex-direction: column;
-    width:50px;
-    text-align: center;
-    margin-left:1%;
+    font-weight: bold;
+    margin-right:1%;
+    width:40px;
 }
-.dislike_bar_data_text{
+.profile_position{
     font-family: 'Noto Sans KR', sans-serif;
-    color: var(--font-color-main);
+    color:var(--color-sub-grey);
     font-size:15px;
-    text-align: center;
-    display:flex;
-    flex-direction: column;
-    width:50px;
-    margin-left:auto;
     margin-right:1%;
 }
-.like_bar_text{
-    font-weight: var(--font-weight-bold);
-    margin-bottom:0;
-}
-.like_bar_number{
+.profile_box_div{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:var(--font-color-main);
     font-size:12px;
-}
-.dislike_bar_text{
-    font-weight: var(--font-weight-bold);
-    margin-bottom: 0;
-}
-.dislike_bar_number{
-    font-size:12px;
-}
+    align-items: center;
 
-/*-----푸터-----*/
+}
+.profile_text{
+    font-family: 'Noto Sans KR', sans-serif;
+    color:var(--font-color-main);
+    font-size:12px;
+    margin-left:5%;
+    margin-right:5%;
+}
+.name_div{
+    display:flex;
+}
+/*푸터*/
 .footer{
     background-color: var(--color-main-deepblue);
     width:100%;
@@ -328,13 +193,7 @@ body,html{
     text-decoration: none;
 
 }
-.private_info{
-    font-family: "Noto Sans KR";
-    color:var(--font-color-sub);
-    font-size:15px;
-    padding-right:40%;
-    text-decoration: none;
-}
+
 .contact_us{
     font-family: "Noto Sans KR";
     color:var(--font-color-sub);
@@ -367,8 +226,7 @@ body,html{
     color:var(--font-color-sub);
 }
 
-@media (max-width: 768px) {
-    /* 화면 너비가 768px 이하일 때 */
+@media screen and (max-width:767px){
     .navbar {
         align-items: center;
         padding: 10px 0;
@@ -382,9 +240,13 @@ body,html{
         height:auto;
         justify-content: center;
     }
+    .service_title{
+        display:none;
+    }
 
-    .service_title {
-        display: none;
+    .page_title{
+        margin-left: 0;
+        font-size:25px;
     }
 
     .navbar_title {
@@ -394,17 +256,16 @@ body,html{
     }
 
     .navbar_text {
-        margin-left: auto;
+        margin-left:auto;
         display:block;
         text-align: center;
     }
 
     .navbar_menu {
-        display: none;
+        display:none;
     }
-
-    .navbar_menu.open {
-        display: flex;
+    .navbar_menu.open{
+        display:flex;
         justify-content: center;
         text-align: center;
         flex-direction: column;
@@ -418,64 +279,37 @@ body,html{
         padding-right:0;
         padding-left:2vw;
         padding-bottom: 2vw;
+
     }
     .navbar_menu_login{
         padding-right:0;
         padding-left:2vw;
         padding-bottom: 2vw;
+
     }
     .navbar_menu_email{
         padding-right:0;
         padding-left:2vw;
         padding-bottom: 2vw;
+
     }
 
-
-    .navbar__toggle-btn {
-        display: flex;
-        margin-right:50px;
-    }
-
-    .navbar__toggle-btn.open {
-        display: none;
-    }
-    .detail_head{
+    .navbar__toggle-btn{
         display:flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    .detail_title{
-        text-align: center;
-        margin-left:3%;
-        margin-right:3%;
-    }
-    .detail_title_box{
-        margin-right: 3%;
-        margin-left: 5%;
-    }
+        margin-right:40px;
+        width:23px;
+        height:18px;
 
-    .detail_title_like{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
-    .detail{
-        width:90%;
+    .navbar__toggle-btn.open{
+        display:none;
     }
-    .detail_title{
-        font-size:1rem;
-        display:flex;
-        top:0;
-        left:0;
+    .profile_image{
+        width:80%;
+        height: auto;
     }
-
-    .detail_content{
-        margin-bottom:8%;
-    }
-    .bar_graph_div{
-        margin-bottom:5%;
+    .row_div{
+        margin-left: 8%;
     }
     .footer{
         width:100%;
@@ -508,5 +342,4 @@ body,html{
         margin-top:5%;
         margin-left:0;
     }
-
 }
