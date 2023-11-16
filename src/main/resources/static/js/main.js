@@ -1,4 +1,3 @@
-//
 // const maxCharctersSmall =1;
 //
 // // 초기에 페이지 로딩 시 원본 텍스트 내용 저장

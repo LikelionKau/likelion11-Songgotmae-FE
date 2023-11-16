@@ -15,7 +15,6 @@ body, html{
     margin: 0;
     padding: 0;
 }
-
 /*네비게이션 바*/
 .navbar{
     background-color: var(--color-sub-lightblue);
@@ -53,12 +52,13 @@ body, html{
 /*네비게이션 바 우측*/
 .navbar_text{
     display: flex;
+    /*float: left;*/
 }
 
 /*네비게이션 바 우측 디테일*/
 .navbar_menu{
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
 }
 
@@ -105,124 +105,67 @@ body, html{
     padding-right:2vw;
 
 }
-.community_main_title{
+/*페이지에서 보이는 가장 큰 타이틀*/
+.page_title{
     font-family: "Noto Sans KR";
-    font-size:30px;
-    color:var(--font-color-main);
-    text-align: center;
+    display: flex;
+    font-size: 30px;
     font-weight: var(--font-weight-bold);
+    font-color:var(--font-color-main);
     margin-top:5%;
+    justify-content: center;
+    margin-left: 7%;
 }
-.accordion_area{
-    width:90%;
-    margin-left:auto;
-    margin-right:auto;
-}
-.accordion_drop_container{
+.row_div{
     display:flex;
+    margin-left: 20%;
 }
-.open_btn.dropdown{
+.profile_box_div{
     display:flex;
-    align-items: center;
-    width:100%;
-    background-color: var(--color-main-lightblue);
-    border: 1px solid var(--color-sub-grey);
-    border-radius: 8px 8px 0px 0px;
-}
-.open_btn{
-    display:flex;
-    align-items: center;
-    width:100%;
-    background-color: var(--font-color-sub);
-    border: 1px solid var(--color-sub-grey);
+    width:40%;
+    border: var(--color-sub-grey) solid 1px;
     border-radius: 8px;
-    margin-top:10px;
+    margin-bottom: 5%;
+    margin-right:5%;
 }
-.info_circle{
-    display:none;
+.profile_image{
+    width:200px;
+    height:200px;
+    padding : 10px;
+    padding-top:30px;
 }
-.info_circle.dropdown{
-    width:20px;
-    height:20px;
-    margin-right:10px;
-    margin-left:18px;
-    color:var(--font-color-sub);
-}
-.info_circle_black{
-    width:20px;
-    height: 20px;
-    margin-right:10px;
-    margin-left:18px;
-}
-.info_circle_black.dropdown{
-    display:none;
-}
-.accordion_title_text{
-    font-family:"Noto Sans KR";
+.profile_nickname{
+    font-family: 'Noto Sans KR', sans-serif;
     color:var(--font-color-main);
     font-size:15px;
-    font-weight:var(--font-weight-bold);
+    font-weight: bold;
+    margin-right:1%;
+    width:40px;
 }
-
-.accordion_title_text.dropdown{
-    font-family:"Noto Sans KR";
-    color:var(--font-color-sub);
+.profile_position{
+    font-family: 'Noto Sans KR', sans-serif;
+    color:var(--color-sub-grey);
     font-size:15px;
-    font-weight:var(--font-weight-bold);
+    margin-right:1%;
 }
-.bottom_arrow{
-    width:21px;
-    height:11px;
-    margin-left:auto;
-    margin-right:5px;
-}
-.bottom_arrow.dropdown{
-    display:none;
-}
-.accordion_content{
-    height:0;
-    overflow-y: hidden;
-    /*border:1px solid var(--color-sub-grey);*/
-    border:none;
-    border-radius: 0px 0px 8px 8px;
-
-}
-.accordion_content.dropdown{
-    overflow-y: hidden;
-    border:1px solid var(--color-sub-grey);
-    border-radius: 0px 0px 8px 8px;
-
-}
-
-.accordion_content_text{
-    font-family: "Noto Sans KR";
-    color:var(--font-color-main);
-    font-size:10px;
-    margin-left:12px;
-    margin-right:12px;
-    line-height:200%;
-}
-.dropdown{
-    display:block;
-    height:100%;
-    overflow:auto;
-}
-
-.accordion_content_sub_area{
-    font-family: "Noto Sans KR";
+.profile_box_div{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Noto Sans KR', sans-serif;
     color:var(--font-color-main);
     font-size:12px;
-    font-weight: var(--font-weight-bold);
-    text-align: left;
-    padding-left:12px;
+    align-items: center;
+
 }
-.accordion_content_sub_text{
-    font-family: "Noto Sans KR";
+.profile_text{
+    font-family: 'Noto Sans KR', sans-serif;
     color:var(--font-color-main);
-    font-size:10px;
-    text-align: left;
-    padding-left:20px;
-    text-decoration: none;
+    font-size:12px;
+    margin-left:5%;
+    margin-right:5%;
+}
+.name_div{
+    display:flex;
 }
 /*푸터*/
 .footer{
@@ -283,14 +226,12 @@ body, html{
     color:var(--font-color-sub);
 }
 
-/*반응형 웹페이지 - 미디어커리*/
 @media screen and (max-width:767px){
     .navbar {
         align-items: center;
         padding: 10px 0;
         display:flex;
     }
-
     .bg{
         margin-top:195px;
         position:absolute;
@@ -302,6 +243,12 @@ body, html{
     .service_title{
         display:none;
     }
+
+    .page_title{
+        margin-left: 0;
+        font-size:25px;
+    }
+
     .navbar_title {
         margin-left:175px;
         margin-top:10px;
@@ -309,7 +256,7 @@ body, html{
     }
 
     .navbar_text {
-        margin-left: auto;
+        margin-left:auto;
         display:block;
         text-align: center;
     }
@@ -327,81 +274,72 @@ body, html{
         padding-right:0;
         padding-left:2vw;
         padding-bottom: 2vw;
-        font-weight: bold;
     }
     .navbar_menu_create{
         padding-right:0;
         padding-left:2vw;
         padding-bottom: 2vw;
-        font-weight: bold;
+
     }
     .navbar_menu_login{
         padding-right:0;
         padding-left:2vw;
         padding-bottom: 2vw;
-        font-weight: bold;
+
     }
     .navbar_menu_email{
         padding-right:0;
         padding-left:2vw;
         padding-bottom: 2vw;
-        font-weight: bold;
+
     }
 
     .navbar__toggle-btn{
         display:flex;
         margin-right:40px;
+        width:23px;
+        height:18px;
+
     }
     .navbar__toggle-btn.open{
         display:none;
     }
-    .community_main_title{
-        margin-bottom: 3%;
+    .profile_image{
+        width:80%;
+        height: auto;
     }
-    .open_btn{
-        margin-top:3%;
+    .row_div{
+        margin-left: 8%;
     }
-    .accordion_content_sub_text{
-        padding-left:3%;
-    }
-
     .footer{
         width:100%;
     }
     .footer_menu{
         display:flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
     }
     .footer_text{
         width:100%;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5%;
         margin-left:0;
+        margin-top: 5%;
     }
     .terms_of_use{
         font-size:12px;
         padding-right: 5%;
     }
-    .community_compliance{
-        font-size:12px;
-        padding-right: 5%;
-    }
 
-    .private_info{
-        font-size:12px;
-        padding-right: 5%;
-    }
     .contact_us{
         font-size:12px;
         padding-right: 5%;
     }
+    .community_compliance{
+        font-size:12px;
+    }
     .copyright_div{
-        justify-content: center;
-        align-items: center;
-        margin-top:3%;
+        justify-content: left;
+        margin-top:5%;
         margin-left:0;
     }
 }

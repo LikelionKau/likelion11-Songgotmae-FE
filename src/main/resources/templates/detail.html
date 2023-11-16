@@ -9,6 +9,7 @@
 </head>
 
 <script src="../static/js/detail.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 <body>
 
@@ -35,7 +36,7 @@
 
     </nav>
 
-    <div class="main_div">
+    <div class="community_main_div">
         <!--청원 디테일-->
         <div class="detail_title_box">
             <!--청원 제목 + 좋아요/싫어요/공유-->
@@ -48,12 +49,12 @@
                         내린 속의 어머니 사랑과 이런 아름다운 풀이 나의 파란 까닭입니다</p>
                     <!--청원 좋아요/싫어요-->
                     <div class="detail_buttons_div">
-                        <button class="like_btn" onclick="updateLikes()">
-                            <img src="../static/image/like.png" alt="like" class="like_img" onclick="agree">
+                        <button class="like_btn" onclick="approve(true)">
+                            <img src="../static/image/like.png" alt="like" class="like_img">
                             <p class="like_text">찬성</p>
                         </button>
-                        <button class="dislike_btn" onclick="updateDislikes()">
-                            <img src="../static/image/dislike.png" alt="dislike" class="dislike_img" onclick="">
+                        <button class="dislike_btn" onclick="approve(false)">
+                            <img src="../static/image/dislike.png" alt="dislike" class="dislike_img">
                             <p class="dislike_text">반대</p>
                         </button>
                     </div>
