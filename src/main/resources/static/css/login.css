@@ -353,6 +353,13 @@ input[id="check_login"]:checked + label::after{
     font-family: "Noto Sans KR";
     color:var(--font-color-sub);
     font-size:15px;
+    padding-right: 40%;
+    text-decoration: none;
+}
+.about_credit{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
     text-decoration: none;
 }
 .copyright_div{
@@ -362,6 +369,7 @@ input[id="check_login"]:checked + label::after{
     margin-bottom: 10px;
     margin-left:10%;
 }
+
 
 .copyright_mark{
     width:10px;
@@ -556,6 +564,11 @@ input[id="check_login"]:checked + label::after{
     }
     .community_compliance{
         font-size:12px;
+        padding-right: 5%;
+    }
+    .about_credit{
+        font-size: 12px;
+        padding-right: 5%;
     }
     .copyright_div{
         justify-content: center;

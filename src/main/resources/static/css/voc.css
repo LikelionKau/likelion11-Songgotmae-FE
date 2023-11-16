@@ -311,6 +311,13 @@ body, html{
     color:var(--font-color-sub);
     font-size:15px;
     text-decoration: none;
+    padding-right: 40%;
+}
+.about_credit{
+    font-family: "Noto Sans KR";
+    color:var(--font-color-sub);
+    font-size:15px;
+    text-decoration: none;
 }
 .copyright_div{
     display:flex;
@@ -500,8 +507,14 @@ body, html{
         font-size:12px;
         padding-right: 5%;
     }
+
     .community_compliance{
         font-size:12px;
+        padding-right: 5%;
+    }
+    .about_credit{
+        font-size: 12px;
+        padding-right: 5%;
     }
     .copyright_div{
         justify-content: left;
