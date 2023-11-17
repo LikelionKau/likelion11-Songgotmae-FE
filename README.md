@@ -183,3 +183,5 @@
 [PATCH] /admin/v1/posts/{postId}/disapprove      (관리자) 포스트 게시 불허
 [PATCH] /admin/v1/posts/{postId}/approve         (관리자) 포스트 게시 허용
 ```
+### 🦅큐알코드 바로가기
+![QR_songgotmae](https://github.com/LikelionKau/likelion11-Songgotmae-FE/assets/102152646/bb54fc83-4669-464d-80de-95420afc2bf2)
