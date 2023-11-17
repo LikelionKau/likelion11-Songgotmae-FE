@@ -175,3 +175,13 @@
 ```
 
 
+|페이지 이름|페이지 화면|
+|:-:|-----------------------|
+|메인페이지|<img src="https://github.com/LikelionKau/likelion11-Songgotmae-FE/assets/102152646/f9ba21c8-9dcd-4903-af21-12303497f7b7" alt="메인페이지" width="800">|
+|청원페이지|<img src="https://github.com/LikelionKau/likelion11-Songgotmae-FE/assets/102152646/d1adb750-75f3-4247-bd05-66b46b16a063" alt="청원페이지" width="800">|
+|로그인페이지|<img src="https://github.com/LikelionKau/likelion11-Songgotmae-FE/assets/102152646/d41c3ec5-2989-427a-a25e-c31e81ced7bf" alt="로그인페이지" width="800">|
+|회원가입페이지|<img src="https://github.com/LikelionKau/likelion11-Songgotmae-FE/assets/102152646/b696115a-fb22-4239-ab6c-7f352632c032" alt="회원가입페이지" width="800">|
+|이용약관페이지|<img src="https://github.com/LikelionKau/likelion11-Songgotmae-FE/assets/102152646/342d3753-3d12-4428-9a90-50481d96e1e1" alt="이용약관" width="800">|
+|커뮤니티 준수사항 페이지|<img src="https://github.com/LikelionKau/likelion11-Songgotmae-FE/assets/102152646/e79c61f8-42e1-47c0-9e00-fc339e1ef933" alt="커뮤니티 준수사항" width="800">|
+|피드백 페이지|<img src="https://github.com/LikelionKau/likelion11-Songgotmae-FE/assets/102152646/69bbad98-2d06-45b6-a24a-e1e79b5d6f61" alt="피드백페이지" width="800">|
+|만든이 페이지|<img src="https://github.com/LikelionKau/likelion11-Songgotmae-FE/assets/102152646/95716314-adeb-4556-91f5-48113b47e1e4" alt="만든이페이지" width="800">|

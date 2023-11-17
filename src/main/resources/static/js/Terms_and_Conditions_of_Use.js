@@ -16,6 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
         loginButton.textContent = '로그아웃';
         loginButton.addEventListener('click', logout);
         nav_signup.textContent = '마이페이지';
-        nav_signup.href = '../templates/mypage.html';
+        nav_signup.href = "mypage.html";
     }
 });

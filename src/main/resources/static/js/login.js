@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loginButton.textContent = '로그아웃';
         loginButton.addEventListener('click', logout);
         nav_signup.textContent = '마이페이지';
-        nav_signup.href = '../templates/mypage.html';
+        nav_signup.href = "mypage.html";
     }
 });
 
@@ -46,24 +46,19 @@ function login(){
             console.log(res);
             // console.log(res.headers.authorization);
             localStorage.setItem('token', res.headers.authorization);
-            // console.log(axios.AxiosHeaders.accessors);
-            // const { accessToken } = res.data;
-            // console.log(accessToken);
-            // console.log(axios.defaults.headers.common["Authorization"] = `Bearer ${accessToken}`)
             alert('로그인이 완료되었습니다.');
-            window.location.href = '../templates/main.html';
+            window.location.href ="main.html";
 
             // 로컬 스토리지에서 토큰을 읽어오기
-            const token = localStorage.getItem('token');
+            // const token = localStorage.getItem('token');
 
             // 토큰을 로컬 스토리지에 저장
-            localStorage.setItem('token', token);
+            // localStorage.setItem('token', token);
 
-            instance();
+            // instance();
 
         }).catch(error=>{
         console.log(error);
         alert(error.response.data.message);
-        // throw new Error(error);
     });
 }
