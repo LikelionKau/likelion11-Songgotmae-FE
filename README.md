@@ -140,3 +140,11 @@
 └─📂target
 ```
 ## 📺 화면 구성
+
+##🎶JAVASCRIPT기능
+|GET /api/vi/posts/{postId}|![게시글 하나의 디테일을 조회할 수 있는 기능](https://img.shields.io/badge/springboot-6DB33F.svg?style=for-the-badge&logo=springboot&logoColor=white)|
+|PUT /api/v1/posts/{postId} |![게시물 수정](https://img.shields.io/badge/Amazon_EC2-FF9900?style=for-the-badge&logo=AmazonEC2&logoColor=white)|
+
+
+
+
