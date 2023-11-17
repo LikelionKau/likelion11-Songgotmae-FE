@@ -141,10 +141,37 @@
 ```
 ## 📺 화면 구성
 
-##🎶JAVASCRIPT기능
-|GET /api/vi/posts/{postId}|![게시글 하나의 디테일을 조회할 수 있는 기능](https://img.shields.io/badge/springboot-6DB33F.svg?style=for-the-badge&logo=springboot&logoColor=white)|
-|PUT /api/v1/posts/{postId} |![게시물 수정](https://img.shields.io/badge/Amazon_EC2-FF9900?style=for-the-badge&logo=AmazonEC2&logoColor=white)|
-
-
+## 🎶JAVASCRIPT기능
+### ⭐Post API
+```
+[GET] /api/vi/posts/{postId}                     게시글 하나의 디테일을 조회할 수 있는 기능
+[PUT] /api/v1/posts/{postId}                     게시물 수정
+[POST] /api/v1/posts/new                         게시글 작성 
+[GET] /api/v1/posts/wroteBy/me                   멤버가 자신이 작성한 게시글을 조회할 수 있는 기능
+[GET] /api/v1/posts/orderedByOpinionCount        조회순으로 조회할 수 있는 기능
+[GET] /api/v1/posts/orderByCreatedAt             최신순으로 조회할 수 있는 기능
+[GET] /api/v1/posts/all                          게시글 전체 조회 기능
+[GET] /api/v1/posts/all/approved                 검열 통과된 게시글 전체 조회 기능
+```
+### ⭐MemberJoin API
+```
+[PUT] /api/v1/members/{email}/password           패스워드 재생성 기능
+[POST] /api/v1/members/join                      회원가입 기능
+[POST] /api/v1/members/join/admin                관리자 계정 생성 기능
+```
+### ⭐email-controller
+```
+[GET] /api/v1/email/authcode                     인증 번호 요청하는 기능
+[POST] /api/v1/email/authcode                    인증 번호 넣는 기능
+```
+### ⭐agreement-controller
+```
+[POST] /api/v1/agreements/new/{postId}           게시글 찬성/반대 입력 기능
+```
+### ⭐Admin API
+```
+[PATCH] /admin/v1/posts/{postId}/disapprove      (관리자) 포스트 게시 불허
+[PATCH] /admin/v1/posts/{postId}/approve         (관리자) 포스트 게시 허용
+```
 
 
