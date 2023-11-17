@@ -140,6 +140,8 @@
 └─📂target
 ```
 ## 📺 화면 구성
+|페이지 이름|페이지 화면|
+|메인페이지|![메인페이지]|
 
 ##🎶JAVASCRIPT기능
 |GET /api/vi/posts/{postId}|![게시글 하나의 디테일을 조회할 수 있는 기능](https://img.shields.io/badge/springboot-6DB33F.svg?style=for-the-badge&logo=springboot&logoColor=white)|
