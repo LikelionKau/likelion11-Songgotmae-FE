@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loginButton.textContent = '로그아웃';
         loginButton.addEventListener('click', logout);
         nav_signup.textContent = '마이페이지';
-        nav_signup.href = '../templates/mypage.html';
+        nav_signup.href = "mypage.html";
     }
 });
 
@@ -81,6 +81,11 @@ window.onload = function() {
             listchar.appendChild(listsize);
             document.body.appendChild(listchar);
 
+            function callApi(postId) {
+                // postId를 사용하여 API 호출 또는 다른 동작 수행
+                console.log("http://ec2-52-78-33-144.ap-northeast-2.compute.amazonaws.com:8080/api/v1/posts/" + postId);
+            }
+
             for (var i = 0; i < res.data.length; i++) {
                 // 새로운 container 생성
                 var newContainer = document.createElement("div");
@@ -96,7 +101,14 @@ window.onload = function() {
                 var contentsTitle = document.createElement("a");
                 contentsTitle.classList.add("contents_title");
                 contentsTitle.textContent = res.data[i].title;
+
+                // postId를 callApi 함수에 전달하기 위해 익명 함수 사용
+                contentsTitle.onclick = function() {
+                    callApi(res.data[i].postId);
+                };
+
                 contentsTitle.href = "detail.html"
+                // contentsTitle.onclick = callApi(res.data[i].postId);
 
                 // contents_text 추가
                 var contentsText = document.createElement("p");
@@ -115,7 +127,7 @@ window.onload = function() {
                 // contents_detail_view 추가
                 var contentsDetailView = document.createElement("p");
                 contentsDetailView.classList.add("contents_detail_view");
-                contentsDetailView.textContent = res.data[i].modifiedAt;
+                contentsDetailView.textContent = res.data[i].postId + "번째 글";
 
                 // contents_detail_div_mobile 추가
                 var contentsDetailDivMobile = document.createElement("div");

@@ -272,7 +272,9 @@ body, html{
     color:var(--color-sub-grey);
     font-weight: 600;
     text-align: right;
-    margin-right:15%;
+    margin-right:10%;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 .alert_div{
     display:flex;
