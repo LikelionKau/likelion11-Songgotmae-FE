@@ -142,12 +142,13 @@
 ## 📺 화면 구성
 |페이지 이름|페이지 화면|
 |:-:|:-:|
-|메인페이지|![메인페이지]|
-
-##🎶JAVASCRIPT기능
-|GET /api/vi/posts/{postId}|![게시글 하나의 디테일을 조회할 수 있는 기능](https://img.shields.io/badge/springboot-6DB33F.svg?style=for-the-badge&logo=springboot&logoColor=white)|
-|PUT /api/v1/posts/{postId} |![게시물 수정](https://img.shields.io/badge/Amazon_EC2-FF9900?style=for-the-badge&logo=AmazonEC2&logoColor=white)|
-
-
+|메인페이지|![메인페이지]("https://github.com/LikelionKau/likelion11-Songgotmae-FE/assets/102152646/f9ba21c8-9dcd-4903-af21-12303497f7b7")|
+|청원하기페이지|![청원페이지]("https://github.com/LikelionKau/likelion11-Songgotmae-FE/assets/102152646/d1adb750-75f3-4247-bd05-66b46b16a063")|
+|로그인페이지|![로그인]("https://github.com/LikelionKau/likelion11-Songgotmae-FE/assets/102152646/d41c3ec5-2989-427a-a25e-c31e81ced7bf")|
+|회원가입페이지|![회원가입]("https://github.com/LikelionKau/likelion11-Songgotmae-FE/assets/102152646/b696115a-fb22-4239-ab6c-7f352632c032")|
+|이용약관페이지|![이용약관]("https://github.com/LikelionKau/likelion11-Songgotmae-FE/assets/102152646/342d3753-3d12-4428-9a90-50481d96e1e1")|
+|피드백페이지|![voc]("https://github.com/LikelionKau/likelion11-Songgotmae-FE/assets/102152646/69bbad98-2d06-45b6-a24a-e1e79b5d6f61")|
+|커뮤니티 준수사항|![community]("https://github.com/LikelionKau/likelion11-Songgotmae-FE/assets/102152646/e79c61f8-42e1-47c0-9e00-fc339e1ef933")|
+|만든이 페이지|![만든이 페이지]("https://github.com/LikelionKau/likelion11-Songgotmae-FE/assets/102152646/95716314-adeb-4556-91f5-48113b47e1e4")|
 
 
