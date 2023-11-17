@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loginButton.textContent = '로그아웃';
         loginButton.addEventListener('click', logout);
         nav_signup.textContent = '마이페이지';
-        nav_signup.href = '../templates/mypage.html';
+        nav_signup.href = "mypage.html";
     }
 });
 
@@ -44,6 +44,7 @@ function create(){
             .then((res) => {
             console.log(res);
             alert(res.data.message);
+            window.location.href = "main.html";
         }).catch(error => {
             console.log(error);
             // throw new Error(error);

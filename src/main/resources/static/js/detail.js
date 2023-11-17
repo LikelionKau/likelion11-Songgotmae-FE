@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loginButton.textContent = '로그아웃';
         loginButton.addEventListener('click', logout);
         nav_signup.textContent = '마이페이지';
-        nav_signup.href = '../templates/mypage.html';
+        nav_signup.href = "mypage.html";
     }
 });
 
@@ -67,4 +67,20 @@ function getPostIdFromURL() {
     // URL이 "http://example.com/detail.html?postId=123"와 같은 형태라면:
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get('postId');
+}
+
+window.onload = function() {
+    axios.get('http://ec2-52-78-33-144.ap-northeast-2.compute.amazonaws.com:8080/api/v1/email/authcode', {
+        params: {
+            emailAddress: kauemail.value
+        }
+    })
+        .then((res)=> {
+            console.log(res);
+            alert('이메일로 인증번호가 발송되었습니다.');
+        })
+        .catch(error=> {
+            console.log(error);
+            alert(error.response.data.message);
+        })
 }

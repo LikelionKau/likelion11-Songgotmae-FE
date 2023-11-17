@@ -20,12 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
         loginButton.textContent = '로그아웃';
         loginButton.addEventListener('click', logout);
         nav_signup.textContent = '마이페이지';
-        nav_signup.href = '../templates/mypage.html';
+        nav_signup.href = "mypage.html";
     }
 });
 
 function signup(){
-    if(e_confirm == 0) {
+    if(e_confirm == 1) {
         const nickname = document.getElementById("nickname");
         const kauEmail = document.getElementById("kauemail");
         const password = document.getElementById("password");
@@ -47,7 +47,7 @@ function signup(){
                 .then((res) => {
                     console.log(res);
                     alert('회원가입이 완료되었습니다.');
-                    window.location.href = '../templates/login.html';
+                    window.location.href = "login.html";
                 }).catch(error => {
                 console.log(error);
                 alert(error.response.data.message);
@@ -99,7 +99,7 @@ function echeck() {
 //         .catch(error => {
 //             console.log(error);
 //             alert(error.response.data.message);
-//             // window.location.href = '../templates/email.html';
+//             // window.location.href = "email.html";
 //         })
 // }
 
@@ -123,6 +123,6 @@ function econfig() {
         .catch(error => {
             console.log(error);
             alert(error.response.data.message);
-            window.location.href = '../templates/email.html';
+            window.location.href = "email.html";
         })
 }
